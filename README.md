@@ -1,1 +1,196 @@
-IyBBbmFseXppbmcgSGVhbHRoY2FyZSDigJQgRkhJUiBEb2NzCgoqKkFza0ZISVIqKiDigJQgYW4gIkFzayBNeSBEb2NzIiBzeXN0ZW0gZm9yIEZISVIgLyBITDcuCgpBIHByb2R1Y3Rpb24tcGF0dGVybiAqKnJldHJpZXZhbC1hdWdtZW50ZWQgZ2VuZXJhdGlvbiAoUkFHKSoqIGFwcGxpY2F0aW9uIG92ZXIKaGVhbHRoY2FyZSBpbnRlcm9wZXJhYmlsaXR5IGRvY3VtZW50YXRpb24uIEFzayBhIHF1ZXN0aW9uIGFib3V0IEZISVI7IHRoZQpzeXN0ZW0gcmV0cmlldmVzIGV2aWRlbmNlIHdpdGggKipoeWJyaWQgc2VhcmNoKiosIHJlcmFua3MgaXQgd2l0aCBhCioqY3Jvc3MtZW5jb2RlcioqLCBhbmQgYW5zd2VycyB3aXRoICoqZW5mb3JjZWQgY2l0YXRpb25zKiog4oCUIG9yICoqYWJzdGFpbnMqKgp3aGVuIHRoZSBkb2NzIGRvbid0IHN1cHBvcnQgYW4gYW5zd2VyLiBObyBjaXRhdGlvbiwgbm8gY2xhaW0uCgpRdWFsaXR5IGlzIG5vdCB2aWJlczogYSAqKmdvbGRlbi1zZXQgZXZhbHVhdGlvbiBydW5zIGFzIGEgQ0kgZ2F0ZSoqLiBFdmVyeQpwdXNoIGFuZCBwdWxsIHJlcXVlc3QgbXVzdCBjbGVhciByZXRyaWV2YWwgYW5kIGNpdGF0aW9uIHRocmVzaG9sZHMgb3IgdGhlCmJ1aWxkIGZhaWxzIChzZWUgW0V2YWx1YXRpb25dKCNldmFsdWF0aW9uLXRoZS1jaS1nYXRlKSkuCgotICoqQ29ycHVzOioqIDEyIGN1cmF0ZWQgZG9jdW1lbnRzICgxMjggY2h1bmtzKSBvbiBGSElSIFI0IHJlc291cmNlcywgc2VhcmNoLAogIEJ1bmRsZXMsIFNNQVJUIG9uIEZISVIsIEhMNyB2MiwgdGVybWlub2xvZ3ksIGFuZCBwcm9maWxlcyDigJQgd3JpdHRlbiBmb3IKICB0aGlzIHByb2plY3QgZnJvbSBwdWJsaWMgSEw3IEZISVIgUjQgY29uY2VwdHMuIE5vIHJlYWwgcGF0aWVudCBkYXRhCiAgYW55d2hlcmU7IGV4YW1wbGVzIHVzZSBvYnZpb3VzbHkgc3ludGhldGljIHBlb3BsZSAoIkphbmUgRXhhbXBsZSIpLgotICoqTW9kZWxzIHJ1biAxMDAlIGxvY2FsbHkqKiAoT05OWCB2aWEgZmFzdGVtYmVkKS4gTm8gQVBJIGtleSwgbm8gTExNIGJpbGwuCiAgQW4gTExNIGdlbmVyYXRvciBjYW4gYmUgZHJvcHBlZCBpbiBiZWhpbmQgdGhlIGBBbnN3ZXJHZW5lcmF0b3JgIHByb3RvY29sLgoKIyMgQXJjaGl0ZWN0dXJlCgpgYGAKICAgICAgICAgICAgICAgICAgICAgICAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAIG9mZmxpbmUg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQCiBjb3JwdXMvKi5tZCDilIDilIDilrogY2h1bmtpbmcgKGJ5IGhlYWRpbmcsIH42MDAgY2hhcnMsIHN0YWJsZSBpZHMgImRvYyNuIikKICAgICAgICAgICAgICAgICAgICAgICAg4pSCICAgICAgICAgICAg4pSc4pSA4pa6IEJNMjUgaW5kZXggKHJhbmtfYm0yNSkKICAgICAgICAgICAgICAgICAgICAgICAg4pSCICAgICAgICAgICAg4pSU4pSA4pa6IGVtYmVkZGluZ3MgKGJnZS1zbWFsbC1lbi12MS41KSDilIDilIDilrogZXhhY3QgY29zaW5lIGluZGV4CiAgICAgICAgICAgICAgICAgICAgICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogcXVlc3Rpb24KICAgIOKUggogICAg4pSc4pSA4pa6IEJNMjUgdG9wLTIwIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkAogICAg4pSc4pSA4pa6IHZlY3RvciB0b3AtMjAg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkICBSZWNpcHJvY2FsIFJhbmsgRnVzaW9uIChrPTYwKQogICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgIOKUgiAgICAgICAgICAgICAgICAgICAgICAgIGZ1c2VkIHRvcC0yMAogICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgIOKUgiAgICAgICAgICAgICAgICAgIGNyb3NzLWVuY29kZXIgcmVyYW5rIChtcy1tYXJjbyBNaW5pTE0pCiAgICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKWvAogICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgIHRvcC01IHBhc3NhZ2VzCiAgICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKWvAogICAg4pSCICAgICAgICAgICAgdG9wIHJlcmFuayBzY29yZSA8IHRocmVzaG9sZD8g4pSA4pSA4pa6IEFCU1RBSU4gKCJub3QgaW4gdGhlIGRvY3MiKQogICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilrwKICAgIOKUgiAgICAgICAgZXh0cmFjdGl2ZSBjb21wb3NpdGlvbjogc2VudGVuY2VzIE9OTFkgZnJvbSB0aGUgdG9wIHBhc3NhZ2VzLAogICAg4pSCICAgICAgICBlYWNoIHNlbnRlbmNlIHRhZ2dlZCBbZG9jI25dOyBJREYtd2VpZ2h0ZWQgc2VudGVuY2Ugc2VsZWN0aW9uCiAgICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKWvAogICAg4pSCICAgICAgICBjaXRhdGlvbiB2YWxpZGF0aW9uOiBldmVyeSBzZW50ZW5jZSBjaXRlZCwgZXZlcnkgY2l0YXRpb24gaW4KICAgIOKUgiAgICAgICAgdGhlIHJldHJpZXZlZCBzZXQg4oCUIG90aGVyd2lzZSByZWdlbmVyYXRlIHJlc3RyaWN0ZWQsIG9yIGFic3RhaW4KICAgIOKWvAogYW5zd2VyICsgY2l0YXRpb25zICsgc291cmNlcyB3aXRoIHBlci1zdGFnZSBzY29yZXMgKEJNMjUgcmFuaywgdmVjdG9yIHJhbmssCiBSUkYgZnVzZWQgc2NvcmUsIHJlcmFuayBzY29yZSkg4oCUIHRoZSBwaXBlbGluZSBpcyB2aXNpYmxlIGluIHRoZSBVSS4KYGBgCgojIyBIb3cgdGhlIHJldHJpZXZhbCB3b3JrcwoKKipIeWJyaWQgcmV0cmlldmFsLioqIEJNMjUgaXMgc3VwZXJiIGF0IGV4YWN0IHRlcm1pbm9sb2d5IChgX2luY2x1ZGVgLApgODg2Ny00YCwgYGNsaW5pY2FsU3RhdHVzYCkgYW5kIHdlYWsgYXQgcGFyYXBocmFzZTsgdmVjdG9yIHNlYXJjaCBpcyB0aGUKb3Bwb3NpdGUuIEFza0ZISVIgcnVucyBib3RoIGFuZCBmdXNlcyB0aGUgcmFua2luZ3MuCgoqKlJlY2lwcm9jYWwgUmFuayBGdXNpb24uKiogRWFjaCBjaHVuayBzY29yZXMgYM6jIDEgLyAoNjAgKyByYW5rKWAgYWNyb3NzIHRoZQp0d28gcmFua2Vycy4gUlJGIG5lZWRzIG5vIHNjb3JlIG5vcm1hbGl6YXRpb24g4oCUIGltcG9ydGFudCBiZWNhdXNlIEJNMjUgc2NvcmVzCmFuZCBjb3NpbmUgc2ltaWxhcml0aWVzIGFyZSBvbiBpbmNvbXBhcmFibGUgc2NhbGVzIOKAlCBhbmQgaXQgcmV3YXJkcyBjaHVua3MKYm90aCByYW5rZXJzIGFncmVlIG9uLgoKKipDcm9zcy1lbmNvZGVyIHJlcmFua2luZy4qKiBUaGUgZnVzZWQgdG9wLTIwIGlzIHJlc2NvcmVkIGJ5IGEgY3Jvc3MtZW5jb2RlcgooYFhlbm92YS9tcy1tYXJjby1NaW5pTE0tTC02LXYyYCkgdGhhdCByZWFkcyBxdWVzdGlvbiBhbmQgcGFzc2FnZSAqdG9nZXRoZXIqLAp3aGljaCBpcyBmYXIgbW9yZSBhY2N1cmF0ZSB0aGFuIHRoZSBiaS1lbmNvZGVyIGZpcnN0IHN0YWdlLiBUaGUgdG9wIDUKc3Vydml2ZS4KCioqQ2l0YXRpb24gZW5mb3JjZW1lbnQuKiogVGhlIGNvbXBvc2VyIChgRXh0cmFjdGl2ZUNvbXBvc2VyYCkgbWF5IG9ubHkgdXNlCnNlbnRlbmNlcyBmcm9tIHRoZSB0b3AtNSBwYXNzYWdlcywgd2VpZ2h0cyB0aGVtIGJ5IGNvcnB1cyBJREYgKHNvIHJhcmUgdGVybXMKbGlrZSBgcmVmdXRlZGAgb3IgYF9oYXNgIG91dHJhbmsgZ2VuZXJpYyAiRkhJUiByZXNvdXJjZSBwYXRpZW50IiB3b3JkIHNhbGFkKSwKc3VwcHJlc3NlcyBuZWFyLWR1cGxpY2F0ZXMgZnJvbSBvdmVybGFwcGluZyBjaHVua3MsIGFuZCB0YWdzIGV2ZXJ5IHNlbnRlbmNlCndpdGggaXRzIGNodW5rIGlkLiBgdmFsaWRhdGVfY2l0YXRpb25zKClgIHRoZW4gcmVqZWN0cyBhbnkgYW5zd2VyIHdpdGggYW4KdW5jaXRlZCBzZW50ZW5jZSBvciBhIGNpdGF0aW9uIG91dHNpZGUgdGhlIHJldHJpZXZlZCBzZXQuCgoqKkFic3RlbnRpb24uKiogSWYgdGhlIGJlc3QgcmVyYW5rIHNjb3JlIGlzIGJlbG93IHRoZSB0aHJlc2hvbGQsIHRoZSBzeXN0ZW0KcmVmdXNlcyByYXRoZXIgdGhhbiBpbXByb3Zpc2UuIFRoZSB0aHJlc2hvbGQgKOKIkjUuNSkgd2FzIGNhbGlicmF0ZWQgb24gdGhlCmdvbGRlbiBzZXQ6IHRoZSB3ZWFrZXN0IGFuc3dlcmFibGUgcXVlc3Rpb24gc2NvcmVkIOKIkjEuMTUgYW5kIHRoZSBzdHJvbmdlc3QKdW5hbnN3ZXJhYmxlIG9uZSDiiJIxMC4wNSwgc28gdGhlIHRocmVzaG9sZCBzaXRzIG1pZC1nYXAgd2l0aCB3aWRlIG1hcmdpbnMuCgojIyBFdmFsdWF0aW9uICh0aGUgQ0kgZ2F0ZSkKCmBldmFsL2dvbGRlbi5qc29ubGAgaG9sZHMgMzUgcXVlc3Rpb25zIOKAlCAyOSBhbnN3ZXJhYmxlIChmYWN0dWFsLCB0ZXJtaW5vbG9neSwKY29tcGFyaXNvbikgd2l0aCB0aGUgZG9jcyB0aGF0IHNob3VsZCBhbnN3ZXIgdGhlbSwgYW5kIDYgZGVsaWJlcmF0ZWx5CnVuYW5zd2VyYWJsZSBvbmVzIChzdG9jayBwcmljZXMsIGNha2UgcmVjaXBlcywg4oCmKS4gYGV2YWwvcnVuX2V2YWwucHlgIHJ1bnMKdGhlIGZ1bGwgcGlwZWxpbmUgYW5kIGdhdGVzIG9uIGBldmFsL3RocmVzaG9sZHMuanNvbmA6Cgp8IE1ldHJpYyB8IE1lYW5pbmcgfCAqKkJhc2VsaW5lIChtZWFzdXJlZCkqKiB8IEdhdGUgdGhyZXNob2xkIHwKfC0tLXwtLS18LS0tOnwtLS06fAp8IGhpdEA1IHwgZXhwZWN0ZWQgZG9jIGFwcGVhcnMgaW4gcmVyYW5rZWQgdG9wLTUgfCAqKjEuMDAwMCoqIHwgMC44NSB8CnwgTVJSQDUgfCBtZWFuIHJlY2lwcm9jYWwgcmFuayBvZiBmaXJzdCBleHBlY3RlZCBkb2MgfCAqKjAuOTY1NSoqIHwgMC44MiB8CnwgY2l0YXRpb25fcHJlY2lzaW9uIHwgZW1pdHRlZCBjaXRhdGlvbnMgcG9pbnRpbmcgYXQgZXhwZWN0ZWQgZG9jcyB8ICoqMC43MDAwKiogfCAwLjYwIHwKfCBhYnN0ZW50aW9uX2FjY3VyYWN5IHwgdW5hbnN3ZXJhYmxlIGFic3RhaW5lZCAqKmFuZCoqIGFuc3dlcmFibGUgYW5zd2VyZWQgfCAqKjEuMDAwMCoqIHwgMC44NSB8Cnwga2V5d29yZF9yZWNhbGwgKGluZm8pIHwgZXhwZWN0ZWQgYW5zd2VyIGtleXdvcmRzIHByZXNlbnQgaW4gdGhlIGFuc3dlciB8IDAuOTA1NyB8IOKAlCB8CgpNZWFzdXJlZCBsb2NhbGx5IHdpdGggdGhlIHJlYWwgbW9kZWxzIChmYXN0ZW1iZWQgYEJBQUkvYmdlLXNtYWxsLWVuLXYxLjVgICsKYFhlbm92YS9tcy1tYXJjby1NaW5pTE0tTC02LXYyYCk7IHRocmVzaG9sZHMgYXJlIHNldCB+MTDigJMxNSUgYmVsb3cgdGhlCm1lYXN1cmVkIGJhc2VsaW5lIHNvIHRoZSBnYXRlIGlzIG1lYW5pbmdmdWwgYnV0IG5vdCBmbGFreS4gVGhlIHNhbWUgY29tbWFuZApydW5zIGluIEdpdEh1YiBBY3Rpb25zIChgLmdpdGh1Yi93b3JrZmxvd3MvY2kueW1sYCkgYWZ0ZXIgYHB5dGVzdGA6CgpgYGBiYXNoClBZVEhPTlBBVEg9c3JjIC52ZW52L2Jpbi9weXRob24gZXZhbC9ydW5fZXZhbC5weSAgICMgZXhpdCAxIGlmIGFueSBnYXRlIGZhaWxzCmBgYAoKQSBub3RlIG9uIGNpdGF0aW9uIHByZWNpc2lvbjogdGhlIG1ldHJpYyBpcyBzdHJpY3Qg4oCUIGl0IGNvdW50cyBhIGNpdGF0aW9uIGFzCndyb25nIGlmIGl0IHBvaW50cyBhbnl3aGVyZSBvdGhlciB0aGFuIHRoZSBzaW5nbGUgZXhwZWN0ZWQgZG9jLiBNb3N0CiJtaXNzZXMiIGFyZSBnZW51aW5lbHkgcmVsZXZhbnQgbmVpZ2hib3VyIGRvY3MgKGUuZy4gdGhlIHRlcm1pbm9sb2d5IGRvYwpjaXRlZCBmb3IgYSBMT0lOQyBxdWVzdGlvbiwgc2luY2UgaXQgbGlzdHMgdGhlIGNvZGVzIHRvbykuIFRoZSBudW1iZXIgaXMKcmVwb3J0ZWQgaG9uZXN0bHkgcmF0aGVyIHRoYW4gZ2FtZWQuCgojIyBRdWlja3N0YXJ0CgpgYGBiYXNoCnB5dGhvbjMgLW0gdmVudiAudmVudgoudmVudi9iaW4vcGlwIGluc3RhbGwgLXIgcmVxdWlyZW1lbnRzLnR4dAoudmVudi9iaW4vcGlwIGluc3RhbGwgLWUgLgoKIyBCdWlsZCB0aGUgaW5kZXggKGZpcnN0IHJ1biBkb3dubG9hZHMgdGhlIGVtYmVkZGluZyBtb2RlbCwgfjEzMCBNQikKUFlUSE9OUEFUSD1zcmMgLnZlbnYvYmluL3B5dGhvbiBzY3JpcHRzL2J1aWxkX2luZGV4LnB5CgojIFJ1biB0aGUgQVBJICsgY2hhdCBVSSAoZmlyc3QgL2FzayBkb3dubG9hZHMgdGhlIHJlcmFua2VyLCB+OTAgTUIpClBZVEhPTlBBVEg9c3JjIC52ZW52L2Jpbi91dmljb3JuIGFza2ZoaXIuYXBpOmFwcCAtLXBvcnQgODAwMAojIG9wZW4gaHR0cDovL2xvY2FsaG9zdDo4MDAwLwpgYGAKCkRvY2tlcjogYGRvY2tlciBidWlsZCAtdCBhc2tmaGlyIC4gJiYgZG9ja2VyIHJ1biAtcCA4MDAwOjgwMDAgYXNrZmhpcmAKKG1vZGVscyBhbmQgaW5kZXggYXJlIGJha2VkIGluIGF0IGltYWdlIGJ1aWxkKS4KCk9mZmxpbmUvc21va2UgbW9kZSB3aXRoIGRldGVybWluaXN0aWMgZmFrZSBtb2RlbHMgKG5vIGRvd25sb2FkcywgbGV4aWNhbApxdWFsaXR5IG9ubHkpOiBwcmVmaXggY29tbWFuZHMgd2l0aCBgQVNLRkhJUl9GQUtFX01PREVMUz0xYC4KCiMjIEV4YW1wbGUgKHJlYWwgY2FwdHVyZWQgb3V0cHV0KQoKKipROiBXaGljaCBMT0lOQyBjb2RlIGlkZW50aWZpZXMgYSBoZWFydCByYXRlIG9ic2VydmF0aW9uPyoqCgo+IE9ic2VydmF0aW9uIGNvZGVzIGFyZSB1c3VhbGx5IExPSU5DOiBnbHVjb3NlIGlzIDIzMzktMCwgaGVhcnQgcmF0ZSBpcyA4ODY3LTQsIHN5c3RvbGljIGJsb29kIHByZXNzdXJlIGlzIDg0ODAtNi4gW3Rlcm1pbm9sb2d5IzFdIC0gKipMT0lOQyoqIChzeXN0ZW0gYGh0dHA6Ly9sb2luYy5vcmdgKSDigJQgTG9naWNhbCBPYnNlcnZhdGlvbiBJZGVudGlmaWVycyBOYW1lcyBhbmQgQ29kZXM6IG5hbWVzIGZvciBsYWJvcmF0b3J5IHRlc3RzLCB2aXRhbCBzaWducywgYW5kIGNsaW5pY2FsIG1lYXN1cmVtZW50cy4gW3Rlcm1pbm9sb2d5IzFdIFRoZSBGSElSIHNwZWNpZmljYXRpb24gZGVmaW5lcyBhIHZpdGFsIHNpZ25zIHByb2ZpbGUgdGhhdCBjb25zdHJhaW5zIE9ic2VydmF0aW9uIGZvciBjb21tb24gbWVhc3VyZW1lbnRzOiBib2R5IHRlbXBlcmF0dXJlLCBoZWFydCByYXRlLCByZXNwaXJhdG9yeSByYXRlLCBibG9vZCBwcmVzc3VyZSwgb3h5Z2VuIHNhdHVyYXRpb24sIGJvZHkgd2VpZ2h0LCBoZWlnaHQsIGFuZCBCTUkuIFtvYnNlcnZhdGlvbi1yZXNvdXJjZSM4XSBDb2RlIHNlYXJjaCBpcyB0b2tlbi1iYXNlZCwgc28gYEdFVCAvT2JzZXJ2YXRpb24/cGF0aWVudD1leGFtcGxlJmNvZGU9aHR0cDovL2xvaW5jLm9yZ3w4ODY3LTRgIHJldHVybnMgaGVhcnQgcmF0ZSByZWFkaW5ncy4gW29ic2VydmF0aW9uLXJlc291cmNlIzldCgoqKlE6IFdoYXQgaXMgdGhlIGNhcGl0YWwgb2YgRnJhbmNlPyoqCgo+IGBhYnN0YWluZWQ6IHRydWVgIOKAlCAiSSBjb3VsZG4ndCBmaW5kIHRoYXQgaW4gdGhlIEZISVIgZG9jcyBwcm92aWRlZCwgc28gSSBkb24ndCBoYXZlIGEgc291cmNlZCBhbnN3ZXIgZm9yIGl0LiDigKYiICh0b3AgcmVyYW5rIHNjb3JlIGZvciB0aGlzIHF1ZXN0aW9uOiDiiJIxMS4wMywgZmFyIGJlbG93IHRoZSDiiJI1LjUgdGhyZXNob2xkKQoKQW5zd2VycyBhcmUgZXh0cmFjdGl2ZSDigJQgc2VudGVuY2VzIGFyZSBxdW90ZWQgdmVyYmF0aW0gZnJvbSB0aGUgY29ycHVzLAptYXJrZG93biBhcnRpZmFjdHMgYW5kIGFsbC4gVGhhdCBpcyBhIGRlbGliZXJhdGUgdHJhZGUtb2ZmIChzZWUgYmVsb3cpLgoKIyMgUHJvamVjdCBzdHJ1Y3R1cmUKCmBgYApjb3JwdXMvICAgICAgICAgICAgICAgICAgMTIgY3VyYXRlZCBGSElSL0hMNyBtYXJrZG93biBkb2NzICh0aGUga25vd2xlZGdlIGJhc2UpCnNyYy9hc2tmaGlyLwogIGNodW5raW5nLnB5ICAgICAgICAgICAgaGVhZGluZy1hd2FyZSBjaHVua2luZywgc3RhYmxlIGlkcwogIGVtYmVkZGluZ3MucHkgICAgICAgICAgRW1iZWRkZXIgcHJvdG9jb2w6IGZhc3RlbWJlZCAoYmdlLXNtYWxsKSAvIFNUIGZhbGxiYWNrIC8gZmFrZQogIGJtMjVfaW5kZXgucHkgICAgICAgICAgQk0yNU9rYXBpIGtleXdvcmQgaW5kZXgKICB2ZWN0b3JfaW5kZXgucHkgICAgICAgIGV4YWN0IGNvc2luZSBzZWFyY2ggKEZBSVNTLXN3YXBwYWJsZSBpbnRlcmZhY2UpCiAgaHlicmlkLnB5ICAgICAgICAgICAgICBSZWNpcHJvY2FsIFJhbmsgRnVzaW9uCiAgcmVyYW5rZXIucHkgICAgICAgICAgICBSZXJhbmtlciBwcm90b2NvbDogZmFzdGVtYmVkIGNyb3NzLWVuY29kZXIgLyBTVCBmYWxsYmFjayAvIGZha2UKICBhbnN3ZXIucHkgICAgICAgICAgICAgIEV4dHJhY3RpdmVDb21wb3NlciArIGNpdGF0aW9uIHZhbGlkYXRpb24gKyBhYnN0ZW50aW9uIHRleHQKICBzZXJ2aWNlLnB5ICAgICAgICAgICAgIHJldHJpZXZlIOKGkiBmdXNlIOKGkiByZXJhbmsg4oaSIGNvbXBvc2Ug4oaSIHZhbGlkYXRlCiAgYXBpLnB5ICAgICAgICAgICAgICAgICBGYXN0QVBJOiBQT1NUIC9hc2ssIEdFVCAvZG9jcywgR0VUIC9oZWFsdGh6LCBHRVQgLyAoVUkpCnN0YXRpYy9pbmRleC5odG1sICAgICAgICBzaW5nbGUtZmlsZSBjaGF0IFVJOyBzaG93cyBwZXItc3RhZ2Ugc2NvcmVzIHBlciBzb3VyY2UKc2NyaXB0cy9idWlsZF9pbmRleC5weSAgIHdyaXRlcyBkYXRhL2luZGV4L3tjaHVua3MuanNvbiwgZW1iZWRkaW5ncy5ucHl9CmV2YWwvCiAgZ29sZGVuLmpzb25sICAgICAgICAgICAzNS1xdWVzdGlvbiBnb2xkZW4gc2V0CiAgdGhyZXNob2xkcy5qc29uICAgICAgICBDSSBnYXRlIHRocmVzaG9sZHMKICBydW5fZXZhbC5weSAgICAgICAgICAgIGV2YWx1YXRpb24gcnVubmVyICh3cml0ZXMgZXZhbC9yZXBvcnQuanNvbikKdGVzdHMvICAgICAgICAgICAgICAgICAgIHB5dGVzdDogdW5pdCArIEFQSSArIGdvbGRlbiBzYW5pdHkgKCsgb3B0LWluIHJlYWwtbW9kZWwgdGVzdCkKLmdpdGh1Yi93b3JrZmxvd3MvY2kueW1sIHB5dGVzdCwgaW5kZXggYnVpbGQsIGFuZCB0aGUgZXZhbCBnYXRlIG9uIGV2ZXJ5IHB1c2gvUFIKRG9ja2VyZmlsZSAgICAgICAgICAgICAgIHNsaW0gaW1hZ2UsIGluZGV4ICsgbW9kZWxzIGJha2VkIGluCmBgYAoKIyMgRGVzaWduIHRyYWRlLW9mZnMKCi0gKipFeGFjdCB2cyBBTk4gdmVjdG9yIHNlYXJjaC4qKiBXaXRoIDEyOCBjaHVua3MsIGJydXRlLWZvcmNlIGNvc2luZSBpcwogIGV4YWN0LCBkZXRlcm1pbmlzdGljLCBhbmQgbWljcm9zZWNvbmRzLWZhc3Qg4oCUIHN0cmljdGx5IGJldHRlciB0aGFuIGFuCiAgYXBwcm94aW1hdGUgaW5kZXguIGBWZWN0b3JJbmRleGAgZXhwb3NlcyB0aGUgc2FtZSBpbnRlcmZhY2UgYSBGQUlTUwogIGBJbmRleEZsYXRJUGAgd3JhcHBlciB3b3VsZCwgc28gdGhlIHN3YXAgYXQgfjFNIGNodW5rcyBpcyBkcm9wLWluLgotICoqRXh0cmFjdGl2ZSB2cyBMTE0gZ2VuZXJhdGlvbi4qKiBFeHRyYWN0aXZlIGNvbXBvc2l0aW9uIGNhbm5vdCBoYWxsdWNpbmF0ZQogIGEgc2VudGVuY2Ug4oCUIGV2ZXJ5IGNsYWltIGlzIGEgdmVyYmF0aW0gcXVvdGUgd2l0aCBhIGNpdGF0aW9uIOKAlCBhdCB0aGUgY29zdAogIG9mIHByb3NlIHBvbGlzaC4gVGhlIGBBbnN3ZXJHZW5lcmF0b3JgIHByb3RvY29sIGlzIHRoZSBzZWFtOiBhbiBMTE0KICBnZW5lcmF0b3IgY2FuIGJlIGFkZGVkIGJlaGluZCBpdCBhbmQgcmVtYWlucyBzdWJqZWN0IHRvIHRoZSBzYW1lCiAgYHZhbGlkYXRlX2NpdGF0aW9uc2AgZ2F0ZSBhbmQgdGhlIHNhbWUgZXZhbC4KLSAqKkxvY2FsIG1vZGVscyB2cyBBUElzLioqIGZhc3RlbWJlZC9PTk5YIG1vZGVscyBrZWVwIHRoZSB3aG9sZSBzeXN0ZW0KICBzZWxmLWNvbnRhaW5lZCBhbmQgZnJlZSB0byBydW4gaW4gQ0kuIGJnZS1zbWFsbCArIG1zLW1hcmNvLU1pbmlMTSBhcmUKICBzbWFsbDsgYSBsYXJnZXIgZW1iZWRkZXIgaXMgYSBvbmUtbGluZSBjaGFuZ2UgYmVoaW5kIHRoZSBwcm90b2NvbC4KLSAqKlNpbmdsZS1sYWJlbCBjaXRhdGlvbiBwcmVjaXNpb24uKiogR29sZGVuIGV4cGVjdGF0aW9ucyBuYW1lIG9uZSBkb2MgcGVyCiAgcXVlc3Rpb24gZXZlbiB3aGVyZSB0d28gZG9jcyBsZWdpdGltYXRlbHkgY292ZXIgYSB0b3BpYzsgdGhlIG1ldHJpYyBpcwogIHJlcG9ydGVkIGFzLWlzICgwLjcwKSBpbnN0ZWFkIG9mIHF1aWV0bHkgcmVkZWZpbmluZyBpdC4KCiMjIEZ1dHVyZSB3b3JrCgotIExMTS1iYWNrZWQgYEFuc3dlckdlbmVyYXRvcmAgd2l0aCB0aGUgc2FtZSBjaXRhdGlvbiB2YWxpZGF0aW9uLCBjb21wYXJlZAogIGFnYWluc3QgdGhlIGV4dHJhY3RpdmUgYmFzZWxpbmUgaW4gdGhlIGV2YWwuCi0gUXVlcnkgcmV3cml0aW5nIC8gSHlERSBmb3IgdmFndWUgcXVlc3Rpb25zOyBwZXItY2F0ZWdvcnkgZXZhbCBicmVha2Rvd25zLgotIEZBSVNTIEFOTiBpbmRleCArIGluY3JlbWVudGFsIGNvcnB1cyB1cGRhdGVzOyBhIHRlcm1pbm9sb2d5LWF3YXJlCiAgdG9rZW5pemVyIHRoYXQga2VlcHMgY29kZXMgbGlrZSBgODUzNTQtOWAgYXRvbWljLgotIFN0cmVhbWluZyBhbnN3ZXJzIGluIHRoZSBVSTsgZmVlZGJhY2sgY2FwdHVyZSAo8J+RjS/wn5GOKSBmZWVkaW5nIG5ldyBnb2xkZW4KICBxdWVzdGlvbnMuCg==
+# Analyzing Healthcare — FHIR Docs
+
+**AskFHIR** — an "Ask My Docs" system for FHIR / HL7.
+
+A production-pattern **retrieval-augmented generation (RAG)** application over
+healthcare interoperability documentation. Ask a question about FHIR; the
+system retrieves evidence with **hybrid search**, reranks it with a
+**cross-encoder**, and answers with **enforced citations** — or **abstains**
+when the docs don't support an answer. No citation, no claim.
+
+Quality is not vibes: a **golden-set evaluation runs as a CI gate**. Every
+push and pull request must clear retrieval and citation thresholds or the
+build fails (see [Evaluation](#evaluation-the-ci-gate)).
+
+- **Corpus:** 12 curated documents (128 chunks) on FHIR R4 resources, search,
+  Bundles, SMART on FHIR, HL7 v2, terminology, and profiles — written for
+  this project from public HL7 FHIR R4 concepts. No real patient data
+  anywhere; examples use obviously synthetic people ("Jane Example").
+- **Models run 100% locally** (ONNX via fastembed). No API key, no LLM bill.
+  An LLM generator can be dropped in behind the `AnswerGenerator` protocol.
+
+## Architecture
+
+```
+                        ┌────────────────────── offline ──────────────────────┐
+ corpus/*.md ──► chunking (by heading, ~600 chars, stable ids "doc#n")
+                        │            ├─► BM25 index (rank_bm25)
+                        │            └─► embeddings (bge-small-en-v1.5) ──► exact cosine index
+                        └──────────────────────────────────────────────────────┘
+ question
+    │
+    ├─► BM25 top-20 ──────────────┐
+    ├─► vector top-20 ────────────┤  Reciprocal Rank Fusion (k=60)
+    │                             ▼
+    │                        fused top-20
+    │                             ▼
+    │                  cross-encoder rerank (ms-marco MiniLM)
+    │                             ▼
+    │                         top-5 passages
+    │                             ▼
+    │            top rerank score < threshold? ──► ABSTAIN ("not in the docs")
+    │                             ▼
+    │        extractive composition: sentences ONLY from the top passages,
+    │        each sentence tagged [doc#n]; IDF-weighted sentence selection
+    │                             ▼
+    │        citation validation: every sentence cited, every citation in
+    │        the retrieved set — otherwise regenerate restricted, or abstain
+    ▼
+ answer + citations + sources with per-stage scores (BM25 rank, vector rank,
+ RRF fused score, rerank score) — the pipeline is visible in the UI.
+```
+
+## How the retrieval works
+
+**Hybrid retrieval.** BM25 is superb at exact terminology (`_include`,
+`8867-4`, `clinicalStatus`) and weak at paraphrase; vector search is the
+opposite. AskFHIR runs both and fuses the rankings.
+
+**Reciprocal Rank Fusion.** Each chunk scores `Σ 1 / (60 + rank)` across the
+two rankers. RRF needs no score normalization — important because BM25 scores
+and cosine similarities are on incomparable scales — and it rewards chunks
+both rankers agree on.
+
+**Cross-encoder reranking.** The fused top-20 is rescored by a cross-encoder
+(`Xenova/ms-marco-MiniLM-L-6-v2`) that reads question and passage *together*,
+which is far more accurate than the bi-encoder first stage. The top 5
+survive.
+
+**Citation enforcement.** The composer (`ExtractiveComposer`) may only use
+sentences from the top-5 passages, weights them by corpus IDF (so rare terms
+like `refuted` or `_has` outrank generic "FHIR resource patient" word salad),
+suppresses near-duplicates from overlapping chunks, and tags every sentence
+with its chunk id. `validate_citations()` then rejects any answer with an
+uncited sentence or a citation outside the retrieved set.
+
+**Abstention.** If the best rerank score is below the threshold, the system
+refuses rather than improvise. The threshold (−5.5) was calibrated on the
+golden set: the weakest answerable question scored −1.15 and the strongest
+unanswerable one −10.05, so the threshold sits mid-gap with wide margins.
+
+## Evaluation (the CI gate)
+
+`eval/golden.jsonl` holds 35 questions — 29 answerable (factual, terminology,
+comparison) with the docs that should answer them, and 6 deliberately
+unanswerable ones (stock prices, cake recipes, …). `eval/run_eval.py` runs
+the full pipeline and gates on `eval/thresholds.json`:
+
+| Metric | Meaning | **Baseline (measured)** | Gate threshold |
+|---|---|---:|---:|
+| hit@5 | expected doc appears in reranked top-5 | **1.0000** | 0.85 |
+| MRR@5 | mean reciprocal rank of first expected doc | **0.9655** | 0.82 |
+| citation_precision | emitted citations pointing at expected docs | **0.7000** | 0.60 |
+| abstention_accuracy | unanswerable abstained **and** answerable answered | **1.0000** | 0.85 |
+| keyword_recall (info) | expected answer keywords present in the answer | 0.9057 | — |
+
+Measured locally with the real models (fastembed `BAAI/bge-small-en-v1.5` +
+`Xenova/ms-marco-MiniLM-L-6-v2`); thresholds are set ~10–15% below the
+measured baseline so the gate is meaningful but not flaky. The same command
+runs in GitHub Actions (`.github/workflows/ci.yml`) after `pytest`:
+
+```bash
+PYTHONPATH=src .venv/bin/python eval/run_eval.py   # exit 1 if any gate fails
+```
+
+A note on citation precision: the metric is strict — it counts a citation as
+wrong if it points anywhere other than the single expected doc. Most
+"misses" are genuinely relevant neighbour docs (e.g. the terminology doc
+cited for a LOINC question, since it lists the codes too). The number is
+reported honestly rather than gamed.
+
+## Quickstart
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -e .
+
+# Build the index (first run downloads the embedding model, ~130 MB)
+PYTHONPATH=src .venv/bin/python scripts/build_index.py
+
+# Run the API + chat UI (first /ask downloads the reranker, ~90 MB)
+PYTHONPATH=src .venv/bin/uvicorn askfhir.api:app --port 8000
+# open http://localhost:8000/
+```
+
+Docker: `docker build -t askfhir . && docker run -p 8000:8000 askfhir`
+(models and index are baked in at image build).
+
+Offline/smoke mode with deterministic fake models (no downloads, lexical
+quality only): prefix commands with `ASKFHIR_FAKE_MODELS=1`.
+
+## Example (real captured output)
+
+**Q: Which LOINC code identifies a heart rate observation?**
+
+> Observation codes are usually LOINC: glucose is 2339-0, heart rate is 8867-4, systolic blood pressure is 8480-6. [terminology#1] - **LOINC** (system `http://loinc.org`) — Logical Observation Identifiers Names and Codes: names for laboratory tests, vital signs, and clinical measurements. [terminology#1] The FHIR specification defines a vital signs profile that constrains Observation for common measurements: body temperature, heart rate, respiratory rate, blood pressure, oxygen saturation, body weight, height, and BMI. [observation-resource#8] Code search is token-based, so `GET /Observation?patient=example&code=http://loinc.org|8867-4` returns heart rate readings. [observation-resource#9]
+
+**Q: What is the capital of France?**
+
+> `abstained: true` — "I couldn't find that in the FHIR docs provided, so I don't have a sourced answer for it. …" (top rerank score for this question: −11.03, far below the −5.5 threshold)
+
+Answers are extractive — sentences are quoted verbatim from the corpus,
+markdown artifacts and all. That is a deliberate trade-off (see below).
+
+## Project structure
+
+```
+corpus/                  12 curated FHIR/HL7 markdown docs (the knowledge base)
+src/askfhir/
+  chunking.py            heading-aware chunking, stable ids
+  embeddings.py          Embedder protocol: fastembed (bge-small) / ST fallback / fake
+  bm25_index.py          BM25Okapi keyword index
+  vector_index.py        exact cosine search (FAISS-swappable interface)
+  hybrid.py              Reciprocal Rank Fusion
+  reranker.py            Reranker protocol: fastembed cross-encoder / ST fallback / fake
+  answer.py              ExtractiveComposer + citation validation + abstention text
+  service.py             retrieve → fuse → rerank → compose → validate
+  api.py                 FastAPI: POST /ask, GET /docs, GET /healthz, GET / (UI)
+static/index.html        single-file chat UI; shows per-stage scores per source
+scripts/build_index.py   writes data/index/{chunks.json, embeddings.npy}
+eval/
+  golden.jsonl           35-question golden set
+  thresholds.json        CI gate thresholds
+  run_eval.py            evaluation runner (writes eval/report.json)
+tests/                   pytest: unit + API + golden sanity (+ opt-in real-model test)
+.github/workflows/ci.yml pytest, index build, and the eval gate on every push/PR
+Dockerfile               slim image, index + models baked in
+```
+
+## Design trade-offs
+
+- **Exact vs ANN vector search.** With 128 chunks, brute-force cosine is
+  exact, deterministic, and microseconds-fast — strictly better than an
+  approximate index. `VectorIndex` exposes the same interface a FAISS
+  `IndexFlatIP` wrapper would, so the swap at ~1M chunks is drop-in.
+- **Extractive vs LLM generation.** Extractive composition cannot hallucinate
+  a sentence — every claim is a verbatim quote with a citation — at the cost
+  of prose polish. The `AnswerGenerator` protocol is the seam: an LLM
+  generator can be added behind it and remains subject to the same
+  `validate_citations` gate and the same eval.
+- **Local models vs APIs.** fastembed/ONNX models keep the whole system
+  self-contained and free to run in CI. bge-small + ms-marco-MiniLM are
+  small; a larger embedder is a one-line change behind the protocol.
+- **Single-label citation precision.** Golden expectations name one doc per
+  question even where two docs legitimately cover a topic; the metric is
+  reported as-is (0.70) instead of quietly redefining it.
+
+## Future work
+
+- LLM-backed `AnswerGenerator` with the same citation validation, compared
+  against the extractive baseline in the eval.
+- Query rewriting / HyDE for vague questions; per-category eval breakdowns.
+- FAISS ANN index + incremental corpus updates; a terminology-aware
+  tokenizer that keeps codes like `85354-9` atomic.
+- Streaming answers in the UI; feedback capture (👍/👎) feeding new golden
+  questions.
