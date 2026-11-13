@@ -1,1 +1,80 @@
-IiIiQ3Jvc3MtZW5jb2RlciByZXJhbmtpbmcgYmVoaW5kIGEgc3dhcHBhYmxlIHByb3RvY29sLgoKRGVmYXVsdDogZmFzdGVtYmVkIFRleHRDcm9zc0VuY29kZXIgd2l0aCBYZW5vdmEvbXMtbWFyY28tTWluaUxNLUwtNi12MgooT05OWCwgbm8gdG9yY2gpLiBGYWxsYmFjazogc2VudGVuY2UtdHJhbnNmb3JtZXJzIENyb3NzRW5jb2RlciB3aXRoIHRoZQplcXVpdmFsZW50IG1vZGVsLiBUZXN0cyB1c2UgRmFrZVJlcmFua2VyLCBhIGRldGVybWluaXN0aWMgbGV4aWNhbCBzY29yZXIuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IG9zCmZyb20gdHlwaW5nIGltcG9ydCBQcm90b2NvbCwgcnVudGltZV9jaGVja2FibGUKCmltcG9ydCBudW1weSBhcyBucAoKZnJvbSAuZW1iZWRkaW5ncyBpbXBvcnQgdG9rZW5pemUKCgpAcnVudGltZV9jaGVja2FibGUKY2xhc3MgUmVyYW5rZXIoUHJvdG9jb2wpOgogICAgbmFtZTogc3RyCgogICAgZGVmIHNjb3JlKHNlbGYsIHF1ZXJ5OiBzdHIsIHRleHRzOiBsaXN0W3N0cl0pIC0+IG5wLm5kYXJyYXk6CiAgICAgICAgIiIiUmV0dXJuIG9uZSByZWxldmFuY2Ugc2NvcmUgcGVyIHRleHQgKGhpZ2hlciA9IG1vcmUgcmVsZXZhbnQpLiIiIgogICAgICAgIC4uLgoKCmNsYXNzIEZhc3RFbWJlZFJlcmFua2VyOgogICAgbmFtZSA9ICJmYXN0ZW1iZWQ6WGVub3ZhL21zLW1hcmNvLU1pbmlMTS1MLTYtdjIiCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIG1vZGVsX25hbWU6IHN0ciA9ICJYZW5vdmEvbXMtbWFyY28tTWluaUxNLUwtNi12MiIsIGNhY2hlX2Rpcjogc3RyIHwgTm9uZSA9IE5vbmUpOgogICAgICAgIGZyb20gZmFzdGVtYmVkLnJlcmFuay5jcm9zc19lbmNvZGVyIGltcG9ydCBUZXh0Q3Jvc3NFbmNvZGVyCgogICAgICAgIGNhY2hlX2RpciA9IGNhY2hlX2RpciBvciBvcy5lbnZpcm9uLmdldCgiQVNLRkhJUl9NT0RFTF9DQUNIRSIpIG9yIE5vbmUKICAgICAgICBzZWxmLl9tb2RlbCA9IFRleHRDcm9zc0VuY29kZXIobW9kZWxfbmFtZT1tb2RlbF9uYW1lLCBjYWNoZV9kaXI9Y2FjaGVfZGlyKQoKICAgIGRlZiBzY29yZShzZWxmLCBxdWVyeTogc3RyLCB0ZXh0czogbGlzdFtzdHJdKSAtPiBucC5uZGFycmF5OgogICAgICAgIHNjb3JlcyA9IGxpc3Qoc2VsZi5fbW9kZWwucmVyYW5rKHF1ZXJ5LCB0ZXh0cykpCiAgICAgICAgcmV0dXJuIG5wLmFzYXJyYXkoc2NvcmVzLCBkdHlwZT1ucC5mbG9hdDMyKQoKCmNsYXNzIFNlbnRlbmNlVHJhbnNmb3JtZXJzUmVyYW5rZXI6CiAgICBuYW1lID0gInNlbnRlbmNlLXRyYW5zZm9ybWVyczpjcm9zcy1lbmNvZGVyL21zLW1hcmNvLU1pbmlMTS1MLTYtdjIiCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIG1vZGVsX25hbWU6IHN0ciA9ICJjcm9zcy1lbmNvZGVyL21zLW1hcmNvLU1pbmlMTS1MLTYtdjIiKToKICAgICAgICBmcm9tIHNlbnRlbmNlX3RyYW5zZm9ybWVycyBpbXBvcnQgQ3Jvc3NFbmNvZGVyCgogICAgICAgIHNlbGYuX21vZGVsID0gQ3Jvc3NFbmNvZGVyKG1vZGVsX25hbWUpCgogICAgZGVmIHNjb3JlKHNlbGYsIHF1ZXJ5OiBzdHIsIHRleHRzOiBsaXN0W3N0cl0pIC0+IG5wLm5kYXJyYXk6CiAgICAgICAgcGFpcnMgPSBbW3F1ZXJ5LCB0XSBmb3IgdCBpbiB0ZXh0c10KICAgICAgICByZXR1cm4gbnAuYXNhcnJheShzZWxmLl9tb2RlbC5wcmVkaWN0KHBhaXJzLCBzaG93X3Byb2dyZXNzX2Jhcj1GYWxzZSksIGR0eXBlPW5wLmZsb2F0MzIpCgoKY2xhc3MgRmFrZVJlcmFua2VyOgogICAgIiIiRGV0ZXJtaW5pc3RpYyBsZXhpY2FsIHJlcmFua2VyOiBmcmFjdGlvbiBvZiBkaXN0aW5jdCBxdWVyeSB0b2tlbnMKICAgIHByZXNlbnQgaW4gdGhlIHRleHQsIHdpdGggYSBzbWFsbCBib251cyBmb3IgcmVwZWF0ZWQgbWF0Y2hlcy4iIiIKCiAgICBuYW1lID0gImZha2U6bGV4aWNhbC1vdmVybGFwIgoKICAgIGRlZiBzY29yZShzZWxmLCBxdWVyeTogc3RyLCB0ZXh0czogbGlzdFtzdHJdKSAtPiBucC5uZGFycmF5OgogICAgICAgIHFfdG9rZW5zID0gc2V0KHRva2VuaXplKHF1ZXJ5KSkKICAgICAgICBvdXQgPSBucC56ZXJvcyhsZW4odGV4dHMpLCBkdHlwZT1ucC5mbG9hdDMyKQogICAgICAgIGlmIG5vdCBxX3Rva2VuczoKICAgICAgICAgICAgcmV0dXJuIG91dAogICAgICAgIGZvciBpLCB0ZXh0IGluIGVudW1lcmF0ZSh0ZXh0cyk6CiAgICAgICAgICAgIHRva3MgPSB0b2tlbml6ZSh0ZXh0KQogICAgICAgICAgICBwcmVzZW50ID0gcV90b2tlbnMuaW50ZXJzZWN0aW9uKHRva3MpCiAgICAgICAgICAgIG91dFtpXSA9IGxlbihwcmVzZW50KSAvIGxlbihxX3Rva2VucykgKyAwLjAxICogc3VtKAogICAgICAgICAgICAgICAgbWluKHRva3MuY291bnQodCksIDMpIGZvciB0IGluIHByZXNlbnQKICAgICAgICAgICAgKQogICAgICAgIHJldHVybiBvdXQKCgpkZWYgZ2V0X3JlcmFua2VyKGZha2U6IGJvb2wgPSBGYWxzZSkgLT4gUmVyYW5rZXI6CiAgICBpZiBmYWtlIG9yIG9zLmVudmlyb24uZ2V0KCJBU0tGSElSX0ZBS0VfTU9ERUxTIikgPT0gIjEiOgogICAgICAgIHJldHVybiBGYWtlUmVyYW5rZXIoKQogICAgdHJ5OgogICAgICAgIHJldHVybiBGYXN0RW1iZWRSZXJhbmtlcigpCiAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgIHJldHVybiBTZW50ZW5jZVRyYW5zZm9ybWVyc1JlcmFua2VyKCkK
+"""Cross-encoder reranking behind a swappable protocol.
+
+Default: fastembed TextCrossEncoder with Xenova/ms-marco-MiniLM-L-6-v2
+(ONNX, no torch). Fallback: sentence-transformers CrossEncoder with the
+equivalent model. Tests use FakeReranker, a deterministic lexical scorer.
+"""
+
+from __future__ import annotations
+
+import os
+from typing import Protocol, runtime_checkable
+
+import numpy as np
+
+from .embeddings import tokenize
+
+
+@runtime_checkable
+class Reranker(Protocol):
+    name: str
+
+    def score(self, query: str, texts: list[str]) -> np.ndarray:
+        """Return one relevance score per text (higher = more relevant)."""
+        ...
+
+
+class FastEmbedReranker:
+    name = "fastembed:Xenova/ms-marco-MiniLM-L-6-v2"
+
+    def __init__(self, model_name: str = "Xenova/ms-marco-MiniLM-L-6-v2", cache_dir: str | None = None):
+        from fastembed.rerank.cross_encoder import TextCrossEncoder
+
+        cache_dir = cache_dir or os.environ.get("ASKFHIR_MODEL_CACHE") or None
+        self._model = TextCrossEncoder(model_name=model_name, cache_dir=cache_dir)
+
+    def score(self, query: str, texts: list[str]) -> np.ndarray:
+        scores = list(self._model.rerank(query, texts))
+        return np.asarray(scores, dtype=np.float32)
+
+
+class SentenceTransformersReranker:
+    name = "sentence-transformers:cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+    def __init__(self, model_name: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"):
+        from sentence_transformers import CrossEncoder
+
+        self._model = CrossEncoder(model_name)
+
+    def score(self, query: str, texts: list[str]) -> np.ndarray:
+        pairs = [[query, t] for t in texts]
+        return np.asarray(self._model.predict(pairs, show_progress_bar=False), dtype=np.float32)
+
+
+class FakeReranker:
+    """Deterministic lexical reranker: fraction of distinct query tokens
+    present in the text, with a small bonus for repeated matches."""
+
+    name = "fake:lexical-overlap"
+
+    def score(self, query: str, texts: list[str]) -> np.ndarray:
+        q_tokens = set(tokenize(query))
+        out = np.zeros(len(texts), dtype=np.float32)
+        if not q_tokens:
+            return out
+        for i, text in enumerate(texts):
+            toks = tokenize(text)
+            present = q_tokens.intersection(toks)
+            out[i] = len(present) / len(q_tokens) + 0.01 * sum(
+                min(toks.count(t), 3) for t in present
+            )
+        return out
+
+
+def get_reranker(fake: bool = False) -> Reranker:
+    if fake or os.environ.get("ASKFHIR_FAKE_MODELS") == "1":
+        return FakeReranker()
+    try:
+        return FastEmbedReranker()
+    except Exception:
+        return SentenceTransformersReranker()
