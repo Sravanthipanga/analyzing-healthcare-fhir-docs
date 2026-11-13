@@ -1,1 +1,45 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJCdWlsZCB0aGUgcGVyc2lzdGVkIGluZGV4IGFydGlmYWN0czogZGF0YS9pbmRleC9jaHVua3MuanNvbiArIGVtYmVkZGluZ3MubnB5LgoKVXNhZ2U6ICBQWVRIT05QQVRIPXNyYyAudmVudi9iaW4vcHl0aG9uIHNjcmlwdHMvYnVpbGRfaW5kZXgucHkgWy0tZmFrZV0KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgYXJncGFyc2UKaW1wb3J0IGpzb24KaW1wb3J0IHN5cwpmcm9tIGRhdGFjbGFzc2VzIGltcG9ydCBhc2RpY3QKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgppbXBvcnQgbnVtcHkgYXMgbnAKCkJBU0UgPSBQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1sxXQpzeXMucGF0aC5pbnNlcnQoMCwgc3RyKEJBU0UgLyAic3JjIikpCgpmcm9tIGFza2ZoaXIuY2h1bmtpbmcgaW1wb3J0IGxvYWRfY29ycHVzICAjIG5vcWE6IEU0MDIKZnJvbSBhc2tmaGlyLmVtYmVkZGluZ3MgaW1wb3J0IGdldF9lbWJlZGRlciAgIyBub3FhOiBFNDAyCgoKZGVmIG1haW4oKSAtPiBpbnQ6CiAgICBwYXJzZXIgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcigpCiAgICBwYXJzZXIuYWRkX2FyZ3VtZW50KCItLWZha2UiLCBhY3Rpb249InN0b3JlX3RydWUiLCBoZWxwPSJ1c2UgdGhlIGZha2UgZW1iZWRkZXIiKQogICAgYXJncyA9IHBhcnNlci5wYXJzZV9hcmdzKCkKCiAgICBjaHVua3MgPSBsb2FkX2NvcnB1cyhCQVNFIC8gImNvcnB1cyIpCiAgICBlbWJlZGRlciA9IGdldF9lbWJlZGRlcihmYWtlPWFyZ3MuZmFrZSkKICAgIHByaW50KGYiZW1iZWRkZXI6IHtlbWJlZGRlci5uYW1lfSIpCiAgICBwcmludChmImNodW5rczoge2xlbihjaHVua3MpfSBmcm9tIHtsZW4oc2V0KGMuZG9jX2lkIGZvciBjIGluIGNodW5rcykpfSBkb2NzIikKICAgIGVtYmVkZGluZ3MgPSBlbWJlZGRlci5lbWJlZChbYy5pbmRleF90ZXh0KCkgZm9yIGMgaW4gY2h1bmtzXSkKICAgIG91dF9kaXIgPSBCQVNFIC8gImRhdGEiIC8gImluZGV4IgogICAgb3V0X2Rpci5ta2RpcihwYXJlbnRzPVRydWUsIGV4aXN0X29rPVRydWUpCiAgICAob3V0X2RpciAvICJjaHVua3MuanNvbiIpLndyaXRlX3RleHQoCiAgICAgICAganNvbi5kdW1wcyhbYXNkaWN0KGMpIGZvciBjIGluIGNodW5rc10sIGluZGVudD0xKSwgZW5jb2Rpbmc9InV0Zi04IgogICAgKQogICAgbnAuc2F2ZShvdXRfZGlyIC8gImVtYmVkZGluZ3MubnB5IiwgZW1iZWRkaW5ncykKICAgIHByaW50KGYid3JvdGUge291dF9kaXJ9L2NodW5rcy5qc29uIGFuZCBlbWJlZGRpbmdzLm5weSB7ZW1iZWRkaW5ncy5zaGFwZX0iKQogICAgcmV0dXJuIDAKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgcmFpc2UgU3lzdGVtRXhpdChtYWluKCkpCg==
+#!/usr/bin/env python3
+"""Build the persisted index artifacts: data/index/chunks.json + embeddings.npy.
+
+Usage:  PYTHONPATH=src .venv/bin/python scripts/build_index.py [--fake]
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from dataclasses import asdict
+from pathlib import Path
+
+import numpy as np
+
+BASE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE / "src"))
+
+from askfhir.chunking import load_corpus  # noqa: E402
+from askfhir.embeddings import get_embedder  # noqa: E402
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--fake", action="store_true", help="use the fake embedder")
+    args = parser.parse_args()
+
+    chunks = load_corpus(BASE / "corpus")
+    embedder = get_embedder(fake=args.fake)
+    print(f"embedder: {embedder.name}")
+    print(f"chunks: {len(chunks)} from {len(set(c.doc_id for c in chunks))} docs")
+    embeddings = embedder.embed([c.index_text() for c in chunks])
+    out_dir = BASE / "data" / "index"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "chunks.json").write_text(
+        json.dumps([asdict(c) for c in chunks], indent=1), encoding="utf-8"
+    )
+    np.save(out_dir / "embeddings.npy", embeddings)
+    print(f"wrote {out_dir}/chunks.json and embeddings.npy {embeddings.shape}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

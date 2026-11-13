@@ -1,1 +1,22 @@
-IiIiUmVhbC1tb2RlbCBpbnRlZ3JhdGlvbiB0ZXN0LiBTa2lwcGVkIHVubGVzcyBBU0tGSElSX0lOVEVHUkFUSU9OPTEKKG1vZGVscyBhcmUgZG93bmxvYWRlZCBvbiBmaXJzdCB1c2UpLiIiIgoKaW1wb3J0IG9zCgppbXBvcnQgcHl0ZXN0CgpweXRlc3RtYXJrID0gcHl0ZXN0Lm1hcmsuc2tpcGlmKAogICAgb3MuZW52aXJvbi5nZXQoIkFTS0ZISVJfSU5URUdSQVRJT04iKSAhPSAiMSIsCiAgICByZWFzb249InNldCBBU0tGSElSX0lOVEVHUkFUSU9OPTEgdG8gcnVuIHJlYWwtbW9kZWwgdGVzdHMiLAopCgoKZGVmIHRlc3RfcmVhbF9waXBlbGluZV9lbmRfdG9fZW5kKCk6CiAgICBmcm9tIGFza2ZoaXIuc2VydmljZSBpbXBvcnQgQXNrRkhJUlNlcnZpY2UKCiAgICBzdmMgPSBBc2tGSElSU2VydmljZS5sb2FkKGZha2U9RmFsc2UpCiAgICByZXN1bHQgPSBzdmMuYXNrKCJXaGF0IGRvZXMgdGhlIHJhbmsgbWVhbiBpbiBhbiBFbmNvdW50ZXIgZGlhZ25vc2lzPyIpCiAgICBhc3NlcnQgcmVzdWx0WyJhYnN0YWluZWQiXSBpcyBGYWxzZQogICAgYXNzZXJ0IGFueShzWyJkb2NfaWQiXSA9PSAiZW5jb3VudGVyLXJlc291cmNlIiBmb3IgcyBpbiByZXN1bHRbInNvdXJjZXMiXVs6M10pCiAgICBvZmZfdG9waWMgPSBzdmMuYXNrKCJXaGF0IGlzIHRoZSBjYXBpdGFsIG9mIEZyYW5jZT8iKQogICAgYXNzZXJ0IG9mZl90b3BpY1siYWJzdGFpbmVkIl0gaXMgVHJ1ZQo=
+"""Real-model integration test. Skipped unless ASKFHIR_INTEGRATION=1
+(models are downloaded on first use)."""
+
+import os
+
+import pytest
+
+pytestmark = pytest.mark.skipif(
+    os.environ.get("ASKFHIR_INTEGRATION") != "1",
+    reason="set ASKFHIR_INTEGRATION=1 to run real-model tests",
+)
+
+
+def test_real_pipeline_end_to_end():
+    from askfhir.service import AskFHIRService
+
+    svc = AskFHIRService.load(fake=False)
+    result = svc.ask("What does the rank mean in an Encounter diagnosis?")
+    assert result["abstained"] is False
+    assert any(s["doc_id"] == "encounter-resource" for s in result["sources"][:3])
+    off_topic = svc.ask("What is the capital of France?")
+    assert off_topic["abstained"] is True

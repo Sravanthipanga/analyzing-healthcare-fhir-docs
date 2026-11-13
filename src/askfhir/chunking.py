@@ -1,1 +1,132 @@
-IiIiRGV0ZXJtaW5pc3RpYyBtYXJrZG93biBjaHVua2luZy4KCkRvY3MgYXJlIHNwbGl0IGZpcnN0IGJ5IG1hcmtkb3duIGhlYWRpbmdzIChgYCMjYGAgc2VjdGlvbnMpLCB0aGVuIGVhY2ggc2VjdGlvbgppcyB3aW5kb3dlZCBpbnRvIGNodW5rcyBvZiByb3VnaGx5IGBgQ0hVTktfQ0hBUlNgYCBjaGFyYWN0ZXJzIHdpdGgKYGBPVkVSTEFQX0NIQVJTYGAgb2Ygb3ZlcmxhcCwgcHJlZmVycmluZyB0byBicmVhayBvbiBzZW50ZW5jZSBib3VuZGFyaWVzLgoKQ2h1bmsgaWRzIGFyZSBzdGFibGU6IGBgIjxkb2Mtc2x1Zz4jPG4+ImBgIHdoZXJlIGBgbmBgIGlzIHRoZSBjaHVuaydzIGluZGV4CndpdGhpbiBpdHMgZG9jdW1lbnQsIGFzc2lnbmVkIGluIHJlYWRpbmcgb3JkZXIuIEdpdmVuIHRoZSBzYW1lIGNvcnB1cyBmaWxlcywKY2h1bmtpbmcgYWx3YXlzIHByb2R1Y2VzIGJ5dGUtaWRlbnRpY2FsIG91dHB1dC4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgcmUKZnJvbSBkYXRhY2xhc3NlcyBpbXBvcnQgZGF0YWNsYXNzLCBhc2RpY3QKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpDSFVOS19DSEFSUyA9IDYwMApPVkVSTEFQX0NIQVJTID0gMTAwCgpfU0VOVEVOQ0VfRU5EID0gcmUuY29tcGlsZShyIig/PD1bLiE/XSlccysiKQpfSEVBRElORyA9IHJlLmNvbXBpbGUociJeKCN7MSw2fSlccysoLiopJCIpCgoKQGRhdGFjbGFzcyhmcm96ZW49VHJ1ZSkKY2xhc3MgQ2h1bms6CiAgICBjaHVua19pZDogc3RyICAjICI8ZG9jLXNsdWc+IzxuPiIKICAgIGRvY19pZDogc3RyICAjIGRvYyBzbHVnLCBlLmcuICJwYXRpZW50LXJlc291cmNlIgogICAgdGl0bGU6IHN0ciAgIyBkb2N1bWVudCB0aXRsZSAoZmlyc3QgSDEpCiAgICBzZWN0aW9uOiBzdHIgICMgbmVhcmVzdCBlbmNsb3NpbmcgSDIgKG9yIHRpdGxlKQogICAgdGV4dDogc3RyICAjIGNodW5rIGJvZHkgdGV4dAoKICAgIGRlZiBpbmRleF90ZXh0KHNlbGYpIC0+IHN0cjoKICAgICAgICAiIiJUZXh0IGZlZCB0byBCTTI1IC8gZW1iZWRkaW5nczogdGl0bGUgKyBzZWN0aW9uIGdpdmUgY29udGV4dC4iIiIKICAgICAgICByZXR1cm4gZiJ7c2VsZi50aXRsZX0uIHtzZWxmLnNlY3Rpb259LiB7c2VsZi50ZXh0fSIKCiAgICBkZWYgdG9fZGljdChzZWxmKSAtPiBkaWN0OgogICAgICAgIHJldHVybiBhc2RpY3Qoc2VsZikKCgpkZWYgX3NwbGl0X2xvbmdfdGV4dCh0ZXh0OiBzdHIsIHNpemU6IGludCA9IENIVU5LX0NIQVJTLCBvdmVybGFwOiBpbnQgPSBPVkVSTEFQX0NIQVJTKSAtPiBsaXN0W3N0cl06CiAgICAiIiJXaW5kb3cgYHRleHRgIGludG8gfmBzaXplYC1jaGFyIHBpZWNlcywgYnJlYWtpbmcgbmVhciBzZW50ZW5jZSBlbmRzLiIiIgogICAgdGV4dCA9ICIgIi5qb2luKHRleHQuc3BsaXQoKSkKICAgIGlmIGxlbih0ZXh0KSA8PSBzaXplOgogICAgICAgIHJldHVybiBbdGV4dF0gaWYgdGV4dCBlbHNlIFtdCiAgICBwaWVjZXM6IGxpc3Rbc3RyXSA9IFtdCiAgICBzdGFydCA9IDAKICAgIG4gPSBsZW4odGV4dCkKICAgIHdoaWxlIHN0YXJ0IDwgbjoKICAgICAgICBlbmQgPSBtaW4oc3RhcnQgKyBzaXplLCBuKQogICAgICAgIGlmIGVuZCA8IG46CiAgICAgICAgICAgICMgUHJlZmVyIGEgc2VudGVuY2UgYm91bmRhcnkgaW4gdGhlIGxhc3QgNDAlIG9mIHRoZSB3aW5kb3cuCiAgICAgICAgICAgIHdpbmRvdyA9IHRleHRbc3RhcnQ6ZW5kXQogICAgICAgICAgICBjdXQgPSAtMQogICAgICAgICAgICBmb3IgbSBpbiBfU0VOVEVOQ0VfRU5ELmZpbmRpdGVyKHdpbmRvdyk6CiAgICAgICAgICAgICAgICBpZiBtLnN0YXJ0KCkgPiBzaXplICogMC42OgogICAgICAgICAgICAgICAgICAgIGN1dCA9IG0uc3RhcnQoKSArIDEKICAgICAgICAgICAgaWYgY3V0ID4gMDoKICAgICAgICAgICAgICAgIGVuZCA9IHN0YXJ0ICsgY3V0CiAgICAgICAgcGllY2UgPSB0ZXh0W3N0YXJ0OmVuZF0uc3RyaXAoKQogICAgICAgIGlmIHBpZWNlOgogICAgICAgICAgICBwaWVjZXMuYXBwZW5kKHBpZWNlKQogICAgICAgIGlmIGVuZCA+PSBuOgogICAgICAgICAgICBicmVhawogICAgICAgIHN0YXJ0ID0gbWF4KGVuZCAtIG92ZXJsYXAsIHN0YXJ0ICsgMSkKICAgIHJldHVybiBwaWVjZXMKCgpkZWYgY2h1bmtfbWFya2Rvd24obWRfdGV4dDogc3RyLCBkb2Nfc2x1Zzogc3RyKSAtPiBsaXN0W0NodW5rXToKICAgIHRpdGxlID0gZG9jX3NsdWcKICAgIHNlY3Rpb24gPSAiIgogICAgIyBzZWN0aW9uczogbGlzdCBvZiAoc2VjdGlvbl9uYW1lLCBbcGFyYWdyYXBoIGxpbmVzXSkKICAgIHNlY3Rpb25zOiBsaXN0W3R1cGxlW3N0ciwgbGlzdFtzdHJdXV0gPSBbXQogICAgY3VycmVudF9uYW1lOiBzdHIgfCBOb25lID0gTm9uZQogICAgY3VycmVudF9saW5lczogbGlzdFtzdHJdID0gW10KCiAgICBkZWYgZmx1c2goKSAtPiBOb25lOgogICAgICAgIG5vbmxvY2FsIGN1cnJlbnRfbmFtZSwgY3VycmVudF9saW5lcwogICAgICAgIGlmIGN1cnJlbnRfbmFtZSBpcyBub3QgTm9uZToKICAgICAgICAgICAgc2VjdGlvbnMuYXBwZW5kKChjdXJyZW50X25hbWUsIGN1cnJlbnRfbGluZXMpKQogICAgICAgIGN1cnJlbnRfbGluZXMgPSBbXQoKICAgIGluX2NvZGUgPSBGYWxzZQogICAgZm9yIGxpbmUgaW4gbWRfdGV4dC5zcGxpdGxpbmVzKCk6CiAgICAgICAgaWYgbGluZS5zdHJpcCgpLnN0YXJ0c3dpdGgoImBgYCIpOgogICAgICAgICAgICBpbl9jb2RlID0gbm90IGluX2NvZGUKICAgICAgICBtID0gX0hFQURJTkcubWF0Y2gobGluZSkKICAgICAgICBpZiBtIGFuZCBub3QgaW5fY29kZToKICAgICAgICAgICAgbGV2ZWwgPSBsZW4obS5ncm91cCgxKSkKICAgICAgICAgICAgaGVhZGluZ190ZXh0ID0gbS5ncm91cCgyKS5zdHJpcCgpCiAgICAgICAgICAgIGlmIGxldmVsID09IDEgYW5kIHRpdGxlID09IGRvY19zbHVnOgogICAgICAgICAgICAgICAgdGl0bGUgPSBoZWFkaW5nX3RleHQKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIGlmIGxldmVsID09IDI6CiAgICAgICAgICAgICAgICBmbHVzaCgpCiAgICAgICAgICAgICAgICBjdXJyZW50X25hbWUgPSBoZWFkaW5nX3RleHQKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICMgRGVlcGVyIGhlYWRpbmdzIGJlY29tZSBib2xkIGlubGluZSBtYXJrZXJzIGluc2lkZSB0aGUgc2VjdGlvbi4KICAgICAgICAgICAgY3VycmVudF9saW5lcy5hcHBlbmQoaGVhZGluZ190ZXh0KQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGlmIGN1cnJlbnRfbmFtZSBpcyBOb25lOgogICAgICAgICAgICBjdXJyZW50X25hbWUgPSB0aXRsZQogICAgICAgIGN1cnJlbnRfbGluZXMuYXBwZW5kKGxpbmUpCiAgICBmbHVzaCgpCgogICAgY2h1bmtzOiBsaXN0W0NodW5rXSA9IFtdCiAgICBjb3VudGVyID0gMAogICAgZm9yIHNlY3Rpb25fbmFtZSwgbGluZXMgaW4gc2VjdGlvbnM6CiAgICAgICAgYm9keSA9ICJcbiIuam9pbihsaW5lcykuc3RyaXAoKQogICAgICAgIGlmIG5vdCBib2R5OgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGZvciBwaWVjZSBpbiBfc3BsaXRfbG9uZ190ZXh0KGJvZHkpOgogICAgICAgICAgICBjaHVua3MuYXBwZW5kKAogICAgICAgICAgICAgICAgQ2h1bmsoCiAgICAgICAgICAgICAgICAgICAgY2h1bmtfaWQ9ZiJ7ZG9jX3NsdWd9I3tjb3VudGVyfSIsCiAgICAgICAgICAgICAgICAgICAgZG9jX2lkPWRvY19zbHVnLAogICAgICAgICAgICAgICAgICAgIHRpdGxlPXRpdGxlLAogICAgICAgICAgICAgICAgICAgIHNlY3Rpb249c2VjdGlvbl9uYW1lLAogICAgICAgICAgICAgICAgICAgIHRleHQ9cGllY2UsCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICkKICAgICAgICAgICAgY291bnRlciArPSAxCiAgICByZXR1cm4gY2h1bmtzCgoKZGVmIGxvYWRfY29ycHVzKGNvcnB1c19kaXI6IHN0ciB8IFBhdGgpIC0+IGxpc3RbQ2h1bmtdOgogICAgIiIiQ2h1bmsgZXZlcnkgYGAqLm1kYGAgZmlsZSBpbiBgY29ycHVzX2RpcmAsIGluIGZpbGVuYW1lIG9yZGVyLiIiIgogICAgY29ycHVzX2RpciA9IFBhdGgoY29ycHVzX2RpcikKICAgIGFsbF9jaHVua3M6IGxpc3RbQ2h1bmtdID0gW10KICAgIGZvciBwYXRoIGluIHNvcnRlZChjb3JwdXNfZGlyLmdsb2IoIioubWQiKSk6CiAgICAgICAgYWxsX2NodW5rcy5leHRlbmQoY2h1bmtfbWFya2Rvd24ocGF0aC5yZWFkX3RleHQoZW5jb2Rpbmc9InV0Zi04IiksIHBhdGguc3RlbSkpCiAgICByZXR1cm4gYWxsX2NodW5rcwo=
+"""Deterministic markdown chunking.
+
+Docs are split first by markdown headings (``##`` sections), then each section
+is windowed into chunks of roughly ``CHUNK_CHARS`` characters with
+``OVERLAP_CHARS`` of overlap, preferring to break on sentence boundaries.
+
+Chunk ids are stable: ``"<doc-slug>#<n>"`` where ``n`` is the chunk's index
+within its document, assigned in reading order. Given the same corpus files,
+chunking always produces byte-identical output.
+"""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass, asdict
+from pathlib import Path
+
+CHUNK_CHARS = 600
+OVERLAP_CHARS = 100
+
+_SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
+_HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
+
+
+@dataclass(frozen=True)
+class Chunk:
+    chunk_id: str  # "<doc-slug>#<n>"
+    doc_id: str  # doc slug, e.g. "patient-resource"
+    title: str  # document title (first H1)
+    section: str  # nearest enclosing H2 (or title)
+    text: str  # chunk body text
+
+    def index_text(self) -> str:
+        """Text fed to BM25 / embeddings: title + section give context."""
+        return f"{self.title}. {self.section}. {self.text}"
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+def _split_long_text(text: str, size: int = CHUNK_CHARS, overlap: int = OVERLAP_CHARS) -> list[str]:
+    """Window `text` into ~`size`-char pieces, breaking near sentence ends."""
+    text = " ".join(text.split())
+    if len(text) <= size:
+        return [text] if text else []
+    pieces: list[str] = []
+    start = 0
+    n = len(text)
+    while start < n:
+        end = min(start + size, n)
+        if end < n:
+            # Prefer a sentence boundary in the last 40% of the window.
+            window = text[start:end]
+            cut = -1
+            for m in _SENTENCE_END.finditer(window):
+                if m.start() > size * 0.6:
+                    cut = m.start() + 1
+            if cut > 0:
+                end = start + cut
+        piece = text[start:end].strip()
+        if piece:
+            pieces.append(piece)
+        if end >= n:
+            break
+        start = max(end - overlap, start + 1)
+    return pieces
+
+
+def chunk_markdown(md_text: str, doc_slug: str) -> list[Chunk]:
+    title = doc_slug
+    section = ""
+    # sections: list of (section_name, [paragraph lines])
+    sections: list[tuple[str, list[str]]] = []
+    current_name: str | None = None
+    current_lines: list[str] = []
+
+    def flush() -> None:
+        nonlocal current_name, current_lines
+        if current_name is not None:
+            sections.append((current_name, current_lines))
+        current_lines = []
+
+    in_code = False
+    for line in md_text.splitlines():
+        if line.strip().startswith("```"):
+            in_code = not in_code
+        m = _HEADING.match(line)
+        if m and not in_code:
+            level = len(m.group(1))
+            heading_text = m.group(2).strip()
+            if level == 1 and title == doc_slug:
+                title = heading_text
+                continue
+            if level == 2:
+                flush()
+                current_name = heading_text
+                continue
+            # Deeper headings become bold inline markers inside the section.
+            current_lines.append(heading_text)
+            continue
+        if current_name is None:
+            current_name = title
+        current_lines.append(line)
+    flush()
+
+    chunks: list[Chunk] = []
+    counter = 0
+    for section_name, lines in sections:
+        body = "\n".join(lines).strip()
+        if not body:
+            continue
+        for piece in _split_long_text(body):
+            chunks.append(
+                Chunk(
+                    chunk_id=f"{doc_slug}#{counter}",
+                    doc_id=doc_slug,
+                    title=title,
+                    section=section_name,
+                    text=piece,
+                )
+            )
+            counter += 1
+    return chunks
+
+
+def load_corpus(corpus_dir: str | Path) -> list[Chunk]:
+    """Chunk every ``*.md`` file in `corpus_dir`, in filename order."""
+    corpus_dir = Path(corpus_dir)
+    all_chunks: list[Chunk] = []
+    for path in sorted(corpus_dir.glob("*.md")):
+        all_chunks.extend(chunk_markdown(path.read_text(encoding="utf-8"), path.stem))
+    return all_chunks

@@ -1,1 +1,3 @@
-IiIiQXNrRkhJUiDigJQgaHlicmlkLXJldHJpZXZhbCBSQUcgb3ZlciBjdXJhdGVkIEZISVIvSEw3IGRvY3VtZW50YXRpb24uIiIiCgpfX3ZlcnNpb25fXyA9ICIwLjEuMCIK
+"""AskFHIR — hybrid-retrieval RAG over curated FHIR/HL7 documentation."""
+
+__version__ = "0.1.0"

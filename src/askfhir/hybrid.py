@@ -1,1 +1,27 @@
-IiIiSHlicmlkIHJldHJpZXZhbDogUmVjaXByb2NhbCBSYW5rIEZ1c2lvbiBvZiBCTTI1IGFuZCB2ZWN0b3IgcmFua2luZ3MuCgpSUkYgc2NvcmUgZm9yIGEgY2h1bmsgPSBzdW0gb3ZlciByYW5rZXJzIG9mIDEgLyAoayArIHJhbmspLCB3aXRoIHJhbmsKMS1iYXNlZCBhbmQgayA9IDYwICh0aGUgdmFsdWUgZnJvbSB0aGUgb3JpZ2luYWwgUlJGIHBhcGVyLCBDb3JtYWNrIGV0IGFsLikuClJSRiBuZWVkcyBubyBzY29yZSBub3JtYWxpemF0aW9uLCB3aGljaCBtYXR0ZXJzIGhlcmUgYmVjYXVzZSBCTTI1IHNjb3JlcyBhbmQKY29zaW5lIHNpbWlsYXJpdGllcyBsaXZlIG9uIGluY29tcGFyYWJsZSBzY2FsZXMuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKUlJGX0sgPSA2MAoKCmRlZiByZWNpcHJvY2FsX3JhbmtfZnVzaW9uKAogICAgcmFua2luZ3M6IGxpc3RbbGlzdFtpbnRdXSwgazogaW50ID0gUlJGX0ssIHRvcF9uOiBpbnQgPSAyMAopIC0+IGxpc3RbdHVwbGVbaW50LCBmbG9hdF1dOgogICAgIiIiRnVzZSByYW5rZWQgbGlzdHMgb2YgY2h1bmsgcG9zaXRpb25zIGludG8gb25lIHJhbmtlZCBsaXN0LgoKICAgIFJldHVybnMgWyhjaHVua19wb3NpdGlvbiwgZnVzZWRfc2NvcmUpXSBzb3J0ZWQgYnkgc2NvcmUgZGVzYywgdGllcyBieQogICAgbG93ZXIgY2h1bmsgcG9zaXRpb24uCiAgICAiIiIKICAgIGZ1c2VkOiBkaWN0W2ludCwgZmxvYXRdID0ge30KICAgIGZvciByYW5raW5nIGluIHJhbmtpbmdzOgogICAgICAgIGZvciByYW5rLCBwb3MgaW4gZW51bWVyYXRlKHJhbmtpbmcsIHN0YXJ0PTEpOgogICAgICAgICAgICBmdXNlZFtwb3NdID0gZnVzZWQuZ2V0KHBvcywgMC4wKSArIDEuMCAvIChrICsgcmFuaykKICAgIG9yZGVyZWQgPSBzb3J0ZWQoZnVzZWQuaXRlbXMoKSwga2V5PWxhbWJkYSBrdjogKC1rdlsxXSwga3ZbMF0pKQogICAgcmV0dXJuIG9yZGVyZWRbOnRvcF9uXQo=
+"""Hybrid retrieval: Reciprocal Rank Fusion of BM25 and vector rankings.
+
+RRF score for a chunk = sum over rankers of 1 / (k + rank), with rank
+1-based and k = 60 (the value from the original RRF paper, Cormack et al.).
+RRF needs no score normalization, which matters here because BM25 scores and
+cosine similarities live on incomparable scales.
+"""
+
+from __future__ import annotations
+
+RRF_K = 60
+
+
+def reciprocal_rank_fusion(
+    rankings: list[list[int]], k: int = RRF_K, top_n: int = 20
+) -> list[tuple[int, float]]:
+    """Fuse ranked lists of chunk positions into one ranked list.
+
+    Returns [(chunk_position, fused_score)] sorted by score desc, ties by
+    lower chunk position.
+    """
+    fused: dict[int, float] = {}
+    for ranking in rankings:
+        for rank, pos in enumerate(ranking, start=1):
+            fused[pos] = fused.get(pos, 0.0) + 1.0 / (k + rank)
+    ordered = sorted(fused.items(), key=lambda kv: (-kv[1], kv[0]))
+    return ordered[:top_n]

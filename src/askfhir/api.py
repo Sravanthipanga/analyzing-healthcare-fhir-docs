@@ -1,1 +1,68 @@
-IiIiRmFzdEFQSSBhcHA6IFBPU1QgL2FzaywgR0VUIC9kb2NzLCBHRVQgL2hlYWx0aHosIEdFVCAvIChjaGF0IFVJKS4KClJ1bjogIFBZVEhPTlBBVEg9c3JjIHV2aWNvcm4gYXNrZmhpci5hcGk6YXBwIC0tcG9ydCA4MDAwClNldCBBU0tGSElSX0ZBS0VfTU9ERUxTPTEgdG8gcnVuIHdpdGggdGhlIGRldGVybWluaXN0aWMgZmFrZSBtb2RlbHMKKG5vIGRvd25sb2Fkcykg4oCUIHVzZWZ1bCBmb3Igc21va2UgdGVzdHM7IHJldHJpZXZhbCBxdWFsaXR5IGlzIGxleGljYWwgb25seS4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgb3MKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpmcm9tIGZhc3RhcGkgaW1wb3J0IEZhc3RBUEkKZnJvbSBmYXN0YXBpLnJlc3BvbnNlcyBpbXBvcnQgRmlsZVJlc3BvbnNlLCBKU09OUmVzcG9uc2UKZnJvbSBweWRhbnRpYyBpbXBvcnQgQmFzZU1vZGVsLCBGaWVsZAoKZnJvbSAuc2VydmljZSBpbXBvcnQgQXNrRkhJUlNlcnZpY2UKCkJBU0VfRElSID0gUGF0aChfX2ZpbGVfXykucmVzb2x2ZSgpLnBhcmVudHNbMl0KU1RBVElDX0lOREVYID0gQkFTRV9ESVIgLyAic3RhdGljIiAvICJpbmRleC5odG1sIgoKX3NlcnZpY2U6IEFza0ZISVJTZXJ2aWNlIHwgTm9uZSA9IE5vbmUKCgpkZWYgZ2V0X3NlcnZpY2UoKSAtPiBBc2tGSElSU2VydmljZToKICAgIGdsb2JhbCBfc2VydmljZQogICAgaWYgX3NlcnZpY2UgaXMgTm9uZToKICAgICAgICBmYWtlID0gb3MuZW52aXJvbi5nZXQoIkFTS0ZISVJfRkFLRV9NT0RFTFMiKSA9PSAiMSIKICAgICAgICBfc2VydmljZSA9IEFza0ZISVJTZXJ2aWNlLmxvYWQoCiAgICAgICAgICAgIGNvcnB1c19kaXI9QkFTRV9ESVIgLyAiY29ycHVzIiwKICAgICAgICAgICAgaW5kZXhfZGlyPUJBU0VfRElSIC8gImRhdGEiIC8gImluZGV4IiwKICAgICAgICAgICAgZmFrZT1mYWtlLAogICAgICAgICkKICAgIHJldHVybiBfc2VydmljZQoKCmNsYXNzIEFza1JlcXVlc3QoQmFzZU1vZGVsKToKICAgIHF1ZXN0aW9uOiBzdHIgPSBGaWVsZChtaW5fbGVuZ3RoPTEsIG1heF9sZW5ndGg9MTAwMCkKCgpkZWYgY3JlYXRlX2FwcChzZXJ2aWNlOiBBc2tGSElSU2VydmljZSB8IE5vbmUgPSBOb25lKSAtPiBGYXN0QVBJOgogICAgIyBkb2NzX3VybD1Ob25lOiBHRVQgL2RvY3MgaXMgb3VyIGNvcnB1cyBsaXN0aW5nLCBub3QgU3dhZ2dlciBVSS4KICAgIGFwcCA9IEZhc3RBUEkodGl0bGU9IkFza0ZISVIiLCB2ZXJzaW9uPSIwLjEuMCIsIGRvY3NfdXJsPU5vbmUsIHJlZG9jX3VybD1Ob25lKQogICAgaWYgc2VydmljZSBpcyBub3QgTm9uZToKICAgICAgICBnbG9iYWwgX3NlcnZpY2UKICAgICAgICBfc2VydmljZSA9IHNlcnZpY2UKCiAgICBAYXBwLmdldCgiL2hlYWx0aHoiKQogICAgZGVmIGhlYWx0aHooKSAtPiBkaWN0OgogICAgICAgIHJldHVybiB7InN0YXR1cyI6ICJvayJ9CgogICAgQGFwcC5nZXQoIi9kb2NzIikKICAgIGRlZiBkb2NzKCkgLT4gbGlzdFtkaWN0XToKICAgICAgICByZXR1cm4gZ2V0X3NlcnZpY2UoKS5kb2NzKCkKCiAgICBAYXBwLnBvc3QoIi9hc2siKQogICAgZGVmIGFzayhyZXE6IEFza1JlcXVlc3QpIC0+IEpTT05SZXNwb25zZToKICAgICAgICByZXN1bHQgPSBnZXRfc2VydmljZSgpLmFzayhyZXEucXVlc3Rpb24pCiAgICAgICAgcmV0dXJuIEpTT05SZXNwb25zZShyZXN1bHQpCgogICAgQGFwcC5nZXQoIi8iKQogICAgZGVmIGluZGV4KCkgLT4gRmlsZVJlc3BvbnNlOgogICAgICAgIHJldHVybiBGaWxlUmVzcG9uc2UoU1RBVElDX0lOREVYLCBtZWRpYV90eXBlPSJ0ZXh0L2h0bWwiKQoKICAgIHJldHVybiBhcHAKCgphcHAgPSBjcmVhdGVfYXBwKCkK
+"""FastAPI app: POST /ask, GET /docs, GET /healthz, GET / (chat UI).
+
+Run:  PYTHONPATH=src uvicorn askfhir.api:app --port 8000
+Set ASKFHIR_FAKE_MODELS=1 to run with the deterministic fake models
+(no downloads) — useful for smoke tests; retrieval quality is lexical only.
+"""
+
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+from fastapi import FastAPI
+from fastapi.responses import FileResponse, JSONResponse
+from pydantic import BaseModel, Field
+
+from .service import AskFHIRService
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+STATIC_INDEX = BASE_DIR / "static" / "index.html"
+
+_service: AskFHIRService | None = None
+
+
+def get_service() -> AskFHIRService:
+    global _service
+    if _service is None:
+        fake = os.environ.get("ASKFHIR_FAKE_MODELS") == "1"
+        _service = AskFHIRService.load(
+            corpus_dir=BASE_DIR / "corpus",
+            index_dir=BASE_DIR / "data" / "index",
+            fake=fake,
+        )
+    return _service
+
+
+class AskRequest(BaseModel):
+    question: str = Field(min_length=1, max_length=1000)
+
+
+def create_app(service: AskFHIRService | None = None) -> FastAPI:
+    # docs_url=None: GET /docs is our corpus listing, not Swagger UI.
+    app = FastAPI(title="AskFHIR", version="0.1.0", docs_url=None, redoc_url=None)
+    if service is not None:
+        global _service
+        _service = service
+
+    @app.get("/healthz")
+    def healthz() -> dict:
+        return {"status": "ok"}
+
+    @app.get("/docs")
+    def docs() -> list[dict]:
+        return get_service().docs()
+
+    @app.post("/ask")
+    def ask(req: AskRequest) -> JSONResponse:
+        result = get_service().ask(req.question)
+        return JSONResponse(result)
+
+    @app.get("/")
+    def index() -> FileResponse:
+        return FileResponse(STATIC_INDEX, media_type="text/html")
+
+    return app
+
+
+app = create_app()

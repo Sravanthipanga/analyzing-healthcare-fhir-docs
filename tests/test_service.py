@@ -1,1 +1,62 @@
-aW1wb3J0IG51bXB5IGFzIG5wCgpmcm9tIGFza2ZoaXIuY2h1bmtpbmcgaW1wb3J0IGxvYWRfY29ycHVzCmZyb20gYXNrZmhpci5lbWJlZGRpbmdzIGltcG9ydCBGYWtlRW1iZWRkZXIKZnJvbSBhc2tmaGlyLnJlcmFua2VyIGltcG9ydCBGYWtlUmVyYW5rZXIKZnJvbSBhc2tmaGlyLnNlcnZpY2UgaW1wb3J0IEFza0ZISVJTZXJ2aWNlCgpmcm9tIGNvbmZ0ZXN0IGltcG9ydCBDT1JQVVNfRElSCgoKY2xhc3MgWmVyb1JlcmFua2VyOgogICAgbmFtZSA9ICJmYWtlOnplcm8iCgogICAgZGVmIHNjb3JlKHNlbGYsIHF1ZXJ5LCB0ZXh0cyk6CiAgICAgICAgcmV0dXJuIG5wLnplcm9zKGxlbih0ZXh0cyksIGR0eXBlPW5wLmZsb2F0MzIpCgoKZGVmIF9zZXJ2aWNlKHJlcmFua2VyPU5vbmUsIHRocmVzaG9sZD1Ob25lKToKICAgIGNodW5rcyA9IGxvYWRfY29ycHVzKENPUlBVU19ESVIpCiAgICBlbWJlZGRlciA9IEZha2VFbWJlZGRlcigpCiAgICBlbWIgPSBlbWJlZGRlci5lbWJlZChbYy5pbmRleF90ZXh0KCkgZm9yIGMgaW4gY2h1bmtzXSkKICAgIHJldHVybiBBc2tGSElSU2VydmljZSgKICAgICAgICBjaHVua3MsCiAgICAgICAgZW1iLAogICAgICAgIGVtYmVkZGVyLAogICAgICAgIHJlcmFua2VyIG9yIEZha2VSZXJhbmtlcigpLAogICAgICAgIGFic3RhaW5fdGhyZXNob2xkPXRocmVzaG9sZCBpZiB0aHJlc2hvbGQgaXMgbm90IE5vbmUgZWxzZSAwLjE1LAogICAgICAgIGZha2VfbW9kZWxzPVRydWUsCiAgICApCgoKZGVmIHRlc3RfYW5zd2VyYWJsZV9xdWVzdGlvbl9yZXR1cm5zX2NpdGVkX2Fuc3dlcigpOgogICAgc3ZjID0gX3NlcnZpY2UoKQogICAgcmVzdWx0ID0gc3ZjLmFzaygiV2hpY2ggZWxlbWVudCBvZiB0aGUgUGF0aWVudCByZXNvdXJjZSBob2xkcyB0aGUgbWVkaWNhbCByZWNvcmQgbnVtYmVyIGlkZW50aWZpZXI/IikKICAgIGFzc2VydCByZXN1bHRbImFic3RhaW5lZCJdIGlzIEZhbHNlCiAgICBhc3NlcnQgcmVzdWx0WyJjaXRhdGlvbnMiXQogICAgc291cmNlX2lkcyA9IHtzWyJjaHVua19pZCJdIGZvciBzIGluIHJlc3VsdFsic291cmNlcyJdfQogICAgYXNzZXJ0IHNldChyZXN1bHRbImNpdGF0aW9ucyJdKSA8PSBzb3VyY2VfaWRzCiAgICBhc3NlcnQgYW55KHNbImRvY19pZCJdID09ICJwYXRpZW50LXJlc291cmNlIiBmb3IgcyBpbiByZXN1bHRbInNvdXJjZXMiXVs6M10pCgoKZGVmIHRlc3RfbG93X3JlcmFua19zY29yZXNfZm9yY2VfYWJzdGVudGlvbigpOgogICAgc3ZjID0gX3NlcnZpY2UocmVyYW5rZXI9WmVyb1JlcmFua2VyKCksIHRocmVzaG9sZD0wLjUpCiAgICByZXN1bHQgPSBzdmMuYXNrKCJXaGljaCBlbGVtZW50IG9mIHRoZSBQYXRpZW50IHJlc291cmNlIGhvbGRzIGlkZW50aWZpZXJzPyIpCiAgICBhc3NlcnQgcmVzdWx0WyJhYnN0YWluZWQiXSBpcyBUcnVlCiAgICBhc3NlcnQgcmVzdWx0WyJjaXRhdGlvbnMiXSA9PSBbXQogICAgYXNzZXJ0ICJjb3VsZG4ndCBmaW5kIHRoYXQgaW4gdGhlIEZISVIgZG9jcyIgaW4gcmVzdWx0WyJhbnN3ZXIiXQoKCmRlZiB0ZXN0X2VtcHR5X3F1ZXN0aW9uX2Fic3RhaW5zKCk6CiAgICBzdmMgPSBfc2VydmljZSgpCiAgICBhc3NlcnQgc3ZjLmFzaygiICAgIilbImFic3RhaW5lZCJdIGlzIFRydWUKCgpkZWYgdGVzdF9zb3VyY2VzX2NhcnJ5X3N0YWdlX3Njb3JlcygpOgogICAgc3ZjID0gX3NlcnZpY2UoKQogICAgcmVzdWx0ID0gc3ZjLmFzaygiSG93IGRvZXMgRkhJUiBzZWFyY2ggcGFnaW5nIHdvcmsgd2l0aCBfY291bnQgYW5kIGxpbmtzPyIpCiAgICBmb3IgcyBpbiByZXN1bHRbInNvdXJjZXMiXToKICAgICAgICBhc3NlcnQgc2V0KHMpID49IHsKICAgICAgICAgICAgImNodW5rX2lkIiwgImRvY19pZCIsICJkb2NfdGl0bGUiLCAic2VjdGlvbiIsICJzbmlwcGV0IiwKICAgICAgICAgICAgImJtMjVfcmFuayIsICJ2ZWN0b3JfcmFuayIsICJmdXNlZF9zY29yZSIsICJyZXJhbmtfc2NvcmUiLAogICAgICAgIH0K
+import numpy as np
+
+from askfhir.chunking import load_corpus
+from askfhir.embeddings import FakeEmbedder
+from askfhir.reranker import FakeReranker
+from askfhir.service import AskFHIRService
+
+from conftest import CORPUS_DIR
+
+
+class ZeroReranker:
+    name = "fake:zero"
+
+    def score(self, query, texts):
+        return np.zeros(len(texts), dtype=np.float32)
+
+
+def _service(reranker=None, threshold=None):
+    chunks = load_corpus(CORPUS_DIR)
+    embedder = FakeEmbedder()
+    emb = embedder.embed([c.index_text() for c in chunks])
+    return AskFHIRService(
+        chunks,
+        emb,
+        embedder,
+        reranker or FakeReranker(),
+        abstain_threshold=threshold if threshold is not None else 0.15,
+        fake_models=True,
+    )
+
+
+def test_answerable_question_returns_cited_answer():
+    svc = _service()
+    result = svc.ask("Which element of the Patient resource holds the medical record number identifier?")
+    assert result["abstained"] is False
+    assert result["citations"]
+    source_ids = {s["chunk_id"] for s in result["sources"]}
+    assert set(result["citations"]) <= source_ids
+    assert any(s["doc_id"] == "patient-resource" for s in result["sources"][:3])
+
+
+def test_low_rerank_scores_force_abstention():
+    svc = _service(reranker=ZeroReranker(), threshold=0.5)
+    result = svc.ask("Which element of the Patient resource holds identifiers?")
+    assert result["abstained"] is True
+    assert result["citations"] == []
+    assert "couldn't find that in the FHIR docs" in result["answer"]
+
+
+def test_empty_question_abstains():
+    svc = _service()
+    assert svc.ask("   ")["abstained"] is True
+
+
+def test_sources_carry_stage_scores():
+    svc = _service()
+    result = svc.ask("How does FHIR search paging work with _count and links?")
+    for s in result["sources"]:
+        assert set(s) >= {
+            "chunk_id", "doc_id", "doc_title", "section", "snippet",
+            "bm25_rank", "vector_rank", "fused_score", "rerank_score",
+        }

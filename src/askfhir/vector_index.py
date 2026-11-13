@@ -1,1 +1,35 @@
-IiIiRXhhY3QgY29zaW5lLXNpbWlsYXJpdHkgdmVjdG9yIGluZGV4IG92ZXIgbnVtcHkgZW1iZWRkaW5ncy4KClRoZSBjb3JwdXMgaXMgc21hbGwgKHRlbnMgb2YgY2h1bmtzKSwgc28gYnJ1dGUtZm9yY2UgZXhhY3Qgc2VhcmNoIGlzIGJvdGgKY29ycmVjdCBhbmQgZGV0ZXJtaW5pc3RpYyDigJQgbm8gQU5OIGFwcHJveGltYXRpb24gZXJyb3IuIFRoZSBpbnRlcmZhY2UKKGBhZGRgL2BzZWFyY2hgKSBpcyB0aGUgc2FtZSBvbmUgYSBGQUlTUyBJbmRleEZsYXRJUCB3cmFwcGVyIHdvdWxkIGV4cG9zZSwKc28gc3dhcHBpbmcgYXQgc2NhbGUgaXMgYSBkcm9wLWluIGNoYW5nZS4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgbnVtcHkgYXMgbnAKCgpjbGFzcyBWZWN0b3JJbmRleDoKICAgIGRlZiBfX2luaXRfXyhzZWxmLCBlbWJlZGRpbmdzOiBucC5uZGFycmF5KToKICAgICAgICBlbWIgPSBucC5hc2FycmF5KGVtYmVkZGluZ3MsIGR0eXBlPW5wLmZsb2F0MzIpCiAgICAgICAgbm9ybXMgPSBucC5saW5hbGcubm9ybShlbWIsIGF4aXM9MSwga2VlcGRpbXM9VHJ1ZSkKICAgICAgICBub3Jtc1tub3JtcyA9PSAwLjBdID0gMS4wCiAgICAgICAgc2VsZi5fZW1iID0gZW1iIC8gbm9ybXMKCiAgICBkZWYgX19sZW5fXyhzZWxmKSAtPiBpbnQ6CiAgICAgICAgcmV0dXJuIGludChzZWxmLl9lbWIuc2hhcGVbMF0pCgogICAgZGVmIHNlYXJjaChzZWxmLCBxdWVyeV92ZWM6IG5wLm5kYXJyYXksIGs6IGludCkgLT4gbGlzdFt0dXBsZVtpbnQsIGZsb2F0XV06CiAgICAgICAgIiIiUmV0dXJuIHRvcC1rIChjaHVua19wb3NpdGlvbiwgY29zaW5lX3Njb3JlKSwgYmVzdCBmaXJzdC4KCiAgICAgICAgVGllcyBicmVhayB0b3dhcmQgdGhlIGxvd2VyIGNodW5rIHBvc2l0aW9uIGZvciBkZXRlcm1pbmlzbS4KICAgICAgICAiIiIKICAgICAgICBxID0gbnAuYXNhcnJheShxdWVyeV92ZWMsIGR0eXBlPW5wLmZsb2F0MzIpLnJlc2hhcGUoLTEpCiAgICAgICAgbm9ybSA9IG5wLmxpbmFsZy5ub3JtKHEpCiAgICAgICAgaWYgbm9ybSA+IDA6CiAgICAgICAgICAgIHEgPSBxIC8gbm9ybQogICAgICAgIHNjb3JlcyA9IHNlbGYuX2VtYiBAIHEKICAgICAgICBvcmRlciA9IHNvcnRlZChyYW5nZShsZW4oc2NvcmVzKSksIGtleT1sYW1iZGEgaTogKC1zY29yZXNbaV0sIGkpKQogICAgICAgIHJldHVybiBbKGksIGZsb2F0KHNjb3Jlc1tpXSkpIGZvciBpIGluIG9yZGVyWzprXV0K
+"""Exact cosine-similarity vector index over numpy embeddings.
+
+The corpus is small (tens of chunks), so brute-force exact search is both
+correct and deterministic — no ANN approximation error. The interface
+(`add`/`search`) is the same one a FAISS IndexFlatIP wrapper would expose,
+so swapping at scale is a drop-in change.
+"""
+
+from __future__ import annotations
+
+import numpy as np
+
+
+class VectorIndex:
+    def __init__(self, embeddings: np.ndarray):
+        emb = np.asarray(embeddings, dtype=np.float32)
+        norms = np.linalg.norm(emb, axis=1, keepdims=True)
+        norms[norms == 0.0] = 1.0
+        self._emb = emb / norms
+
+    def __len__(self) -> int:
+        return int(self._emb.shape[0])
+
+    def search(self, query_vec: np.ndarray, k: int) -> list[tuple[int, float]]:
+        """Return top-k (chunk_position, cosine_score), best first.
+
+        Ties break toward the lower chunk position for determinism.
+        """
+        q = np.asarray(query_vec, dtype=np.float32).reshape(-1)
+        norm = np.linalg.norm(q)
+        if norm > 0:
+            q = q / norm
+        scores = self._emb @ q
+        order = sorted(range(len(scores)), key=lambda i: (-scores[i], i))
+        return [(i, float(scores[i])) for i in order[:k]]

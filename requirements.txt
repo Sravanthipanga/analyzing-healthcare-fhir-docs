@@ -1,1 +1,8 @@
-ZmFzdGFwaT09MC4xMTUuNgp1dmljb3JuPT0wLjM0LjAKcHlkYW50aWM9PTIuMTAuNApudW1weT09Mi4yLjEKcmFuay1ibTI1PT0wLjIuMgpmYXN0ZW1iZWQ9PTAuNC4yCmh0dHB4PT0wLjI4LjEKcHl0ZXN0PT04LjMuNAo=
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+numpy==2.2.1
+rank-bm25==0.2.2
+fastembed==0.4.2
+httpx==0.28.1
+pytest==8.3.4

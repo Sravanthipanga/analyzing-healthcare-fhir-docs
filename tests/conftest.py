@@ -1,1 +1,7 @@
-aW1wb3J0IHN5cwpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKCkJBU0UgPSBQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1sxXQpzeXMucGF0aC5pbnNlcnQoMCwgc3RyKEJBU0UgLyAic3JjIikpCgpDT1JQVVNfRElSID0gQkFTRSAvICJjb3JwdXMiCg==
+import sys
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE / "src"))
+
+CORPUS_DIR = BASE / "corpus"

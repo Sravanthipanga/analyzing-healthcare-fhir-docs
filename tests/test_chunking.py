@@ -1,1 +1,45 @@
-ZnJvbSBhc2tmaGlyLmNodW5raW5nIGltcG9ydCBjaHVua19tYXJrZG93biwgbG9hZF9jb3JwdXMKCmZyb20gY29uZnRlc3QgaW1wb3J0IENPUlBVU19ESVIKClNBTVBMRSA9ICIiIiMgTXkgRG9jCgpJbnRybyBwYXJhZ3JhcGggYWJvdXQgcGF0aWVudHMgYW5kIGlkZW50aWZpZXJzLgoKIyMgRmlyc3QgU2VjdGlvbgoKVGhlIGlkZW50aWZpZXIgZWxlbWVudCBob2xkcyBleHRlcm5hbCBpZHMuIEVhY2ggaWRlbnRpZmllciBoYXMgYSBzeXN0ZW0gYW5kIGEgdmFsdWUuClBhdGllbnRzIG1heSBoYXZlIHNldmVyYWwgaWRlbnRpZmllcnMsIHN1Y2ggYXMgYSBtZWRpY2FsIHJlY29yZCBudW1iZXIuCgojIyBTZWNvbmQgU2VjdGlvbgoKU2VhcmNoaW5nIHVzZXMgcGFyYW1ldGVycyBsaWtlIG5hbWUgYW5kIGJpcnRoZGF0ZS4gUmVzdWx0cyBjb21lIGJhY2sgaW4gYSBCdW5kbGUuCiIiIgoKCmRlZiB0ZXN0X2NodW5rX2lkc19hbmRfc2VjdGlvbnMoKToKICAgIGNodW5rcyA9IGNodW5rX21hcmtkb3duKFNBTVBMRSwgIm15LWRvYyIpCiAgICBhc3NlcnQgY2h1bmtzLCAiZXhwZWN0ZWQgY2h1bmtzIgogICAgYXNzZXJ0IFtjLmNodW5rX2lkIGZvciBjIGluIGNodW5rc10gPT0gW2YibXktZG9jI3tpfSIgZm9yIGkgaW4gcmFuZ2UobGVuKGNodW5rcykpXQogICAgYXNzZXJ0IGFsbChjLmRvY19pZCA9PSAibXktZG9jIiBmb3IgYyBpbiBjaHVua3MpCiAgICBhc3NlcnQgYWxsKGMudGl0bGUgPT0gIk15IERvYyIgZm9yIGMgaW4gY2h1bmtzKQogICAgc2VjdGlvbnMgPSB7Yy5zZWN0aW9uIGZvciBjIGluIGNodW5rc30KICAgIGFzc2VydCAiRmlyc3QgU2VjdGlvbiIgaW4gc2VjdGlvbnMgYW5kICJTZWNvbmQgU2VjdGlvbiIgaW4gc2VjdGlvbnMKCgpkZWYgdGVzdF9jaHVua2luZ19pc19kZXRlcm1pbmlzdGljKCk6CiAgICBhID0gbG9hZF9jb3JwdXMoQ09SUFVTX0RJUikKICAgIGIgPSBsb2FkX2NvcnB1cyhDT1JQVVNfRElSKQogICAgYXNzZXJ0IFtjLnRvX2RpY3QoKSBmb3IgYyBpbiBhXSA9PSBbYy50b19kaWN0KCkgZm9yIGMgaW4gYl0KCgpkZWYgdGVzdF9jb3JwdXNfc2hhcGUoKToKICAgIGNodW5rcyA9IGxvYWRfY29ycHVzKENPUlBVU19ESVIpCiAgICBkb2NfaWRzID0ge2MuZG9jX2lkIGZvciBjIGluIGNodW5rc30KICAgIGFzc2VydCBsZW4oZG9jX2lkcykgPT0gMTIKICAgIGlkcyA9IFtjLmNodW5rX2lkIGZvciBjIGluIGNodW5rc10KICAgIGFzc2VydCBsZW4oaWRzKSA9PSBsZW4oc2V0KGlkcykpLCAiY2h1bmsgaWRzIG11c3QgYmUgdW5pcXVlIgogICAgZm9yIGMgaW4gY2h1bmtzOgogICAgICAgIHByZWZpeCwgXywgbnVtID0gYy5jaHVua19pZC5ycGFydGl0aW9uKCIjIikKICAgICAgICBhc3NlcnQgcHJlZml4ID09IGMuZG9jX2lkIGFuZCBudW0uaXNkaWdpdCgpCiAgICAgICAgYXNzZXJ0IDAgPCBsZW4oYy50ZXh0KSA8PSA5MDAK
+from askfhir.chunking import chunk_markdown, load_corpus
+
+from conftest import CORPUS_DIR
+
+SAMPLE = """# My Doc
+
+Intro paragraph about patients and identifiers.
+
+## First Section
+
+The identifier element holds external ids. Each identifier has a system and a value.
+Patients may have several identifiers, such as a medical record number.
+
+## Second Section
+
+Searching uses parameters like name and birthdate. Results come back in a Bundle.
+"""
+
+
+def test_chunk_ids_and_sections():
+    chunks = chunk_markdown(SAMPLE, "my-doc")
+    assert chunks, "expected chunks"
+    assert [c.chunk_id for c in chunks] == [f"my-doc#{i}" for i in range(len(chunks))]
+    assert all(c.doc_id == "my-doc" for c in chunks)
+    assert all(c.title == "My Doc" for c in chunks)
+    sections = {c.section for c in chunks}
+    assert "First Section" in sections and "Second Section" in sections
+
+
+def test_chunking_is_deterministic():
+    a = load_corpus(CORPUS_DIR)
+    b = load_corpus(CORPUS_DIR)
+    assert [c.to_dict() for c in a] == [c.to_dict() for c in b]
+
+
+def test_corpus_shape():
+    chunks = load_corpus(CORPUS_DIR)
+    doc_ids = {c.doc_id for c in chunks}
+    assert len(doc_ids) == 12
+    ids = [c.chunk_id for c in chunks]
+    assert len(ids) == len(set(ids)), "chunk ids must be unique"
+    for c in chunks:
+        prefix, _, num = c.chunk_id.rpartition("#")
+        assert prefix == c.doc_id and num.isdigit()
+        assert 0 < len(c.text) <= 900
