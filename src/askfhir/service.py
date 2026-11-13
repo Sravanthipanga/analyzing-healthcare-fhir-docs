@@ -1,1 +1,202 @@
-IiIiU2VydmljZSBsYXllcjogcmV0cmlldmUgLT4gZnVzZSAtPiByZXJhbmsgLT4gY29tcG9zZSAtPiB2YWxpZGF0ZS4iIiIKCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmltcG9ydCBqc29uCmltcG9ydCBvcwpmcm9tIGRhdGFjbGFzc2VzIGltcG9ydCBkYXRhY2xhc3MKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgppbXBvcnQgbnVtcHkgYXMgbnAKCmZyb20gLmFuc3dlciBpbXBvcnQgQUJTVEFJTl9NRVNTQUdFLCBFeHRyYWN0aXZlQ29tcG9zZXIsIFBhc3NhZ2UsIHZhbGlkYXRlX2NpdGF0aW9ucwpmcm9tIC5ibTI1X2luZGV4IGltcG9ydCBCTTI1SW5kZXgKZnJvbSAuY2h1bmtpbmcgaW1wb3J0IENodW5rLCBsb2FkX2NvcnB1cwpmcm9tIC5lbWJlZGRpbmdzIGltcG9ydCBFbWJlZGRlciwgZ2V0X2VtYmVkZGVyCmZyb20gLmh5YnJpZCBpbXBvcnQgcmVjaXByb2NhbF9yYW5rX2Z1c2lvbgpmcm9tIC5yZXJhbmtlciBpbXBvcnQgUmVyYW5rZXIsIGdldF9yZXJhbmtlcgpmcm9tIC52ZWN0b3JfaW5kZXggaW1wb3J0IFZlY3RvckluZGV4CgojIENyb3NzLWVuY29kZXIgKG1zLW1hcmNvIE1pbmlMTSkgc2NvcmVzIGFyZSBsb2dpdHM7IHBhc3NhZ2VzIGJlbG93IHRoaXMgYXJlCiMgdHJlYXRlZCBhcyAibm90IHN1cHBvcnRlZCBieSB0aGUgZG9jcyIuIENhbGlicmF0ZWQgb24gdGhlIGdvbGRlbiBldmFsIHNldDoKIyB0aGUgd2Vha2VzdCBhbnN3ZXJhYmxlIHF1ZXN0aW9uJ3MgdG9wIHNjb3JlIHdhcyAtMS4xNSBhbmQgdGhlIHN0cm9uZ2VzdAojIHVuYW5zd2VyYWJsZSBxdWVzdGlvbidzIHRvcCBzY29yZSB3YXMgLTEwLjA1LCBzbyAtNS41IHNpdHMgbWlkLWdhcCB3aXRoCiMgd2lkZSBtYXJnaW5zIG9uIGJvdGggc2lkZXMuIE92ZXJyaWRlIHdpdGggQVNLRkhJUl9BQlNUQUlOX1RIUkVTSE9MRC4KREVGQVVMVF9BQlNUQUlOX1RIUkVTSE9MRCA9IC01LjUKClRPUF9FQUNIID0gMjAgICMgY2FuZGlkYXRlcyBwZXIgZmlyc3Qtc3RhZ2UgcmFua2VyCkZVU0VEX04gPSAyMCAgIyBjYW5kaWRhdGVzIGludG8gdGhlIHJlcmFua2VyCkZJTkFMX04gPSA1ICAjIHBhc3NhZ2VzIHVzZWQgZm9yIHRoZSBhbnN3ZXIKCgpAZGF0YWNsYXNzCmNsYXNzIFNvdXJjZToKICAgIGNodW5rOiBDaHVuawogICAgYm0yNV9yYW5rOiBpbnQgfCBOb25lCiAgICB2ZWN0b3JfcmFuazogaW50IHwgTm9uZQogICAgZnVzZWRfc2NvcmU6IGZsb2F0CiAgICByZXJhbmtfc2NvcmU6IGZsb2F0CgogICAgZGVmIHRvX2RpY3Qoc2VsZikgLT4gZGljdDoKICAgICAgICByZXR1cm4gewogICAgICAgICAgICAiY2h1bmtfaWQiOiBzZWxmLmNodW5rLmNodW5rX2lkLAogICAgICAgICAgICAiZG9jX2lkIjogc2VsZi5jaHVuay5kb2NfaWQsCiAgICAgICAgICAgICJkb2NfdGl0bGUiOiBzZWxmLmNodW5rLnRpdGxlLAogICAgICAgICAgICAic2VjdGlvbiI6IHNlbGYuY2h1bmsuc2VjdGlvbiwKICAgICAgICAgICAgInNuaXBwZXQiOiBzZWxmLmNodW5rLnRleHQsCiAgICAgICAgICAgICJibTI1X3JhbmsiOiBzZWxmLmJtMjVfcmFuaywKICAgICAgICAgICAgInZlY3Rvcl9yYW5rIjogc2VsZi52ZWN0b3JfcmFuaywKICAgICAgICAgICAgImZ1c2VkX3Njb3JlIjogcm91bmQoc2VsZi5mdXNlZF9zY29yZSwgNiksCiAgICAgICAgICAgICJyZXJhbmtfc2NvcmUiOiByb3VuZChzZWxmLnJlcmFua19zY29yZSwgNCksCiAgICAgICAgfQoKCmNsYXNzIEFza0ZISVJTZXJ2aWNlOgogICAgZGVmIF9faW5pdF9fKAogICAgICAgIHNlbGYsCiAgICAgICAgY2h1bmtzOiBsaXN0W0NodW5rXSwKICAgICAgICBlbWJlZGRpbmdzOiBucC5uZGFycmF5LAogICAgICAgIGVtYmVkZGVyOiBFbWJlZGRlciwKICAgICAgICByZXJhbmtlcjogUmVyYW5rZXIsCiAgICAgICAgYWJzdGFpbl90aHJlc2hvbGQ6IGZsb2F0IHwgTm9uZSA9IE5vbmUsCiAgICAgICAgZmFrZV9tb2RlbHM6IGJvb2wgPSBGYWxzZSwKICAgICk6CiAgICAgICAgc2VsZi5jaHVua3MgPSBjaHVua3MKICAgICAgICBzZWxmLmNodW5rc19ieV9pZCA9IHtjLmNodW5rX2lkOiBjIGZvciBjIGluIGNodW5rc30KICAgICAgICBzZWxmLmVtYmVkZGVyID0gZW1iZWRkZXIKICAgICAgICBzZWxmLnJlcmFua2VyID0gcmVyYW5rZXIKICAgICAgICBzZWxmLmZha2VfbW9kZWxzID0gZmFrZV9tb2RlbHMKICAgICAgICBpZiBhYnN0YWluX3RocmVzaG9sZCBpcyBOb25lOgogICAgICAgICAgICBlbnYgPSBvcy5lbnZpcm9uLmdldCgiQVNLRkhJUl9BQlNUQUlOX1RIUkVTSE9MRCIpCiAgICAgICAgICAgIGFic3RhaW5fdGhyZXNob2xkID0gZmxvYXQoZW52KSBpZiBlbnYgZWxzZSBERUZBVUxUX0FCU1RBSU5fVEhSRVNIT0xECiAgICAgICAgIyBUaGUgZmFrZSBsZXhpY2FsIHJlcmFua2VyIHNjb3JlcyBpbiBbMCwgfjEuM107IGdpdmUgaXQgYSBzYW5lCiAgICAgICAgIyBkZWZhdWx0IHRocmVzaG9sZCB3aGVuIHJ1bm5pbmcgaW4gZmFrZSBtb2RlLgogICAgICAgIGlmIGZha2VfbW9kZWxzIGFuZCBvcy5lbnZpcm9uLmdldCgiQVNLRkhJUl9BQlNUQUlOX1RIUkVTSE9MRCIpIGlzIE5vbmU6CiAgICAgICAgICAgIGFic3RhaW5fdGhyZXNob2xkID0gMC4xNQogICAgICAgIHNlbGYuYWJzdGFpbl90aHJlc2hvbGQgPSBhYnN0YWluX3RocmVzaG9sZAogICAgICAgIHNlbGYuX2JtMjUgPSBCTTI1SW5kZXgoW2MuaW5kZXhfdGV4dCgpIGZvciBjIGluIGNodW5rc10pCiAgICAgICAgc2VsZi5fdmVjdG9ycyA9IFZlY3RvckluZGV4KGVtYmVkZGluZ3MpCiAgICAgICAgc2VsZi5fY29tcG9zZXIgPSBFeHRyYWN0aXZlQ29tcG9zZXIoKQogICAgICAgIHNlbGYuX3Rva2VuX3dlaWdodHMgPSBzZWxmLl9jb21wdXRlX2lkZihjaHVua3MpCgogICAgQHN0YXRpY21ldGhvZAogICAgZGVmIF9jb21wdXRlX2lkZihjaHVua3M6IGxpc3RbQ2h1bmtdKSAtPiBkaWN0W3N0ciwgZmxvYXRdOgogICAgICAgICIiIkJNMjUtc3R5bGUgaW52ZXJzZSBkb2N1bWVudCBmcmVxdWVuY3kgb3ZlciBjaHVuayB0b2tlbnMuIiIiCiAgICAgICAgaW1wb3J0IG1hdGgKCiAgICAgICAgZnJvbSAuZW1iZWRkaW5ncyBpbXBvcnQgdG9rZW5pemUKCiAgICAgICAgbiA9IGxlbihjaHVua3MpCiAgICAgICAgZGY6IGRpY3Rbc3RyLCBpbnRdID0ge30KICAgICAgICBmb3IgYyBpbiBjaHVua3M6CiAgICAgICAgICAgIGZvciB0b2sgaW4gc2V0KHRva2VuaXplKGMuaW5kZXhfdGV4dCgpKSk6CiAgICAgICAgICAgICAgICBkZlt0b2tdID0gZGYuZ2V0KHRvaywgMCkgKyAxCiAgICAgICAgcmV0dXJuIHsKICAgICAgICAgICAgdG9rOiBtYXRoLmxvZygobiAtIGQgKyAwLjUpIC8gKGQgKyAwLjUpICsgMS4wKSBmb3IgdG9rLCBkIGluIGRmLml0ZW1zKCkKICAgICAgICB9CgogICAgIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbG9hZAogICAgQGNsYXNzbWV0aG9kCiAgICBkZWYgbG9hZCgKICAgICAgICBjbHMsCiAgICAgICAgY29ycHVzX2Rpcjogc3RyIHwgUGF0aCA9ICJjb3JwdXMiLAogICAgICAgIGluZGV4X2Rpcjogc3RyIHwgUGF0aCA9ICJkYXRhL2luZGV4IiwKICAgICAgICBmYWtlOiBib29sID0gRmFsc2UsCiAgICApIC0+ICJBc2tGSElSU2VydmljZSI6CiAgICAgICAgaW5kZXhfZGlyID0gUGF0aChpbmRleF9kaXIpCiAgICAgICAgY2h1bmtzX2ZpbGUgPSBpbmRleF9kaXIgLyAiY2h1bmtzLmpzb24iCiAgICAgICAgZW1iX2ZpbGUgPSBpbmRleF9kaXIgLyAiZW1iZWRkaW5ncy5ucHkiCiAgICAgICAgZW1iZWRkZXIgPSBnZXRfZW1iZWRkZXIoZmFrZT1mYWtlKQogICAgICAgIGlmIGNodW5rc19maWxlLmV4aXN0cygpOgogICAgICAgICAgICByYXcgPSBqc29uLmxvYWRzKGNodW5rc19maWxlLnJlYWRfdGV4dChlbmNvZGluZz0idXRmLTgiKSkKICAgICAgICAgICAgY2h1bmtzID0gW0NodW5rKCoqcikgZm9yIHIgaW4gcmF3XQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGNodW5rcyA9IGxvYWRfY29ycHVzKGNvcnB1c19kaXIpCiAgICAgICAgaWYgZW1iX2ZpbGUuZXhpc3RzKCk6CiAgICAgICAgICAgIGVtYmVkZGluZ3MgPSBucC5sb2FkKGVtYl9maWxlKQogICAgICAgICAgICBwcm9iZV9kaW0gPSBlbWJlZGRlci5lbWJlZChbImRpbWVuc2lvbiBwcm9iZSJdKS5zaGFwZVsxXQogICAgICAgICAgICBpZiBlbWJlZGRpbmdzLnNoYXBlWzBdICE9IGxlbihjaHVua3MpIG9yIGVtYmVkZGluZ3Muc2hhcGVbMV0gIT0gcHJvYmVfZGltOgogICAgICAgICAgICAgICAgZW1iZWRkaW5ncyA9IGVtYmVkZGVyLmVtYmVkKFtjLmluZGV4X3RleHQoKSBmb3IgYyBpbiBjaHVua3NdKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGVtYmVkZGluZ3MgPSBlbWJlZGRlci5lbWJlZChbYy5pbmRleF90ZXh0KCkgZm9yIGMgaW4gY2h1bmtzXSkKICAgICAgICByZXJhbmtlciA9IGdldF9yZXJhbmtlcihmYWtlPWZha2UpCiAgICAgICAgcmV0dXJuIGNscyhjaHVua3MsIGVtYmVkZGluZ3MsIGVtYmVkZGVyLCByZXJhbmtlciwgZmFrZV9tb2RlbHM9ZmFrZSkKCiAgICAjIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gYXNrCiAgICBkZWYgYXNrKHNlbGYsIHF1ZXN0aW9uOiBzdHIpIC0+IGRpY3Q6CiAgICAgICAgcXVlc3Rpb24gPSAocXVlc3Rpb24gb3IgIiIpLnN0cmlwKCkKICAgICAgICBpZiBub3QgcXVlc3Rpb246CiAgICAgICAgICAgIHJldHVybiBzZWxmLl9hYnN0YWluKHF1ZXN0aW9uLCBbXSkKCiAgICAgICAgYm0yNV9yZXN1bHRzID0gc2VsZi5fYm0yNS5zZWFyY2gocXVlc3Rpb24sIFRPUF9FQUNIKQogICAgICAgIHFfdmVjID0gc2VsZi5lbWJlZGRlci5lbWJlZChbcXVlc3Rpb25dKVswXQogICAgICAgIHZlY3Rvcl9yZXN1bHRzID0gc2VsZi5fdmVjdG9ycy5zZWFyY2gocV92ZWMsIFRPUF9FQUNIKQoKICAgICAgICBibTI1X3JhbmsgPSB7cG9zOiBpICsgMSBmb3IgaSwgKHBvcywgXykgaW4gZW51bWVyYXRlKGJtMjVfcmVzdWx0cyl9CiAgICAgICAgdmVjdG9yX3JhbmsgPSB7cG9zOiBpICsgMSBmb3IgaSwgKHBvcywgXykgaW4gZW51bWVyYXRlKHZlY3Rvcl9yZXN1bHRzKX0KICAgICAgICBmdXNlZCA9IHJlY2lwcm9jYWxfcmFua19mdXNpb24oCiAgICAgICAgICAgIFtbcCBmb3IgcCwgXyBpbiBibTI1X3Jlc3VsdHNdLCBbcCBmb3IgcCwgXyBpbiB2ZWN0b3JfcmVzdWx0c11dLAogICAgICAgICAgICB0b3Bfbj1GVVNFRF9OLAogICAgICAgICkKICAgICAgICBmdXNlZF9zY29yZSA9IGRpY3QoZnVzZWQpCiAgICAgICAgY2FuZGlkYXRlcyA9IFtwb3MgZm9yIHBvcywgXyBpbiBmdXNlZF0KICAgICAgICByZXJhbmtfc2NvcmVzID0gc2VsZi5yZXJhbmtlci5zY29yZSgKICAgICAgICAgICAgcXVlc3Rpb24sIFtzZWxmLmNodW5rc1twXS50ZXh0IGZvciBwIGluIGNhbmRpZGF0ZXNdCiAgICAgICAgKQogICAgICAgIG9yZGVyID0gc29ydGVkKAogICAgICAgICAgICByYW5nZShsZW4oY2FuZGlkYXRlcykpLAogICAgICAgICAgICBrZXk9bGFtYmRhIGk6ICgtZmxvYXQocmVyYW5rX3Njb3Jlc1tpXSksIGkpLAogICAgICAgICkKICAgICAgICBzb3VyY2VzOiBsaXN0W1NvdXJjZV0gPSBbXQogICAgICAgIGZvciBpIGluIG9yZGVyWzpGSU5BTF9OXToKICAgICAgICAgICAgcG9zID0gY2FuZGlkYXRlc1tpXQogICAgICAgICAgICBzb3VyY2VzLmFwcGVuZCgKICAgICAgICAgICAgICAgIFNvdXJjZSgKICAgICAgICAgICAgICAgICAgICBjaHVuaz1zZWxmLmNodW5rc1twb3NdLAogICAgICAgICAgICAgICAgICAgIGJtMjVfcmFuaz1ibTI1X3JhbmsuZ2V0KHBvcyksCiAgICAgICAgICAgICAgICAgICAgdmVjdG9yX3Jhbms9dmVjdG9yX3JhbmsuZ2V0KHBvcyksCiAgICAgICAgICAgICAgICAgICAgZnVzZWRfc2NvcmU9ZnVzZWRfc2NvcmVbcG9zXSwKICAgICAgICAgICAgICAgICAgICByZXJhbmtfc2NvcmU9ZmxvYXQocmVyYW5rX3Njb3Jlc1tpXSksCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICkKCiAgICAgICAgaWYgbm90IHNvdXJjZXMgb3Igc291cmNlc1swXS5yZXJhbmtfc2NvcmUgPCBzZWxmLmFic3RhaW5fdGhyZXNob2xkOgogICAgICAgICAgICByZXR1cm4gc2VsZi5fYWJzdGFpbihxdWVzdGlvbiwgc291cmNlcykKCiAgICAgICAgcGFzc2FnZXMgPSBbUGFzc2FnZShzLmNodW5rLCBzLnJlcmFua19zY29yZSkgZm9yIHMgaW4gc291cmNlc10KICAgICAgICBhbGxvd2VkID0ge3MuY2h1bmsuY2h1bmtfaWQgZm9yIHMgaW4gc291cmNlc30KICAgICAgICBhbnN3ZXIgPSBzZWxmLl9jb21wb3Nlci5nZW5lcmF0ZShxdWVzdGlvbiwgcGFzc2FnZXMsIHNlbGYuX3Rva2VuX3dlaWdodHMpCiAgICAgICAgaWYgdmFsaWRhdGVfY2l0YXRpb25zKGFuc3dlciwgYWxsb3dlZCk6CiAgICAgICAgICAgICMgRmFsbGJhY2s6IGNvbXBvc2UgZnJvbSB0aGUgc2luZ2xlIGJlc3QgcGFzc2FnZSBvbmx5LgogICAgICAgICAgICBhbnN3ZXIgPSBzZWxmLl9jb21wb3Nlci5nZW5lcmF0ZShxdWVzdGlvbiwgcGFzc2FnZXNbOjFdLCBzZWxmLl90b2tlbl93ZWlnaHRzKQogICAgICAgICAgICBpZiB2YWxpZGF0ZV9jaXRhdGlvbnMoYW5zd2VyLCB7cGFzc2FnZXNbMF0uY2h1bmsuY2h1bmtfaWR9KToKICAgICAgICAgICAgICAgIHJldHVybiBzZWxmLl9hYnN0YWluKHF1ZXN0aW9uLCBzb3VyY2VzKQoKICAgICAgICBmcm9tIC5hbnN3ZXIgaW1wb3J0IENJVEFUSU9OX1JFCgogICAgICAgIHJldHVybiB7CiAgICAgICAgICAgICJxdWVzdGlvbiI6IHF1ZXN0aW9uLAogICAgICAgICAgICAiYW5zd2VyIjogYW5zd2VyLAogICAgICAgICAgICAiYWJzdGFpbmVkIjogRmFsc2UsCiAgICAgICAgICAgICJjaXRhdGlvbnMiOiBzb3J0ZWQoc2V0KENJVEFUSU9OX1JFLmZpbmRhbGwoYW5zd2VyKSkpLAogICAgICAgICAgICAic291cmNlcyI6IFtzLnRvX2RpY3QoKSBmb3IgcyBpbiBzb3VyY2VzXSwKICAgICAgICB9CgogICAgZGVmIF9hYnN0YWluKHNlbGYsIHF1ZXN0aW9uOiBzdHIsIHNvdXJjZXM6IGxpc3RbU291cmNlXSkgLT4gZGljdDoKICAgICAgICByZXR1cm4gewogICAgICAgICAgICAicXVlc3Rpb24iOiBxdWVzdGlvbiwKICAgICAgICAgICAgImFuc3dlciI6IEFCU1RBSU5fTUVTU0FHRSwKICAgICAgICAgICAgImFic3RhaW5lZCI6IFRydWUsCiAgICAgICAgICAgICJjaXRhdGlvbnMiOiBbXSwKICAgICAgICAgICAgInNvdXJjZXMiOiBbcy50b19kaWN0KCkgZm9yIHMgaW4gc291cmNlc10sCiAgICAgICAgfQoKICAgICMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIGRvY3MKICAgIGRlZiBkb2NzKHNlbGYpIC0+IGxpc3RbZGljdF06CiAgICAgICAgY291bnRzOiBkaWN0W3N0ciwgZGljdF0gPSB7fQogICAgICAgIGZvciBjIGluIHNlbGYuY2h1bmtzOgogICAgICAgICAgICBlbnRyeSA9IGNvdW50cy5zZXRkZWZhdWx0KAogICAgICAgICAgICAgICAgYy5kb2NfaWQsIHsiZG9jX2lkIjogYy5kb2NfaWQsICJ0aXRsZSI6IGMudGl0bGUsICJjaHVua3MiOiAwfQogICAgICAgICAgICApCiAgICAgICAgICAgIGVudHJ5WyJjaHVua3MiXSArPSAxCiAgICAgICAgcmV0dXJuIFtjb3VudHNba10gZm9yIGsgaW4gc29ydGVkKGNvdW50cyldCg==
+"""Service layer: retrieve -> fuse -> rerank -> compose -> validate."""
+
+from __future__ import annotations
+
+import json
+import os
+from dataclasses import dataclass
+from pathlib import Path
+
+import numpy as np
+
+from .answer import ABSTAIN_MESSAGE, ExtractiveComposer, Passage, validate_citations
+from .bm25_index import BM25Index
+from .chunking import Chunk, load_corpus
+from .embeddings import Embedder, get_embedder
+from .hybrid import reciprocal_rank_fusion
+from .reranker import Reranker, get_reranker
+from .vector_index import VectorIndex
+
+# Cross-encoder (ms-marco MiniLM) scores are logits; passages below this are
+# treated as "not supported by the docs". Calibrated on the golden eval set:
+# the weakest answerable question's top score was -1.15 and the strongest
+# unanswerable question's top score was -10.05, so -5.5 sits mid-gap with
+# wide margins on both sides. Override with ASKFHIR_ABSTAIN_THRESHOLD.
+DEFAULT_ABSTAIN_THRESHOLD = -5.5
+
+TOP_EACH = 20  # candidates per first-stage ranker
+FUSED_N = 20  # candidates into the reranker
+FINAL_N = 5  # passages used for the answer
+
+
+@dataclass
+class Source:
+    chunk: Chunk
+    bm25_rank: int | None
+    vector_rank: int | None
+    fused_score: float
+    rerank_score: float
+
+    def to_dict(self) -> dict:
+        return {
+            "chunk_id": self.chunk.chunk_id,
+            "doc_id": self.chunk.doc_id,
+            "doc_title": self.chunk.title,
+            "section": self.chunk.section,
+            "snippet": self.chunk.text,
+            "bm25_rank": self.bm25_rank,
+            "vector_rank": self.vector_rank,
+            "fused_score": round(self.fused_score, 6),
+            "rerank_score": round(self.rerank_score, 4),
+        }
+
+
+class AskFHIRService:
+    def __init__(
+        self,
+        chunks: list[Chunk],
+        embeddings: np.ndarray,
+        embedder: Embedder,
+        reranker: Reranker,
+        abstain_threshold: float | None = None,
+        fake_models: bool = False,
+    ):
+        self.chunks = chunks
+        self.chunks_by_id = {c.chunk_id: c for c in chunks}
+        self.embedder = embedder
+        self.reranker = reranker
+        self.fake_models = fake_models
+        if abstain_threshold is None:
+            env = os.environ.get("ASKFHIR_ABSTAIN_THRESHOLD")
+            abstain_threshold = float(env) if env else DEFAULT_ABSTAIN_THRESHOLD
+        # The fake lexical reranker scores in [0, ~1.3]; give it a sane
+        # default threshold when running in fake mode.
+        if fake_models and os.environ.get("ASKFHIR_ABSTAIN_THRESHOLD") is None:
+            abstain_threshold = 0.15
+        self.abstain_threshold = abstain_threshold
+        self._bm25 = BM25Index([c.index_text() for c in chunks])
+        self._vectors = VectorIndex(embeddings)
+        self._composer = ExtractiveComposer()
+        self._token_weights = self._compute_idf(chunks)
+
+    @staticmethod
+    def _compute_idf(chunks: list[Chunk]) -> dict[str, float]:
+        """BM25-style inverse document frequency over chunk tokens."""
+        import math
+
+        from .embeddings import tokenize
+
+        n = len(chunks)
+        df: dict[str, int] = {}
+        for c in chunks:
+            for tok in set(tokenize(c.index_text())):
+                df[tok] = df.get(tok, 0) + 1
+        return {
+            tok: math.log((n - d + 0.5) / (d + 0.5) + 1.0) for tok, d in df.items()
+        }
+
+    # ------------------------------------------------------------------ load
+    @classmethod
+    def load(
+        cls,
+        corpus_dir: str | Path = "corpus",
+        index_dir: str | Path = "data/index",
+        fake: bool = False,
+    ) -> "AskFHIRService":
+        index_dir = Path(index_dir)
+        chunks_file = index_dir / "chunks.json"
+        emb_file = index_dir / "embeddings.npy"
+        embedder = get_embedder(fake=fake)
+        if chunks_file.exists():
+            raw = json.loads(chunks_file.read_text(encoding="utf-8"))
+            chunks = [Chunk(**r) for r in raw]
+        else:
+            chunks = load_corpus(corpus_dir)
+        if emb_file.exists():
+            embeddings = np.load(emb_file)
+            probe_dim = embedder.embed(["dimension probe"]).shape[1]
+            if embeddings.shape[0] != len(chunks) or embeddings.shape[1] != probe_dim:
+                embeddings = embedder.embed([c.index_text() for c in chunks])
+        else:
+            embeddings = embedder.embed([c.index_text() for c in chunks])
+        reranker = get_reranker(fake=fake)
+        return cls(chunks, embeddings, embedder, reranker, fake_models=fake)
+
+    # ------------------------------------------------------------------- ask
+    def ask(self, question: str) -> dict:
+        question = (question or "").strip()
+        if not question:
+            return self._abstain(question, [])
+
+        bm25_results = self._bm25.search(question, TOP_EACH)
+        q_vec = self.embedder.embed([question])[0]
+        vector_results = self._vectors.search(q_vec, TOP_EACH)
+
+        bm25_rank = {pos: i + 1 for i, (pos, _) in enumerate(bm25_results)}
+        vector_rank = {pos: i + 1 for i, (pos, _) in enumerate(vector_results)}
+        fused = reciprocal_rank_fusion(
+            [[p for p, _ in bm25_results], [p for p, _ in vector_results]],
+            top_n=FUSED_N,
+        )
+        fused_score = dict(fused)
+        candidates = [pos for pos, _ in fused]
+        rerank_scores = self.reranker.score(
+            question, [self.chunks[p].text for p in candidates]
+        )
+        order = sorted(
+            range(len(candidates)),
+            key=lambda i: (-float(rerank_scores[i]), i),
+        )
+        sources: list[Source] = []
+        for i in order[:FINAL_N]:
+            pos = candidates[i]
+            sources.append(
+                Source(
+                    chunk=self.chunks[pos],
+                    bm25_rank=bm25_rank.get(pos),
+                    vector_rank=vector_rank.get(pos),
+                    fused_score=fused_score[pos],
+                    rerank_score=float(rerank_scores[i]),
+                )
+            )
+
+        if not sources or sources[0].rerank_score < self.abstain_threshold:
+            return self._abstain(question, sources)
+
+        passages = [Passage(s.chunk, s.rerank_score) for s in sources]
+        allowed = {s.chunk.chunk_id for s in sources}
+        answer = self._composer.generate(question, passages, self._token_weights)
+        if validate_citations(answer, allowed):
+            # Fallback: compose from the single best passage only.
+            answer = self._composer.generate(question, passages[:1], self._token_weights)
+            if validate_citations(answer, {passages[0].chunk.chunk_id}):
+                return self._abstain(question, sources)
+
+        from .answer import CITATION_RE
+
+        return {
+            "question": question,
+            "answer": answer,
+            "abstained": False,
+            "citations": sorted(set(CITATION_RE.findall(answer))),
+            "sources": [s.to_dict() for s in sources],
+        }
+
+    def _abstain(self, question: str, sources: list[Source]) -> dict:
+        return {
+            "question": question,
+            "answer": ABSTAIN_MESSAGE,
+            "abstained": True,
+            "citations": [],
+            "sources": [s.to_dict() for s in sources],
+        }
+
+    # ------------------------------------------------------------------ docs
+    def docs(self) -> list[dict]:
+        counts: dict[str, dict] = {}
+        for c in self.chunks:
+            entry = counts.setdefault(
+                c.doc_id, {"doc_id": c.doc_id, "title": c.title, "chunks": 0}
+            )
+            entry["chunks"] += 1
+        return [counts[k] for k in sorted(counts)]
