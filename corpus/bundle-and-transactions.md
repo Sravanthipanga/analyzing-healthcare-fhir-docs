@@ -1,1 +1,52 @@
-IyBCdW5kbGVzIGFuZCBUcmFuc2FjdGlvbnMKCiMjIFdoYXQgYSBCdW5kbGUgSXMKClRoZSBgQnVuZGxlYCByZXNvdXJjZSBpcyBhIGNvbnRhaW5lcjogYSBzaW5nbGUgRkhJUiByZXNvdXJjZSB3aG9zZSBgZW50cnlgIGxpc3QgaG9sZHMgb3RoZXIgcmVzb3VyY2VzLiBCdW5kbGVzIGRvIG5vdCBoYXZlIGNsaW5pY2FsIG1lYW5pbmcgb2YgdGhlaXIgb3duOyB0aGV5IGFyZSBob3cgRkhJUiBwYWNrYWdlcyBjb2xsZWN0aW9ucyBmb3IgdHJhbnNwb3J0IOKAlCB0aGUgcmVzdWx0IG9mIGEgc2VhcmNoLCBhIGRvY3VtZW50LCBhIG1lc3NhZ2UsIG9yIGEgZ3JvdXAgb2YgY2hhbmdlcyB0aGF0IG11c3QgYmUgYXBwbGllZCB0b2dldGhlci4gRXZlcnkgZW50cnkgaGFzIGEgYGZ1bGxVcmxgIChhIFVSSSBpZGVudGlmeWluZyB0aGUgcmVzb3VyY2Ugd2l0aGluIHRoZSBidW5kbGUpIGFuZCBhIGByZXNvdXJjZWAuCgojIyBCdW5kbGUgVHlwZXMKClRoZSBgdHlwZWAgZWxlbWVudCBkZWNsYXJlcyBob3cgdGhlIGJ1bmRsZSBzaG91bGQgYmUgaW50ZXJwcmV0ZWQ6CgotICoqYHNlYXJjaHNldGAqKiDigJQgdGhlIHJlc3VsdCBvZiBhIHNlYXJjaCBvciByZWFkLWhpc3Rvcnkgb3BlcmF0aW9uLiBFYWNoIGVudHJ5IGhvbGRzIG9uZSBtYXRjaGluZyByZXNvdXJjZSwgYW5kIGVudHJpZXMgbWF5IGFsc28gaW5jbHVkZSByZXNvdXJjZXMgcHVsbGVkIGluIGJ5IGBfaW5jbHVkZWAgKG1hcmtlZCB3aXRoIGBzZWFyY2gubW9kZWAgb2YgYGluY2x1ZGVgKSBhbmQgYW4gYE9wZXJhdGlvbk91dGNvbWVgIGVudHJ5IChgc2VhcmNoLm1vZGVgIG9mIGBvdXRjb21lYCkgY2Fycnlpbmcgd2FybmluZ3MuIFRoZSBidW5kbGUncyBgdG90YWxgIGVsZW1lbnQgZ2l2ZXMgdGhlIGZ1bGwgY291bnQgb2YgbWF0Y2hlcywgd2hpY2ggY2FuIGV4Y2VlZCB0aGUgbnVtYmVyIG9mIGVudHJpZXMgb24gb25lIHBhZ2U7IGBsaW5rYCBlbGVtZW50cyB3aXRoIHJlbGF0aW9ucyBgc2VsZmAsIGBuZXh0YCwgYHByZXZpb3VzYCwgYGZpcnN0YCwgYW5kIGBsYXN0YCBzdXBwb3J0IHBhZ2luZy4KLSAqKmB0cmFuc2FjdGlvbmAqKiDigJQgYSBzZXQgb2YgY3JlYXRlcywgdXBkYXRlcywgYW5kIGRlbGV0ZXMgdGhhdCB0aGUgc2VydmVyIG11c3QgcHJvY2VzcyBhcyBhIHNpbmdsZSBhdG9taWMgdW5pdDogZWl0aGVyIGV2ZXJ5dGhpbmcgc3VjY2VlZHMgb3IgZXZlcnl0aGluZyBpcyByb2xsZWQgYmFjay4gRWFjaCBlbnRyeSBjYXJyaWVzIGEgYHJlcXVlc3RgIGVsZW1lbnQgd2l0aCB0aGUgSFRUUCBgbWV0aG9kYCAoYFBPU1RgLCBgUFVUYCwgYFBBVENIYCwgYERFTEVURWApLCB0aGUgYHVybGAgKGZvciBleGFtcGxlIGBQYXRpZW50YCBvciBgUGF0aWVudC8xMjNgKSwgYW5kIG9wdGlvbmFsIGBpZk5vbmVFeGlzdGAgb3IgYGlmTWF0Y2hgIGNvbmRpdGlvbmFsIGhlYWRlcnMuIFRoZSBzZXJ2ZXIgcmVzcG9uZHMgd2l0aCBhIGB0cmFuc2FjdGlvbi1yZXNwb25zZWAgYnVuZGxlIHdob3NlIGVudHJpZXMgY2Fycnkgc3RhdHVzIGNvZGVzIHBlciByZXF1ZXN0LgotICoqYGJhdGNoYCoqIOKAlCBsaWtlIGEgdHJhbnNhY3Rpb24sIGJ1dCBlYWNoIGVudHJ5IGlzIHByb2Nlc3NlZCBpbmRlcGVuZGVudGx5OiBzb21lIG1heSBzdWNjZWVkIGFuZCBvdGhlcnMgZmFpbCwgYW5kIHRoZSByZXNwb25zZSBpcyBhIGBiYXRjaC1yZXNwb25zZWAgYnVuZGxlIHdpdGggcGVyLWVudHJ5IHJlc3VsdHMuIFVzZSBiYXRjaCB3aGVuIGF0b21pY2l0eSBpcyBub3QgcmVxdWlyZWQgYW5kIHBhcnRpYWwgc3VjY2VzcyBpcyBhY2NlcHRhYmxlLgotICoqYGRvY3VtZW50YCoqIOKAlCBhbiBhdHRlc3RlZCwgaW1tdXRhYmxlIGNvbGxlY3Rpb24gKGEgY2xpbmljYWwgZG9jdW1lbnQpIHdob3NlIGZpcnN0IGVudHJ5IGlzIGEgYENvbXBvc2l0aW9uYCByZXNvdXJjZSB0aGF0IG9yZ2FuaXplcyB0aGUgcmVzdC4KLSAqKmBtZXNzYWdlYCoqIOKAlCBhIGJ1bmRsZSBzZW50IGFzIGEgbWVzc2FnZSwgd2hvc2UgZmlyc3QgZW50cnkgaXMgYSBgTWVzc2FnZUhlYWRlcmAgZGVmaW5pbmcgdGhlIGV2ZW50IGFuZCBzZW5kZXIuCi0gKipgaGlzdG9yeWAqKiDigJQgYSBsaXN0IG9mIHZlcnNpb25zIG9mIHJlc291cmNlcywgYXMgcmV0dXJuZWQgYnkgYSBoaXN0b3J5IG9wZXJhdGlvbi4KLSAqKmBjb2xsZWN0aW9uYCoqIOKAlCBhIGJ1bmRsZSBhc3NlbWJsZWQgZm9yIGEgcHVycG9zZSBvdGhlciB0aGFuIHRoZSBhYm92ZSwgd2l0aCBubyBwcm9jZXNzaW5nIHJ1bGVzIGF0dGFjaGVkLgoKIyMgVHJhbnNhY3Rpb24gRGV0YWlscwoKVHJhbnNhY3Rpb25zIGFyZSBob3cgY2xpZW50cyBjcmVhdGUgaW50ZXJkZXBlbmRlbnQgcmVzb3VyY2VzIGluIG9uZSByb3VuZCB0cmlwIOKAlCBmb3IgZXhhbXBsZSwgYSBQYXRpZW50IHRvZ2V0aGVyIHdpdGggdGhyZWUgT2JzZXJ2YXRpb25zIHRoYXQgcmVmZXJlbmNlIGl0LiBCZWNhdXNlIHRoZSBzZXJ2ZXIgaGFzIG5vdCB5ZXQgYXNzaWduZWQgaWRzIGF0IHRoZSB0aW1lIHRoZSBidW5kbGUgaXMgYXV0aG9yZWQsIGVudHJpZXMgcmVmZXJlbmNlIGVhY2ggb3RoZXIgdXNpbmcgKip0ZW1wb3JhcnkgVVVJRHMqKiBpbiBgZnVsbFVybGA6CgpgYGBqc29uCnsKICAicmVzb3VyY2VUeXBlIjogIkJ1bmRsZSIsCiAgInR5cGUiOiAidHJhbnNhY3Rpb24iLAogICJlbnRyeSI6IFsKICAgIHsKICAgICAgImZ1bGxVcmwiOiAidXJuOnV1aWQ6OWMyZDFiNmUtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwKICAgICAgInJlc291cmNlIjogeyAicmVzb3VyY2VUeXBlIjogIlBhdGllbnQiLCAibmFtZSI6IFt7ICJmYW1pbHkiOiAiRXhhbXBsZSIsICJnaXZlbiI6IFsiSmFuZSJdIH1dIH0sCiAgICAgICJyZXF1ZXN0IjogeyAibWV0aG9kIjogIlBPU1QiLCAidXJsIjogIlBhdGllbnQiIH0KICAgIH0sCiAgICB7CiAgICAgICJmdWxsVXJsIjogInVybjp1dWlkOjljMmQxYjZlLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJyZXNvdXJjZSI6IHsKICAgICAgICAicmVzb3VyY2VUeXBlIjogIk9ic2VydmF0aW9uIiwKICAgICAgICAic3RhdHVzIjogImZpbmFsIiwKICAgICAgICAiY29kZSI6IHsgImNvZGluZyI6IFt7ICJzeXN0ZW0iOiAiaHR0cDovL2xvaW5jLm9yZyIsICJjb2RlIjogIjg4NjctNCIgfV0gfSwKICAgICAgICAic3ViamVjdCI6IHsgInJlZmVyZW5jZSI6ICJ1cm46dXVpZDo5YzJkMWI2ZS0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDEiIH0sCiAgICAgICAgInZhbHVlUXVhbnRpdHkiOiB7ICJ2YWx1ZSI6IDcyLCAidW5pdCI6ICJiZWF0cy9taW51dGUiIH0KICAgICAgfSwKICAgICAgInJlcXVlc3QiOiB7ICJtZXRob2QiOiAiUE9TVCIsICJ1cmwiOiAiT2JzZXJ2YXRpb24iIH0KICAgIH0KICBdCn0KYGBgCgpUaGUgc2VydmVyIHJlcGxhY2VzIHRoZSBwbGFjZWhvbGRlciBVVUlEcyB3aXRoIHRoZSByZWFsIGFzc2lnbmVkIGlkcyBhbmQgcmV3cml0ZXMgdGhlIHJlZmVyZW5jZXMuIENvbmRpdGlvbmFsIGNyZWF0ZXMgdXNlIGBpZk5vbmVFeGlzdGAgd2l0aCBhIHNlYXJjaCBzdHJpbmcg4oCUIGBQT1NUIFBhdGllbnRgIHdpdGggYGlmTm9uZUV4aXN0OiBpZGVudGlmaWVyPWh0dHA6Ly9leGFtcGxlLWhvc3BpdGFsLm9yZy9tcm58TVJOLTEwMDIzNGAgY3JlYXRlcyB0aGUgcGF0aWVudCBvbmx5IGlmIG5vIHBhdGllbnQgd2l0aCB0aGF0IGlkZW50aWZpZXIgZXhpc3RzLCBwcmV2ZW50aW5nIGR1cGxpY2F0ZXMgd2hlbiBhIHRyYW5zYWN0aW9uIGlzIHJldHJpZWQuCgojIyBSdWxlcyBhbmQgTGltaXRzCgpXaXRoaW4gYSB0cmFuc2FjdGlvbiwgZW50cmllcyBhcmUgcHJvY2Vzc2VkIGluIG9yZGVyIGFuZCB0aGUgYnVuZGxlIGVpdGhlciBmdWxseSBzdWNjZWVkcyBvciBmdWxseSBmYWlscyB3aXRoIGFuIGBPcGVyYXRpb25PdXRjb21lYC4gU2VydmVycyBtYXkgaW1wb3NlIHNpemUgbGltaXRzIG9uIGJ1bmRsZXMsIGFuZCByZWZlcmVuY2VzIGJldHdlZW4gZW50cmllcyBtdXN0IHJlc29sdmUgZWl0aGVyIHRvIGFub3RoZXIgZW50cnkncyBgZnVsbFVybGAgb3IgdG8gYSByZXNvdXJjZSB0aGF0IGFscmVhZHkgZXhpc3RzIG9uIHRoZSBzZXJ2ZXIuIFRyYW5zYWN0aW9ucyBhcmUgcG9zdGVkIHRvIHRoZSBzZXJ2ZXIncyBiYXNlIFVSTCAoYFBPU1QgL2ApLCBub3QgdG8gYSBgL0J1bmRsZWAgZW5kcG9pbnQuCg==
+# Bundles and Transactions
+
+## What a Bundle Is
+
+The `Bundle` resource is a container: a single FHIR resource whose `entry` list holds other resources. Bundles do not have clinical meaning of their own; they are how FHIR packages collections for transport — the result of a search, a document, a message, or a group of changes that must be applied together. Every entry has a `fullUrl` (a URI identifying the resource within the bundle) and a `resource`.
+
+## Bundle Types
+
+The `type` element declares how the bundle should be interpreted:
+
+- **`searchset`** — the result of a search or read-history operation. Each entry holds one matching resource, and entries may also include resources pulled in by `_include` (marked with `search.mode` of `include`) and an `OperationOutcome` entry (`search.mode` of `outcome`) carrying warnings. The bundle's `total` element gives the full count of matches, which can exceed the number of entries on one page; `link` elements with relations `self`, `next`, `previous`, `first`, and `last` support paging.
+- **`transaction`** — a set of creates, updates, and deletes that the server must process as a single atomic unit: either everything succeeds or everything is rolled back. Each entry carries a `request` element with the HTTP `method` (`POST`, `PUT`, `PATCH`, `DELETE`), the `url` (for example `Patient` or `Patient/123`), and optional `ifNoneExist` or `ifMatch` conditional headers. The server responds with a `transaction-response` bundle whose entries carry status codes per request.
+- **`batch`** — like a transaction, but each entry is processed independently: some may succeed and others fail, and the response is a `batch-response` bundle with per-entry results. Use batch when atomicity is not required and partial success is acceptable.
+- **`document`** — an attested, immutable collection (a clinical document) whose first entry is a `Composition` resource that organizes the rest.
+- **`message`** — a bundle sent as a message, whose first entry is a `MessageHeader` defining the event and sender.
+- **`history`** — a list of versions of resources, as returned by a history operation.
+- **`collection`** — a bundle assembled for a purpose other than the above, with no processing rules attached.
+
+## Transaction Details
+
+Transactions are how clients create interdependent resources in one round trip — for example, a Patient together with three Observations that reference it. Because the server has not yet assigned ids at the time the bundle is authored, entries reference each other using **temporary UUIDs** in `fullUrl`:
+
+```json
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:9c2d1b6e-0000-4000-8000-000000000001",
+      "resource": { "resourceType": "Patient", "name": [{ "family": "Example", "given": ["Jane"] }] },
+      "request": { "method": "POST", "url": "Patient" }
+    },
+    {
+      "fullUrl": "urn:uuid:9c2d1b6e-0000-4000-8000-000000000002",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [{ "system": "http://loinc.org", "code": "8867-4" }] },
+        "subject": { "reference": "urn:uuid:9c2d1b6e-0000-4000-8000-000000000001" },
+        "valueQuantity": { "value": 72, "unit": "beats/minute" }
+      },
+      "request": { "method": "POST", "url": "Observation" }
+    }
+  ]
+}
+```
+
+The server replaces the placeholder UUIDs with the real assigned ids and rewrites the references. Conditional creates use `ifNoneExist` with a search string — `POST Patient` with `ifNoneExist: identifier=http://example-hospital.org/mrn|MRN-100234` creates the patient only if no patient with that identifier exists, preventing duplicates when a transaction is retried.
+
+## Rules and Limits
+
+Within a transaction, entries are processed in order and the bundle either fully succeeds or fully fails with an `OperationOutcome`. Servers may impose size limits on bundles, and references between entries must resolve either to another entry's `fullUrl` or to a resource that already exists on the server. Transactions are posted to the server's base URL (`POST /`), not to a `/Bundle` endpoint.
