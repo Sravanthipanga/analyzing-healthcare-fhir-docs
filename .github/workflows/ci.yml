@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: Build index
+        run: python scripts/build_index.py
+
+      # The CI gate: the golden-set evaluation must clear every threshold
+      # in eval/thresholds.json or the build fails.
+      - name: Evaluation gate
+        run: python eval/run_eval.py
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: eval/report.json
