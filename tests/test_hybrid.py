@@ -1,1 +1,26 @@
-aW1wb3J0IG1hdGgKCmZyb20gYXNrZmhpci5oeWJyaWQgaW1wb3J0IHJlY2lwcm9jYWxfcmFua19mdXNpb24KCgpkZWYgdGVzdF9ycmZfbWF0aCgpOgogICAgIyBjaHVuayAxIGlzIHJhbmsyIGluIGxpc3QgQSBhbmQgcmFuazEgaW4gbGlzdCBCCiAgICBmdXNlZCA9IGRpY3QocmVjaXByb2NhbF9yYW5rX2Z1c2lvbihbWzAsIDEsIDJdLCBbMiwgMV1dLCBrPTYwKSkKICAgIGFzc2VydCBtYXRoLmlzY2xvc2UoZnVzZWRbMV0sIDEgLyA2MiArIDEgLyA2MiwgcmVsX3RvbD0xZS05KQogICAgYXNzZXJ0IG1hdGguaXNjbG9zZShmdXNlZFswXSwgMSAvIDYxLCByZWxfdG9sPTFlLTkpCiAgICBhc3NlcnQgbWF0aC5pc2Nsb3NlKGZ1c2VkWzJdLCAxIC8gNjMgKyAxIC8gNjEsIHJlbF90b2w9MWUtOSkKCgpkZWYgdGVzdF9ycmZfYWdyZWVtZW50X3dpbnNfYW5kX3RvcG4oKToKICAgIGZ1c2VkID0gcmVjaXByb2NhbF9yYW5rX2Z1c2lvbihbWzUsIDYsIDddLCBbNiwgNSwgOF1dLCBrPTYwLCB0b3Bfbj0yKQogICAgcG9zaXRpb25zID0gW3AgZm9yIHAsIF8gaW4gZnVzZWRdCiAgICBhc3NlcnQgc2V0KHBvc2l0aW9ucykgPT0gezUsIDZ9ICAjIGJvdGggbGlzdHMgYWdyZWUgb24gNSBhbmQgNgogICAgYXNzZXJ0IGxlbihmdXNlZCkgPT0gMgoKCmRlZiB0ZXN0X3JyZl9kZXRlcm1pbmlzdGljX3RpZXMoKToKICAgIGEgPSByZWNpcHJvY2FsX3JhbmtfZnVzaW9uKFtbMCwgMV0sIFsxLCAwXV0sIGs9NjApCiAgICBiID0gcmVjaXByb2NhbF9yYW5rX2Z1c2lvbihbWzAsIDFdLCBbMSwgMF1dLCBrPTYwKQogICAgYXNzZXJ0IGEgPT0gYgogICAgIyBlcXVhbCBzY29yZXMgLT4gbG93ZXIgcG9zaXRpb24gZmlyc3QKICAgIGFzc2VydCBhWzBdWzBdID09IDAK
+import math
+
+from askfhir.hybrid import reciprocal_rank_fusion
+
+
+def test_rrf_math():
+    # chunk 1 is rank2 in list A and rank1 in list B
+    fused = dict(reciprocal_rank_fusion([[0, 1, 2], [2, 1]], k=60))
+    assert math.isclose(fused[1], 1 / 62 + 1 / 62, rel_tol=1e-9)
+    assert math.isclose(fused[0], 1 / 61, rel_tol=1e-9)
+    assert math.isclose(fused[2], 1 / 63 + 1 / 61, rel_tol=1e-9)
+
+
+def test_rrf_agreement_wins_and_topn():
+    fused = reciprocal_rank_fusion([[5, 6, 7], [6, 5, 8]], k=60, top_n=2)
+    positions = [p for p, _ in fused]
+    assert set(positions) == {5, 6}  # both lists agree on 5 and 6
+    assert len(fused) == 2
+
+
+def test_rrf_deterministic_ties():
+    a = reciprocal_rank_fusion([[0, 1], [1, 0]], k=60)
+    b = reciprocal_rank_fusion([[0, 1], [1, 0]], k=60)
+    assert a == b
+    # equal scores -> lower position first
+    assert a[0][0] == 0
