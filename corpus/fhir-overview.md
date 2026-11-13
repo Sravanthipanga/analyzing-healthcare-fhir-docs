@@ -1,1 +1,56 @@
-IyBGSElSIE92ZXJ2aWV3CgojIyBXaGF0IEZISVIgSXMKCkZISVIgKEZhc3QgSGVhbHRoY2FyZSBJbnRlcm9wZXJhYmlsaXR5IFJlc291cmNlcykgaXMgYSBzdGFuZGFyZCBjcmVhdGVkIGJ5IEhMNyBmb3IgZXhjaGFuZ2luZyBoZWFsdGhjYXJlIGluZm9ybWF0aW9uIGVsZWN0cm9uaWNhbGx5LiBJdCB3YXMgZGVzaWduZWQgdG8gY29tYmluZSB0aGUgYmVzdCBmZWF0dXJlcyBvZiBITDcgVmVyc2lvbiAyIGFuZCBITDcgQ0RBIHdpdGggbW9kZXJuIHdlYiB0ZWNobm9sb2d5OiBGSElSIGRhdGEgaXMgZXhjaGFuZ2VkIG92ZXIgYSBSRVNUZnVsIEFQSSB1c2luZyBKU09OIG9yIFhNTCwgd2hpY2ggbWFrZXMgaXQgZmFyIGVhc2llciBmb3Igd2ViIGFuZCBtb2JpbGUgZGV2ZWxvcGVycyB0byB3b3JrIHdpdGggdGhhbiBvbGRlciBoZWFsdGhjYXJlIHN0YW5kYXJkcy4KCiMjIFJlc291cmNlcwoKVGhlIGJhc2ljIGJ1aWxkaW5nIGJsb2NrIG9mIEZISVIgaXMgdGhlICoqcmVzb3VyY2UqKi4gQSByZXNvdXJjZSBpcyBhIHNtYWxsLCBzZWxmLWNvbnRhaW5lZCB1bml0IG9mIGhlYWx0aGNhcmUgaW5mb3JtYXRpb24gd2l0aCBhIHdlbGwtZGVmaW5lZCBzdHJ1Y3R1cmUsIHN1Y2ggYXMgYSBgUGF0aWVudGAsIGFuIGBPYnNlcnZhdGlvbmAgKGEgbGFiIHJlc3VsdCBvciB2aXRhbCBzaWduKSwgYW4gYEVuY291bnRlcmAgKGEgdmlzaXQpLCBhIGBDb25kaXRpb25gIChhIGRpYWdub3NpcyBvciBwcm9ibGVtKSwgb3IgYSBgTWVkaWNhdGlvblJlcXVlc3RgIChhIHByZXNjcmlwdGlvbikuIEZISVIgUjQgZGVmaW5lcyBtb3JlIHRoYW4gMTQwIHJlc291cmNlIHR5cGVzLCBidXQgYSBzbWFsbCBjb3JlIHNldCBjb3ZlcnMgdGhlIG1ham9yaXR5IG9mIHJlYWwtd29ybGQgdXNlIGNhc2VzLgoKRXZlcnkgcmVzb3VyY2UgaGFzOgoKLSBBIHVuaXF1ZSBgaWRgIGFzc2lnbmVkIGJ5IHRoZSBzZXJ2ZXIgdGhhdCBzdG9yZXMgaXQuCi0gQSBgbWV0YWAgc2VjdGlvbiBjYXJyeWluZyBtZXRhZGF0YSBzdWNoIGFzIGB2ZXJzaW9uSWRgLCBgbGFzdFVwZGF0ZWRgLCBhbmQgdGhlIHByb2ZpbGVzIHRoZSByZXNvdXJjZSBjb25mb3JtcyB0by4KLSBBIGh1bWFuLXJlYWRhYmxlIGB0ZXh0YCBuYXJyYXRpdmUgd2l0aCBhIHN1bW1hcnkgb2YgdGhlIHJlc291cmNlJ3MgY29udGVudC4KLSBTdHJ1Y3R1cmVkIGRhdGEgZWxlbWVudHMsIG1hbnkgb2Ygd2hpY2ggYXJlIHNoYXJlZCAqKmRhdGEgdHlwZXMqKiBzdWNoIGFzIGBIdW1hbk5hbWVgLCBgSWRlbnRpZmllcmAsIGBBZGRyZXNzYCwgYENvZGVhYmxlQ29uY2VwdGAsIGFuZCBgUmVmZXJlbmNlYC4KLSBBbiBgcmVzb3VyY2VUeXBlYCBmaWVsZCBuYW1pbmcgdGhlIHR5cGUsIGZvciBleGFtcGxlIGAicmVzb3VyY2VUeXBlIjogIlBhdGllbnQiYC4KClJlc291cmNlcyBsaW5rIHRvIGVhY2ggb3RoZXIgdXNpbmcgKipyZWZlcmVuY2VzKiouIEEgYE1lZGljYXRpb25SZXF1ZXN0YCwgZm9yIGV4YW1wbGUsIHBvaW50cyB0byBpdHMgc3ViamVjdCB3aXRoIGAic3ViamVjdCI6IHsicmVmZXJlbmNlIjogIlBhdGllbnQvMTIzIn1gLiBUaGlzIHNpbXBsZSwgVVJMLWJhc2VkIGxpbmtpbmcgbW9kZWwgbWlycm9ycyBob3cgdGhlIHdlYiBpdHNlbGYgd29ya3MuCgojIyBUaGUgUkVTVGZ1bCBBUEkKCkZISVIgc2VydmVycyBleHBvc2UgcmVzb3VyY2VzIHRocm91Z2ggYSBSRVNUZnVsIEFQSSBidWlsdCBvbiBzdGFuZGFyZCBIVFRQIG9wZXJhdGlvbnM6CgotIGBHRVQgL1BhdGllbnQvMTIzYCByZWFkcyBhIHNpbmdsZSByZXNvdXJjZSBieSBpZC4KLSBgUE9TVCAvUGF0aWVudGAgY3JlYXRlcyBhIG5ldyByZXNvdXJjZS4KLSBgUFVUIC9QYXRpZW50LzEyM2AgdXBkYXRlcyBhIHJlc291cmNlIChvciBjcmVhdGVzIGl0IHdpdGggYSBrbm93biBpZCkuCi0gYFBBVENIIC9QYXRpZW50LzEyM2AgYXBwbGllcyBhIHBhcnRpYWwgdXBkYXRlLgotIGBERUxFVEUgL1BhdGllbnQvMTIzYCByZW1vdmVzIGEgcmVzb3VyY2UuCi0gYEdFVCAvUGF0aWVudD9uYW1lPUV4YW1wbGVgIHNlYXJjaGVzIGZvciByZXNvdXJjZXMgbWF0Y2hpbmcgY3JpdGVyaWEuCgpTZWFyY2ggaXMgYSBmaXJzdC1jbGFzcyBwYXJ0IG9mIHRoZSBzcGVjaWZpY2F0aW9uOiBldmVyeSByZXNvdXJjZSB0eXBlIGRlZmluZXMgc3RhbmRhcmQgKipzZWFyY2ggcGFyYW1ldGVycyoqIHN1Y2ggYXMgYG5hbWVgLCBgYmlydGhkYXRlYCwgYW5kIGBpZGVudGlmaWVyYCBmb3IgYFBhdGllbnRgLiBTdWNjZXNzZnVsIHJlYWRzIHJldHVybiBIVFRQIDIwMCB3aXRoIHRoZSByZXNvdXJjZSBhcyBKU09OOyBjcmVhdGVzIHJldHVybiAyMDEgd2l0aCBhIGBMb2NhdGlvbmAgaGVhZGVyLiBXaGVuIGFuIG9wZXJhdGlvbiBmYWlscywgdGhlIHNlcnZlciByZXR1cm5zIGFuIGBPcGVyYXRpb25PdXRjb21lYCByZXNvdXJjZSBkZXNjcmliaW5nIGVycm9ycywgd2FybmluZ3MsIGFuZCBpbmZvcm1hdGlvbmFsIG1lc3NhZ2VzLgoKIyMgRm9ybWF0czogSlNPTiBhbmQgWE1MCgpGSElSIHJlc291cmNlcyBjYW4gYmUgcmVwcmVzZW50ZWQgaW4gYm90aCBKU09OIGFuZCBYTUwsIGFuZCB0aGUgdHdvIHJlcHJlc2VudGF0aW9ucyBhcmUgZnVsbHkgZXF1aXZhbGVudC4gSlNPTiBpcyBieSBmYXIgdGhlIG1vc3QgY29tbW9uIGluIG1vZGVybiBpbnRlZ3JhdGlvbnMuIEEgbWluaW1hbCBQYXRpZW50IGluIEpTT04gbG9va3MgbGlrZToKCmBgYGpzb24KewogICJyZXNvdXJjZVR5cGUiOiAiUGF0aWVudCIsCiAgImlkIjogImV4YW1wbGUiLAogICJuYW1lIjogW3sgImZhbWlseSI6ICJFeGFtcGxlIiwgImdpdmVuIjogWyJKYW5lIl0gfV0sCiAgImdlbmRlciI6ICJmZW1hbGUiLAogICJiaXJ0aERhdGUiOiAiMTk4NS0wNC0xMiIKfQpgYGAKCkNsaWVudHMgbmVnb3RpYXRlIHRoZSBmb3JtYXQgd2l0aCB0aGUgYEFjY2VwdGAgaGVhZGVyLCB1c2luZyB0aGUgbWVkaWEgdHlwZXMgYGFwcGxpY2F0aW9uL2ZoaXIranNvbmAgb3IgYGFwcGxpY2F0aW9uL2ZoaXIreG1sYC4KCiMjIFZlcnNpb25zOiBSNCBhbmQgUjUKCkZISVIgaGFzIGJlZW4gcHVibGlzaGVkIGluIHNldmVyYWwgdmVyc2lvbnMuICoqUjQqKiAocHVibGlzaGVkIGluIDIwMTkpIGlzIHRoZSBmaXJzdCB2ZXJzaW9uIHdpdGggbm9ybWF0aXZlIGNvbnRlbnQg4oCUIHBhcnRzIG9mIHRoZSBzcGVjaWZpY2F0aW9uIHRoYXQgSEw3IGd1YXJhbnRlZXMgd2lsbCBub3QgY2hhbmdlIGluY29tcGF0aWJseSDigJQgYW5kIGl0IGlzIHRoZSB2ZXJzaW9uIG1vc3Qgd2lkZWx5IGltcGxlbWVudGVkIGluIHByb2R1Y3Rpb24gc3lzdGVtcyBhbmQgcmVxdWlyZWQgYnkgcmVndWxhdGlvbnMgc3VjaCBhcyB0aGUgVVMgT05DIEN1cmVzIEFjdCBydWxlcy4gKipSNSoqIChwdWJsaXNoZWQgaW4gMjAyMykgYWRkcyBuZXcgcmVzb3VyY2VzIGFuZCByZWZpbmVtZW50cyBidXQga2VlcHMgbW9zdCBSNCBwYXR0ZXJucyBpbnRhY3QuIEJlY2F1c2UgaW1wbGVtZW50YXRpb25zIG1vdmUgc2xvd2x5IGluIGhlYWx0aGNhcmUsIG5ldyBwcm9qZWN0cyBvdmVyd2hlbG1pbmdseSB0YXJnZXQgUjQgdW5sZXNzIHRoZXkgaGF2ZSBhIHNwZWNpZmljIG5lZWQgZm9yIGFuIFI1IGZlYXR1cmUuIFJlc291cmNlcyB3cml0dGVuIGFnYWluc3QgZGlmZmVyZW50IEZISVIgdmVyc2lvbnMgYXJlIG5vdCBhdXRvbWF0aWNhbGx5IGludGVyb3BlcmFibGU7IHNlcnZlcnMgYWR2ZXJ0aXNlIHRoZWlyIHZlcnNpb24gYW5kIGNhcGFiaWxpdGllcyBpbiBhIGBDYXBhYmlsaXR5U3RhdGVtZW50YCByZXNvdXJjZSBzZXJ2ZWQgZnJvbSB0aGUgYC9tZXRhZGF0YWAgZW5kcG9pbnQuCgojIyBDYXBhYmlsaXR5IFN0YXRlbWVudAoKRXZlcnkgRkhJUiBzZXJ2ZXIgcHVibGlzaGVzIGEgYENhcGFiaWxpdHlTdGF0ZW1lbnRgIGF0IGBHRVQgL21ldGFkYXRhYC4gSXQgZGVjbGFyZXMgd2hpY2ggcmVzb3VyY2UgdHlwZXMgdGhlIHNlcnZlciBzdXBwb3J0cywgd2hpY2ggc2VhcmNoIHBhcmFtZXRlcnMgYXJlIGltcGxlbWVudGVkLCB3aGljaCBpbnRlcmFjdGlvbnMgKHJlYWQsIHNlYXJjaCwgY3JlYXRlLCB1cGRhdGUsIGFuZCBzbyBvbikgYXJlIGF2YWlsYWJsZSwgYW5kIHRoZSBGSElSIHZlcnNpb24gaW4gdXNlLiBDbGllbnQgYXBwbGljYXRpb25zIHNob3VsZCByZWFkIHRoaXMgc3RhdGVtZW50IHJhdGhlciB0aGFuIGFzc3VtaW5nIGZ1bGwgc3BlY2lmaWNhdGlvbiBzdXBwb3J0LCBiZWNhdXNlIHJlYWwgc2VydmVycyBpbXBsZW1lbnQgZGlmZmVyZW50IHN1YnNldHMgb2YgRkhJUi4K
+# FHIR Overview
+
+## What FHIR Is
+
+FHIR (Fast Healthcare Interoperability Resources) is a standard created by HL7 for exchanging healthcare information electronically. It was designed to combine the best features of HL7 Version 2 and HL7 CDA with modern web technology: FHIR data is exchanged over a RESTful API using JSON or XML, which makes it far easier for web and mobile developers to work with than older healthcare standards.
+
+## Resources
+
+The basic building block of FHIR is the **resource**. A resource is a small, self-contained unit of healthcare information with a well-defined structure, such as a `Patient`, an `Observation` (a lab result or vital sign), an `Encounter` (a visit), a `Condition` (a diagnosis or problem), or a `MedicationRequest` (a prescription). FHIR R4 defines more than 140 resource types, but a small core set covers the majority of real-world use cases.
+
+Every resource has:
+
+- A unique `id` assigned by the server that stores it.
+- A `meta` section carrying metadata such as `versionId`, `lastUpdated`, and the profiles the resource conforms to.
+- A human-readable `text` narrative with a summary of the resource's content.
+- Structured data elements, many of which are shared **data types** such as `HumanName`, `Identifier`, `Address`, `CodeableConcept`, and `Reference`.
+- An `resourceType` field naming the type, for example `"resourceType": "Patient"`.
+
+Resources link to each other using **references**. A `MedicationRequest`, for example, points to its subject with `"subject": {"reference": "Patient/123"}`. This simple, URL-based linking model mirrors how the web itself works.
+
+## The RESTful API
+
+FHIR servers expose resources through a RESTful API built on standard HTTP operations:
+
+- `GET /Patient/123` reads a single resource by id.
+- `POST /Patient` creates a new resource.
+- `PUT /Patient/123` updates a resource (or creates it with a known id).
+- `PATCH /Patient/123` applies a partial update.
+- `DELETE /Patient/123` removes a resource.
+- `GET /Patient?name=Example` searches for resources matching criteria.
+
+Search is a first-class part of the specification: every resource type defines standard **search parameters** such as `name`, `birthdate`, and `identifier` for `Patient`. Successful reads return HTTP 200 with the resource as JSON; creates return 201 with a `Location` header. When an operation fails, the server returns an `OperationOutcome` resource describing errors, warnings, and informational messages.
+
+## Formats: JSON and XML
+
+FHIR resources can be represented in both JSON and XML, and the two representations are fully equivalent. JSON is by far the most common in modern integrations. A minimal Patient in JSON looks like:
+
+```json
+{
+  "resourceType": "Patient",
+  "id": "example",
+  "name": [{ "family": "Example", "given": ["Jane"] }],
+  "gender": "female",
+  "birthDate": "1985-04-12"
+}
+```
+
+Clients negotiate the format with the `Accept` header, using the media types `application/fhir+json` or `application/fhir+xml`.
+
+## Versions: R4 and R5
+
+FHIR has been published in several versions. **R4** (published in 2019) is the first version with normative content — parts of the specification that HL7 guarantees will not change incompatibly — and it is the version most widely implemented in production systems and required by regulations such as the US ONC Cures Act rules. **R5** (published in 2023) adds new resources and refinements but keeps most R4 patterns intact. Because implementations move slowly in healthcare, new projects overwhelmingly target R4 unless they have a specific need for an R5 feature. Resources written against different FHIR versions are not automatically interoperable; servers advertise their version and capabilities in a `CapabilityStatement` resource served from the `/metadata` endpoint.
+
+## Capability Statement
+
+Every FHIR server publishes a `CapabilityStatement` at `GET /metadata`. It declares which resource types the server supports, which search parameters are implemented, which interactions (read, search, create, update, and so on) are available, and the FHIR version in use. Client applications should read this statement rather than assuming full specification support, because real servers implement different subsets of FHIR.
