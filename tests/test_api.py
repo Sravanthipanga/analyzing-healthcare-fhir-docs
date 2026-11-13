@@ -1,1 +1,61 @@
-aW1wb3J0IGpzb24KZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpmcm9tIGZhc3RhcGkudGVzdGNsaWVudCBpbXBvcnQgVGVzdENsaWVudAoKZnJvbSBhc2tmaGlyLmFwaSBpbXBvcnQgY3JlYXRlX2FwcApmcm9tIGFza2ZoaXIuY2h1bmtpbmcgaW1wb3J0IGxvYWRfY29ycHVzCmZyb20gYXNrZmhpci5lbWJlZGRpbmdzIGltcG9ydCBGYWtlRW1iZWRkZXIKZnJvbSBhc2tmaGlyLnJlcmFua2VyIGltcG9ydCBGYWtlUmVyYW5rZXIKZnJvbSBhc2tmaGlyLnNlcnZpY2UgaW1wb3J0IEFza0ZISVJTZXJ2aWNlCgpmcm9tIGNvbmZ0ZXN0IGltcG9ydCBCQVNFLCBDT1JQVVNfRElSCgoKZGVmIF9jbGllbnQoKSAtPiBUZXN0Q2xpZW50OgogICAgY2h1bmtzID0gbG9hZF9jb3JwdXMoQ09SUFVTX0RJUikKICAgIGVtYmVkZGVyID0gRmFrZUVtYmVkZGVyKCkKICAgIGVtYiA9IGVtYmVkZGVyLmVtYmVkKFtjLmluZGV4X3RleHQoKSBmb3IgYyBpbiBjaHVua3NdKQogICAgc3ZjID0gQXNrRkhJUlNlcnZpY2UoY2h1bmtzLCBlbWIsIGVtYmVkZGVyLCBGYWtlUmVyYW5rZXIoKSwgZmFrZV9tb2RlbHM9VHJ1ZSkKICAgIHJldHVybiBUZXN0Q2xpZW50KGNyZWF0ZV9hcHAoc2VydmljZT1zdmMpKQoKCmRlZiB0ZXN0X2hlYWx0aHooKToKICAgIGFzc2VydCBfY2xpZW50KCkuZ2V0KCIvaGVhbHRoeiIpLmpzb24oKSA9PSB7InN0YXR1cyI6ICJvayJ9CgoKZGVmIHRlc3RfZG9jc19saXN0c19jb3JwdXMoKToKICAgIGRvY3MgPSBfY2xpZW50KCkuZ2V0KCIvZG9jcyIpLmpzb24oKQogICAgYXNzZXJ0IGxlbihkb2NzKSA9PSAxMgogICAgYXNzZXJ0IGFsbChkWyJjaHVua3MiXSA+IDAgZm9yIGQgaW4gZG9jcykKCgpkZWYgdGVzdF9hc2tfc2hhcGUoKToKICAgIHJlc3AgPSBfY2xpZW50KCkucG9zdCgKICAgICAgICAiL2FzayIsIGpzb249eyJxdWVzdGlvbiI6ICJXaGF0IGlzIGEgdHJhbnNhY3Rpb24gQnVuZGxlIGluIEZISVI/In0KICAgICkKICAgIGFzc2VydCByZXNwLnN0YXR1c19jb2RlID09IDIwMAogICAgZGF0YSA9IHJlc3AuanNvbigpCiAgICBhc3NlcnQgc2V0KGRhdGEpID49IHsicXVlc3Rpb24iLCAiYW5zd2VyIiwgImFic3RhaW5lZCIsICJjaXRhdGlvbnMiLCAic291cmNlcyJ9CiAgICBhc3NlcnQgaXNpbnN0YW5jZShkYXRhWyJhYnN0YWluZWQiXSwgYm9vbCkKICAgIGFzc2VydCBpc2luc3RhbmNlKGRhdGFbImNpdGF0aW9ucyJdLCBsaXN0KQoKCmRlZiB0ZXN0X2luZGV4X3BhZ2Vfc2VydmVkKCk6CiAgICByZXNwID0gX2NsaWVudCgpLmdldCgiLyIpCiAgICBhc3NlcnQgcmVzcC5zdGF0dXNfY29kZSA9PSAyMDAKICAgIGFzc2VydCAiQXNrRkhJUiIgaW4gcmVzcC50ZXh0CgoKZGVmIHRlc3RfZ29sZGVuX3NldF9zYW5pdHkoKToKICAgIGdvbGRlbl9wYXRoID0gQkFTRSAvICJldmFsIiAvICJnb2xkZW4uanNvbmwiCiAgICBlbnRyaWVzID0gW2pzb24ubG9hZHMobGluZSkgZm9yIGxpbmUgaW4gZ29sZGVuX3BhdGgucmVhZF90ZXh0KCkuc3BsaXRsaW5lcygpIGlmIGxpbmUuc3RyaXAoKV0KICAgIGFzc2VydCBsZW4oZW50cmllcykgPj0gMjUKICAgIGNvcnB1c19kb2NzID0ge3Auc3RlbSBmb3IgcCBpbiBQYXRoKENPUlBVU19ESVIpLmdsb2IoIioubWQiKX0KICAgIGNhdGVnb3JpZXMgPSBzZXQoKQogICAgZm9yIGUgaW4gZW50cmllczoKICAgICAgICBjYXRlZ29yaWVzLmFkZChlWyJjYXRlZ29yeSJdKQogICAgICAgIGFzc2VydCBzZXQoZVsiZXhwZWN0ZWRfZG9jX2lkcyJdKSA8PSBjb3JwdXNfZG9jcywgZQogICAgICAgIGlmIGVbImNhdGVnb3J5Il0gPT0gInVuYW5zd2VyYWJsZSI6CiAgICAgICAgICAgIGFzc2VydCBlWyJleHBlY3RlZF9kb2NfaWRzIl0gPT0gW10KICAgIGFzc2VydCB7ImZhY3R1YWwiLCAidGVybWlub2xvZ3kiLCAiY29tcGFyaXNvbiIsICJ1bmFuc3dlcmFibGUifSA8PSBjYXRlZ29yaWVzCg==
+import json
+from pathlib import Path
+
+from fastapi.testclient import TestClient
+
+from askfhir.api import create_app
+from askfhir.chunking import load_corpus
+from askfhir.embeddings import FakeEmbedder
+from askfhir.reranker import FakeReranker
+from askfhir.service import AskFHIRService
+
+from conftest import BASE, CORPUS_DIR
+
+
+def _client() -> TestClient:
+    chunks = load_corpus(CORPUS_DIR)
+    embedder = FakeEmbedder()
+    emb = embedder.embed([c.index_text() for c in chunks])
+    svc = AskFHIRService(chunks, emb, embedder, FakeReranker(), fake_models=True)
+    return TestClient(create_app(service=svc))
+
+
+def test_healthz():
+    assert _client().get("/healthz").json() == {"status": "ok"}
+
+
+def test_docs_lists_corpus():
+    docs = _client().get("/docs").json()
+    assert len(docs) == 12
+    assert all(d["chunks"] > 0 for d in docs)
+
+
+def test_ask_shape():
+    resp = _client().post(
+        "/ask", json={"question": "What is a transaction Bundle in FHIR?"}
+    )
+    assert resp.status_code == 200
+    data = resp.json()
+    assert set(data) >= {"question", "answer", "abstained", "citations", "sources"}
+    assert isinstance(data["abstained"], bool)
+    assert isinstance(data["citations"], list)
+
+
+def test_index_page_served():
+    resp = _client().get("/")
+    assert resp.status_code == 200
+    assert "AskFHIR" in resp.text
+
+
+def test_golden_set_sanity():
+    golden_path = BASE / "eval" / "golden.jsonl"
+    entries = [json.loads(line) for line in golden_path.read_text().splitlines() if line.strip()]
+    assert len(entries) >= 25
+    corpus_docs = {p.stem for p in Path(CORPUS_DIR).glob("*.md")}
+    categories = set()
+    for e in entries:
+        categories.add(e["category"])
+        assert set(e["expected_doc_ids"]) <= corpus_docs, e
+        if e["category"] == "unanswerable":
+            assert e["expected_doc_ids"] == []
+    assert {"factual", "terminology", "comparison", "unanswerable"} <= categories
