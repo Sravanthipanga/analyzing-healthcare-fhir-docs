@@ -1,1 +1,56 @@
-IyBUaGUgUGF0aWVudCBSZXNvdXJjZQoKIyMgUHVycG9zZQoKVGhlIGBQYXRpZW50YCByZXNvdXJjZSByZXByZXNlbnRzIGEgcGVyc29uIHdobyByZWNlaXZlcyBoZWFsdGhjYXJlIHNlcnZpY2VzOiBkZW1vZ3JhcGhpY3MgYW5kIGFkbWluaXN0cmF0aXZlIGluZm9ybWF0aW9uIGFib3V0IGFuIGluZGl2aWR1YWwuIEl0IGRlbGliZXJhdGVseSBjb250YWlucyBubyBjbGluaWNhbCBkYXRhIOKAlCBkaWFnbm9zZXMgbGl2ZSBpbiBgQ29uZGl0aW9uYCwgbWVhc3VyZW1lbnRzIGluIGBPYnNlcnZhdGlvbmAg4oCUIGJlY2F1c2UgdGhlIFBhdGllbnQgcmVzb3VyY2UgaXMgdGhlIGRlbW9ncmFwaGljIGFuY2hvciB0aGF0IGFsbW9zdCBldmVyeSBvdGhlciByZXNvdXJjZSByZWZlcmVuY2VzIHRocm91Z2ggaXRzIGBzdWJqZWN0YCBvciBgcGF0aWVudGAgZWxlbWVudC4KCiMjIEtleSBFbGVtZW50cwoKLSAqKmBpZGAqKiDigJQgdGhlIHNlcnZlci1hc3NpZ25lZCBsb2dpY2FsIGlkIG9mIHRoZSByZXNvdXJjZSwgdW5pcXVlIHdpdGhpbiB0aGUgc2VydmVyJ3MgUGF0aWVudCBjb2xsZWN0aW9uLgotICoqYGlkZW50aWZpZXJgKiog4oCUIGlkZW50aWZpZXJzIHRoYXQgYmVsb25nIHRvIHRoZSBwYXRpZW50IGluIHRoZSByZWFsIHdvcmxkLCBhcyBvcHBvc2VkIHRvIHRoZSBzZXJ2ZXIgaWQuIEEgUGF0aWVudCB0eXBpY2FsbHkgaGFzIHNldmVyYWw6IGEgbWVkaWNhbCByZWNvcmQgbnVtYmVyIChNUk4pLCBhIG5hdGlvbmFsIGlkZW50aWZpZXIsIG9yIGFuIGluc3VyYW5jZSBtZW1iZXIgaWQuIEVhY2ggYElkZW50aWZpZXJgIGhhcyBhIGBzeXN0ZW1gIChhIFVSSSBuYW1pbmcgdGhlIGlzc3VpbmcgYXV0aG9yaXR5LCBzdWNoIGFzIGEgaG9zcGl0YWwncyBNUk4gbmFtZXNwYWNlKSwgYSBgdmFsdWVgLCBhbmQgb2Z0ZW4gYSBgdHlwZWAgY29kZS4gSWRlbnRpZmllcnMgYXJlIHRoZSBwcmltYXJ5IHdheSBzeXN0ZW1zIG1hdGNoIHBhdGllbnRzIGFjcm9zcyBvcmdhbml6YXRpb25zLgotICoqYGFjdGl2ZWAqKiDigJQgYSBib29sZWFuIGluZGljYXRpbmcgd2hldGhlciB0aGUgcGF0aWVudCByZWNvcmQgaXMgaW4gYWN0aXZlIHVzZTsgcmVjb3JkcyBjcmVhdGVkIGluIGVycm9yIGFyZSB1c3VhbGx5IG1hcmtlZCBpbmFjdGl2ZSByYXRoZXIgdGhhbiBkZWxldGVkLgotICoqYG5hbWVgKiog4oCUIGEgbGlzdCBvZiBgSHVtYW5OYW1lYCBlbGVtZW50cy4gRWFjaCBuYW1lIGhhcyBhIGB1c2VgIChgb2ZmaWNpYWxgLCBgdXN1YWxgLCBgbWFpZGVuYCwgYG5pY2tuYW1lYCksIGEgYGZhbWlseWAgbmFtZSwgYW5kIG9uZSBvciBtb3JlIGBnaXZlbmAgbmFtZXMuIFBhdGllbnRzIG1heSBoYXZlIHNldmVyYWwgbmFtZXMgb3ZlciB0aW1lLCBzbyB0aGUgcmVzb3VyY2Uga2VlcHMgYSBsaXN0IHJhdGhlciB0aGFuIGEgc2luZ2xlIHZhbHVlLgotICoqYGdlbmRlcmAqKiDigJQgdGhlIGFkbWluaXN0cmF0aXZlIGdlbmRlciwgY29kZWQgYG1hbGVgLCBgZmVtYWxlYCwgYG90aGVyYCwgb3IgYHVua25vd25gLiBUaGlzIGlzIGEgcmVxdWlyZWQgYmluZGluZyB0byBhIHNtYWxsIGZpeGVkIGNvZGUgc2V0LgotICoqYGJpcnRoRGF0ZWAqKiDigJQgdGhlIGRhdGUgb2YgYmlydGggYXMgYSBGSElSIGBkYXRlYC4gSXQgbWF5IGJlIHBhcnRpYWw6IGAxOTg1YCBvciBgMTk4NS0wNGAgYXJlIHZhbGlkIHdoZW4gdGhlIGZ1bGwgZGF0ZSBpcyB1bmtub3duLgotICoqYGRlY2Vhc2VkW3hdYCoqIOKAlCBlaXRoZXIgYSBib29sZWFuIChgZGVjZWFzZWRCb29sZWFuYCkgb3IgdGhlIGRhdGUgYW5kIHRpbWUgb2YgZGVhdGggKGBkZWNlYXNlZERhdGVUaW1lYCkuCi0gKipgYWRkcmVzc2AqKiDigJQgYSBsaXN0IG9mIGBBZGRyZXNzYCBlbGVtZW50cyB3aXRoIGB1c2VgIChzdWNoIGFzIGBob21lYCBvciBgd29ya2ApLCBgbGluZWAgKHN0cmVldCBsaW5lcyksIGBjaXR5YCwgYHN0YXRlYCwgYHBvc3RhbENvZGVgLCBhbmQgYGNvdW50cnlgLgotICoqYHRlbGVjb21gKiog4oCUIGNvbnRhY3QgcG9pbnRzIHN1Y2ggYXMgcGhvbmUgbnVtYmVycyBhbmQgZW1haWwgYWRkcmVzc2VzLCBlYWNoIGEgYENvbnRhY3RQb2ludGAgd2l0aCBgc3lzdGVtYCAoYHBob25lYCwgYGVtYWlsYCksIGB2YWx1ZWAsIGFuZCBgdXNlYC4KLSAqKmBjb21tdW5pY2F0aW9uYCoqIOKAlCB0aGUgcGF0aWVudCdzIHByZWZlcnJlZCBsYW5ndWFnZXMuIEVhY2ggZW50cnkgaGFzIGEgYGxhbmd1YWdlYCBhcyBhIGBDb2RlYWJsZUNvbmNlcHRgICh1c3VhbGx5IGNvZGVkIHdpdGggQkNQLTQ3IGxhbmd1YWdlIHRhZ3MsIGZvciBleGFtcGxlIGBlbmAgb3IgYGVzYCkgYW5kIGFuIG9wdGlvbmFsIGBwcmVmZXJyZWRgIGZsYWcuCi0gKipgbWFyaXRhbFN0YXR1c2AqKiDigJQgYSBgQ29kZWFibGVDb25jZXB0YCBzdWNoIGFzIG1hcnJpZWQsIGRpdm9yY2VkLCBvciB1bm1hcnJpZWQuCi0gKipgZ2VuZXJhbFByYWN0aXRpb25lcmAqKiDigJQgcmVmZXJlbmNlcyB0byB0aGUgcGF0aWVudCdzIHVzdWFsIGNhcmUgcHJvdmlkZXJzIChgUHJhY3RpdGlvbmVyYCBvciBgT3JnYW5pemF0aW9uYCByZXNvdXJjZXMpLgotICoqYGxpbmtgKiog4oCUIGxpbmtzIHRvIG90aGVyIFBhdGllbnQgcmVzb3VyY2VzIHRoYXQgcmVwcmVzZW50IHRoZSBzYW1lIHBlcnNvbiwgZm9yIGV4YW1wbGUgYSBkdXBsaWNhdGUgcmVjb3JkIChgdHlwZWAgYHJlcGxhY2VkLWJ5YCBvciBgc2VlYWxzb2ApLgoKIyMgRXhhbXBsZQoKYGBganNvbgp7CiAgInJlc291cmNlVHlwZSI6ICJQYXRpZW50IiwKICAiaWQiOiAiZXhhbXBsZSIsCiAgImlkZW50aWZpZXIiOiBbCiAgICB7ICJzeXN0ZW0iOiAiaHR0cDovL2V4YW1wbGUtaG9zcGl0YWwub3JnL21ybiIsICJ2YWx1ZSI6ICJNUk4tMTAwMjM0IiB9CiAgXSwKICAiYWN0aXZlIjogdHJ1ZSwKICAibmFtZSI6IFt7ICJ1c2UiOiAib2ZmaWNpYWwiLCAiZmFtaWx5IjogIkV4YW1wbGUiLCAiZ2l2ZW4iOiBbIkphbmUiXSB9XSwKICAiZ2VuZGVyIjogImZlbWFsZSIsCiAgImJpcnRoRGF0ZSI6ICIxOTg1LTA0LTEyIiwKICAiYWRkcmVzcyI6IFt7CiAgICAidXNlIjogImhvbWUiLAogICAgImxpbmUiOiBbIjEyMDAgRXhhbXBsZSBTdHJlZXQiXSwKICAgICJjaXR5IjogIlNwcmluZ2ZpZWxkIiwKICAgICJzdGF0ZSI6ICJJTCIsCiAgICAicG9zdGFsQ29kZSI6ICI2MjcwMSIsCiAgICAiY291bnRyeSI6ICJVUyIKICB9XSwKICAiY29tbXVuaWNhdGlvbiI6IFt7ICJsYW5ndWFnZSI6IHsgImNvZGluZyI6IFt7ICJzeXN0ZW0iOiAidXJuOmlldGY6YmNwOjQ3IiwgImNvZGUiOiAiZW4iIH1dIH0sICJwcmVmZXJyZWQiOiB0cnVlIH1dCn0KYGBgCgpOb3RlIHRoYXQgdGhpcyBpcyBlbnRpcmVseSBzeW50aGV0aWMgZGVtb25zdHJhdGlvbiBkYXRhOiAiSmFuZSBFeGFtcGxlIiBpcyBhIGZpY3Rpb25hbCBwZXJzb24uCgojIyBTZWFyY2hpbmcgZm9yIFBhdGllbnRzCgpUaGUgUGF0aWVudCByZXNvdXJjZSBkZWZpbmVzIHNlYXJjaCBwYXJhbWV0ZXJzIGluY2x1ZGluZyBgbmFtZWAsIGBmYW1pbHlgLCBgZ2l2ZW5gLCBgYmlydGhkYXRlYCwgYGdlbmRlcmAsIGBpZGVudGlmaWVyYCwgYGFkZHJlc3NgLCBhbmQgYHBob25lYC4gSWRlbnRpZmllciBzZWFyY2ggaXMgdG9rZW4tYmFzZWQ6IGBHRVQgL1BhdGllbnQ/aWRlbnRpZmllcj1odHRwOi8vZXhhbXBsZS1ob3NwaXRhbC5vcmcvbXJufE1STi0xMDAyMzRgIGZpbmRzIHRoZSBwYXRpZW50IGJ5IHN5c3RlbSBhbmQgdmFsdWUuIE5hbWUgc2VhcmNoIGlzIHN0cmluZy1iYXNlZCBhbmQgdHlwaWNhbGx5IGRvZXMgcHJlZml4IGFuZCBwaG9uZXRpYyBtYXRjaGluZyBkZXBlbmRpbmcgb24gdGhlIHNlcnZlci4KCiMjIENvbW1vbiBQaXRmYWxscwoKUGF0aWVudCBtYXRjaGluZyBpcyB0aGUgY2xhc3NpYyBpbnRlZ3JhdGlvbiBwcm9ibGVtOiB0aGUgc2FtZSBwZXJzb24gbWF5IGhhdmUgcmVjb3JkcyBpbiBtYW55IHN5c3RlbXMgd2l0aCBzbGlnaHRseSBkaWZmZXJlbnQgbmFtZXMgYW5kIGlkZW50aWZpZXJzLiBDb25zdW1lcnMgc2hvdWxkIG1hdGNoIG9uIHN0cm9uZyBpZGVudGlmaWVycyBmaXJzdCBhbmQgdHJlYXQgbmFtZS1hbmQtYmlydGhkYXRlIG1hdGNoaW5nIGFzIHByb2JhYmlsaXN0aWMuIENvbnN1bWVycyBtdXN0IGFsc28gaGFuZGxlIG1lcmdlZCByZWNvcmRzIOKAlCB3aGVuIHR3byBQYXRpZW50IHJlc291cmNlcyBhcmUgbWVyZ2VkLCBvbmUgaXMgbWFya2VkIGluYWN0aXZlIGFuZCBsaW5rZWQgdG8gdGhlIHN1cnZpdm9yIHdpdGggYGxpbmsudHlwZWAgb2YgYHJlcGxhY2VkLWJ5YC4K
+# The Patient Resource
+
+## Purpose
+
+The `Patient` resource represents a person who receives healthcare services: demographics and administrative information about an individual. It deliberately contains no clinical data — diagnoses live in `Condition`, measurements in `Observation` — because the Patient resource is the demographic anchor that almost every other resource references through its `subject` or `patient` element.
+
+## Key Elements
+
+- **`id`** — the server-assigned logical id of the resource, unique within the server's Patient collection.
+- **`identifier`** — identifiers that belong to the patient in the real world, as opposed to the server id. A Patient typically has several: a medical record number (MRN), a national identifier, or an insurance member id. Each `Identifier` has a `system` (a URI naming the issuing authority, such as a hospital's MRN namespace), a `value`, and often a `type` code. Identifiers are the primary way systems match patients across organizations.
+- **`active`** — a boolean indicating whether the patient record is in active use; records created in error are usually marked inactive rather than deleted.
+- **`name`** — a list of `HumanName` elements. Each name has a `use` (`official`, `usual`, `maiden`, `nickname`), a `family` name, and one or more `given` names. Patients may have several names over time, so the resource keeps a list rather than a single value.
+- **`gender`** — the administrative gender, coded `male`, `female`, `other`, or `unknown`. This is a required binding to a small fixed code set.
+- **`birthDate`** — the date of birth as a FHIR `date`. It may be partial: `1985` or `1985-04` are valid when the full date is unknown.
+- **`deceased[x]`** — either a boolean (`deceasedBoolean`) or the date and time of death (`deceasedDateTime`).
+- **`address`** — a list of `Address` elements with `use` (such as `home` or `work`), `line` (street lines), `city`, `state`, `postalCode`, and `country`.
+- **`telecom`** — contact points such as phone numbers and email addresses, each a `ContactPoint` with `system` (`phone`, `email`), `value`, and `use`.
+- **`communication`** — the patient's preferred languages. Each entry has a `language` as a `CodeableConcept` (usually coded with BCP-47 language tags, for example `en` or `es`) and an optional `preferred` flag.
+- **`maritalStatus`** — a `CodeableConcept` such as married, divorced, or unmarried.
+- **`generalPractitioner`** — references to the patient's usual care providers (`Practitioner` or `Organization` resources).
+- **`link`** — links to other Patient resources that represent the same person, for example a duplicate record (`type` `replaced-by` or `seealso`).
+
+## Example
+
+```json
+{
+  "resourceType": "Patient",
+  "id": "example",
+  "identifier": [
+    { "system": "http://example-hospital.org/mrn", "value": "MRN-100234" }
+  ],
+  "active": true,
+  "name": [{ "use": "official", "family": "Example", "given": ["Jane"] }],
+  "gender": "female",
+  "birthDate": "1985-04-12",
+  "address": [{
+    "use": "home",
+    "line": ["1200 Example Street"],
+    "city": "Springfield",
+    "state": "IL",
+    "postalCode": "62701",
+    "country": "US"
+  }],
+  "communication": [{ "language": { "coding": [{ "system": "urn:ietf:bcp:47", "code": "en" }] }, "preferred": true }]
+}
+```
+
+Note that this is entirely synthetic demonstration data: "Jane Example" is a fictional person.
+
+## Searching for Patients
+
+The Patient resource defines search parameters including `name`, `family`, `given`, `birthdate`, `gender`, `identifier`, `address`, and `phone`. Identifier search is token-based: `GET /Patient?identifier=http://example-hospital.org/mrn|MRN-100234` finds the patient by system and value. Name search is string-based and typically does prefix and phonetic matching depending on the server.
+
+## Common Pitfalls
+
+Patient matching is the classic integration problem: the same person may have records in many systems with slightly different names and identifiers. Consumers should match on strong identifiers first and treat name-and-birthdate matching as probabilistic. Consumers must also handle merged records — when two Patient resources are merged, one is marked inactive and linked to the survivor with `link.type` of `replaced-by`.
