@@ -1,1 +1,22 @@
-IiIiQk0yNSBrZXl3b3JkIGluZGV4IChyYW5rX2JtMjUgQk0yNU9rYXBpKSBvdmVyIGNodW5rIHRleHQuIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgpmcm9tIHJhbmtfYm0yNSBpbXBvcnQgQk0yNU9rYXBpCgpmcm9tIC5lbWJlZGRpbmdzIGltcG9ydCB0b2tlbml6ZQoKCmNsYXNzIEJNMjVJbmRleDoKICAgIGRlZiBfX2luaXRfXyhzZWxmLCB0ZXh0czogbGlzdFtzdHJdKToKICAgICAgICBzZWxmLl9jb3JwdXNfdG9rZW5zID0gW3Rva2VuaXplKHQpIGZvciB0IGluIHRleHRzXQogICAgICAgIHNlbGYuX2JtMjUgPSBCTTI1T2thcGkoc2VsZi5fY29ycHVzX3Rva2VucykKCiAgICBkZWYgX19sZW5fXyhzZWxmKSAtPiBpbnQ6CiAgICAgICAgcmV0dXJuIGxlbihzZWxmLl9jb3JwdXNfdG9rZW5zKQoKICAgIGRlZiBzZWFyY2goc2VsZiwgcXVlcnk6IHN0ciwgazogaW50KSAtPiBsaXN0W3R1cGxlW2ludCwgZmxvYXRdXToKICAgICAgICAiIiJSZXR1cm4gdG9wLWsgKGNodW5rX3Bvc2l0aW9uLCBibTI1X3Njb3JlKSwgYmVzdCBmaXJzdCwgdGllcyBieSBwb3NpdGlvbi4iIiIKICAgICAgICBzY29yZXMgPSBzZWxmLl9ibTI1LmdldF9zY29yZXModG9rZW5pemUocXVlcnkpKQogICAgICAgIG9yZGVyID0gc29ydGVkKHJhbmdlKGxlbihzY29yZXMpKSwga2V5PWxhbWJkYSBpOiAoLXNjb3Jlc1tpXSwgaSkpCiAgICAgICAgcmV0dXJuIFsoaSwgZmxvYXQoc2NvcmVzW2ldKSkgZm9yIGkgaW4gb3JkZXJbOmtdXQo=
+"""BM25 keyword index (rank_bm25 BM25Okapi) over chunk text."""
+
+from __future__ import annotations
+
+from rank_bm25 import BM25Okapi
+
+from .embeddings import tokenize
+
+
+class BM25Index:
+    def __init__(self, texts: list[str]):
+        self._corpus_tokens = [tokenize(t) for t in texts]
+        self._bm25 = BM25Okapi(self._corpus_tokens)
+
+    def __len__(self) -> int:
+        return len(self._corpus_tokens)
+
+    def search(self, query: str, k: int) -> list[tuple[int, float]]:
+        """Return top-k (chunk_position, bm25_score), best first, ties by position."""
+        scores = self._bm25.get_scores(tokenize(query))
+        order = sorted(range(len(scores)), key=lambda i: (-scores[i], i))
+        return [(i, float(scores[i])) for i in order[:k]]
