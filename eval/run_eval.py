@@ -1,1 +1,144 @@
-IiIiUnVuIHRoZSBnb2xkZW4tc2V0IGV2YWx1YXRpb24gYW5kIGdhdGUgb24gdGhyZXNob2xkcy4KClVzYWdlOiAgUFlUSE9OUEFUSD1zcmMgLnZlbnYvYmluL3B5dGhvbiBldmFsL3J1bl9ldmFsLnB5IFstLWZha2VdCgpNZXRyaWNzIChhbnN3ZXJhYmxlIHF1ZXN0aW9ucyk6CiAgaGl0QDUgICAgICAgICAgICAgICBmcmFjdGlvbiB3aXRoIGFuIGV4cGVjdGVkIGRvYyBpbiB0aGUgcmVyYW5rZWQgdG9wLTUKICBtcnJANSAgICAgICAgICAgICAgIG1lYW4gcmVjaXByb2NhbCByYW5rIG9mIHRoZSBmaXJzdCBleHBlY3RlZCBkb2MgaW4gdG9wLTUKICBjaXRhdGlvbl9wcmVjaXNpb24gIG9mIGNpdGF0aW9ucyBlbWl0dGVkLCBmcmFjdGlvbiBwb2ludGluZyBhdCBleHBlY3RlZCBkb2NzCiAga2V5d29yZF9yZWNhbGwgICAgICBmcmFjdGlvbiBvZiBhbnN3ZXJfa2V5d29yZHMgcHJlc2VudCBpbiB0aGUgYW5zd2VyIChpbmZvKQpBYnN0ZW50aW9uOgogIGFic3RlbnRpb25fYWNjdXJhY3kgdW5hbnN3ZXJhYmxlIGNvcnJlY3RseSBhYnN0YWluZWQgQU5EIGFuc3dlcmFibGUgbm90IGFic3RhaW5lZAoKV3JpdGVzIGV2YWwvcmVwb3J0Lmpzb247IGV4aXQgY29kZSAxIGlmIGFueSBnYXRlZCBtZXRyaWMgaXMgYmVsb3cgaXRzCnRocmVzaG9sZCBpbiBldmFsL3RocmVzaG9sZHMuanNvbi4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgYXJncGFyc2UKaW1wb3J0IGpzb24KaW1wb3J0IHN5cwpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKCkJBU0UgPSBQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1sxXQpzeXMucGF0aC5pbnNlcnQoMCwgc3RyKEJBU0UgLyAic3JjIikpCgpmcm9tIGFza2ZoaXIuYW5zd2VyIGltcG9ydCBDSVRBVElPTl9SRSAgIyBub3FhOiBFNDAyCmZyb20gYXNrZmhpci5zZXJ2aWNlIGltcG9ydCBBc2tGSElSU2VydmljZSAgIyBub3FhOiBFNDAyCgoKZGVmIG1haW4oKSAtPiBpbnQ6CiAgICBwYXJzZXIgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcigpCiAgICBwYXJzZXIuYWRkX2FyZ3VtZW50KCItLWZha2UiLCBhY3Rpb249InN0b3JlX3RydWUiLCBoZWxwPSJ1c2UgZmFrZSBtb2RlbHMiKQogICAgYXJncyA9IHBhcnNlci5wYXJzZV9hcmdzKCkKCiAgICBnb2xkZW4gPSBbCiAgICAgICAganNvbi5sb2FkcyhsaW5lKQogICAgICAgIGZvciBsaW5lIGluIChCQVNFIC8gImV2YWwiIC8gImdvbGRlbi5qc29ubCIpLnJlYWRfdGV4dCgpLnNwbGl0bGluZXMoKQogICAgICAgIGlmIGxpbmUuc3RyaXAoKQogICAgXQogICAgdGhyZXNob2xkcyA9IGpzb24ubG9hZHMoKEJBU0UgLyAiZXZhbCIgLyAidGhyZXNob2xkcy5qc29uIikucmVhZF90ZXh0KCkpCgogICAgc3ZjID0gQXNrRkhJUlNlcnZpY2UubG9hZCgKICAgICAgICBjb3JwdXNfZGlyPUJBU0UgLyAiY29ycHVzIiwgaW5kZXhfZGlyPUJBU0UgLyAiZGF0YSIgLyAiaW5kZXgiLCBmYWtlPWFyZ3MuZmFrZQogICAgKQogICAgcHJpbnQoZiJlbWJlZGRlcj17c3ZjLmVtYmVkZGVyLm5hbWV9ICByZXJhbmtlcj17c3ZjLnJlcmFua2VyLm5hbWV9ICAiCiAgICAgICAgICBmImFic3RhaW5fdGhyZXNob2xkPXtzdmMuYWJzdGFpbl90aHJlc2hvbGR9IikKCiAgICByb3dzID0gW10KICAgIGhpdHMsIHJyX3N1bSwgYW5zd2VyZWQgPSAwLCAwLjAsIDAKICAgIGNpdGVfdG90YWwsIGNpdGVfZ29vZCA9IDAsIDAKICAgIGt3X3RvdGFsLCBrd19mb3VuZCA9IDAsIDAKICAgIGFic3RhaW5fY29ycmVjdCwgYWJzdGFpbl90b3RhbCA9IDAsIDAKCiAgICBmb3IgZW50cnkgaW4gZ29sZGVuOgogICAgICAgIHJlc3VsdCA9IHN2Yy5hc2soZW50cnlbInF1ZXN0aW9uIl0pCiAgICAgICAgZXhwZWN0ZWQgPSBzZXQoZW50cnlbImV4cGVjdGVkX2RvY19pZHMiXSkKICAgICAgICBpZiBub3QgZXhwZWN0ZWQ6ICAjIHVuYW5zd2VyYWJsZQogICAgICAgICAgICBhYnN0YWluX3RvdGFsICs9IDEKICAgICAgICAgICAgb2sgPSByZXN1bHRbImFic3RhaW5lZCJdCiAgICAgICAgICAgIGFic3RhaW5fY29ycmVjdCArPSBpbnQob2spCiAgICAgICAgICAgIHJvd3MuYXBwZW5kKChlbnRyeSwgTm9uZSwgb2ssIHJlc3VsdCkpCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgYWJzdGFpbl90b3RhbCArPSAxCiAgICAgICAgYWJzdGFpbl9jb3JyZWN0ICs9IGludChub3QgcmVzdWx0WyJhYnN0YWluZWQiXSkKICAgICAgICB0b3BfZG9jcyA9IFtzWyJkb2NfaWQiXSBmb3IgcyBpbiByZXN1bHRbInNvdXJjZXMiXVs6NV1dCiAgICAgICAgcmFuayA9IG5leHQoKGkgKyAxIGZvciBpLCBkIGluIGVudW1lcmF0ZSh0b3BfZG9jcykgaWYgZCBpbiBleHBlY3RlZCksIE5vbmUpCiAgICAgICAgaWYgcmFuazoKICAgICAgICAgICAgaGl0cyArPSAxCiAgICAgICAgICAgIHJyX3N1bSArPSAxLjAgLyByYW5rCiAgICAgICAgYW5zd2VyZWQgKz0gMQogICAgICAgIGNpdGVkX2RvY3MgPSB7CiAgICAgICAgICAgIHN2Yy5jaHVua3NfYnlfaWRbY2lkXS5kb2NfaWQKICAgICAgICAgICAgZm9yIGNpZCBpbiBDSVRBVElPTl9SRS5maW5kYWxsKHJlc3VsdFsiYW5zd2VyIl0pCiAgICAgICAgICAgIGlmIGNpZCBpbiBzdmMuY2h1bmtzX2J5X2lkCiAgICAgICAgfQogICAgICAgIGNpdGVfdG90YWwgKz0gbGVuKGNpdGVkX2RvY3MpCiAgICAgICAgY2l0ZV9nb29kICs9IHN1bSgxIGZvciBkIGluIGNpdGVkX2RvY3MgaWYgZCBpbiBleHBlY3RlZCkKICAgICAgICBhbnN3ZXJfbG93ID0gcmVzdWx0WyJhbnN3ZXIiXS5sb3dlcigpCiAgICAgICAgZm9yIGt3IGluIGVudHJ5WyJhbnN3ZXJfa2V5d29yZHMiXToKICAgICAgICAgICAga3dfdG90YWwgKz0gMQogICAgICAgICAgICBrd19mb3VuZCArPSBpbnQoa3cubG93ZXIoKSBpbiBhbnN3ZXJfbG93KQogICAgICAgIHJvd3MuYXBwZW5kKChlbnRyeSwgcmFuaywgbm90IHJlc3VsdFsiYWJzdGFpbmVkIl0sIHJlc3VsdCkpCgogICAgbWV0cmljcyA9IHsKICAgICAgICAicXVlc3Rpb25zIjogbGVuKGdvbGRlbiksCiAgICAgICAgImFuc3dlcmFibGUiOiBhbnN3ZXJlZCwKICAgICAgICAiaGl0QDUiOiByb3VuZChoaXRzIC8gYW5zd2VyZWQsIDQpIGlmIGFuc3dlcmVkIGVsc2UgMC4wLAogICAgICAgICJtcnJANSI6IHJvdW5kKHJyX3N1bSAvIGFuc3dlcmVkLCA0KSBpZiBhbnN3ZXJlZCBlbHNlIDAuMCwKICAgICAgICAiY2l0YXRpb25fcHJlY2lzaW9uIjogcm91bmQoY2l0ZV9nb29kIC8gY2l0ZV90b3RhbCwgNCkgaWYgY2l0ZV90b3RhbCBlbHNlIDAuMCwKICAgICAgICAia2V5d29yZF9yZWNhbGwiOiByb3VuZChrd19mb3VuZCAvIGt3X3RvdGFsLCA0KSBpZiBrd190b3RhbCBlbHNlIDAuMCwKICAgICAgICAiYWJzdGVudGlvbl9hY2N1cmFjeSI6IHJvdW5kKGFic3RhaW5fY29ycmVjdCAvIGFic3RhaW5fdG90YWwsIDQpIGlmIGFic3RhaW5fdG90YWwgZWxzZSAwLjAsCiAgICB9CgogICAgcHJpbnQoZiJcbnsncXVlc3Rpb24nOjw3Mn0geydyYW5rJzo+NH0gIG9rIikKICAgIHByaW50KCItIiAqIDg0KQogICAgZm9yIGVudHJ5LCByYW5rLCBvaywgXyBpbiByb3dzOgogICAgICAgIHEgPSBlbnRyeVsicXVlc3Rpb24iXVs6NzBdCiAgICAgICAgcHJpbnQoZiJ7cTo8NzJ9IHtzdHIocmFuaykgaWYgcmFuayBlbHNlICctJzo+NH0gIHsneWVzJyBpZiBvayBlbHNlICdOTyd9IikKCiAgICBwcmludCgiXG5tZXRyaWNzIHZzIGdhdGUgdGhyZXNob2xkczoiKQogICAgZmFpbGVkID0gW10KICAgIGZvciBuYW1lLCB2YWx1ZSBpbiBtZXRyaWNzLml0ZW1zKCk6CiAgICAgICAgaWYgbmFtZSBpbiB0aHJlc2hvbGRzOgogICAgICAgICAgICBnYXRlID0gdGhyZXNob2xkc1tuYW1lXQogICAgICAgICAgICBzdGF0dXMgPSAiUEFTUyIgaWYgdmFsdWUgPj0gZ2F0ZSBlbHNlICJGQUlMIgogICAgICAgICAgICBpZiBzdGF0dXMgPT0gIkZBSUwiOgogICAgICAgICAgICAgICAgZmFpbGVkLmFwcGVuZChuYW1lKQogICAgICAgICAgICBwcmludChmIiAge25hbWU6PDIyfSB7dmFsdWU6LjRmfSAgPj0ge2dhdGU6PDZ9IHtzdGF0dXN9IikKICAgICAgICBlbHNlOgogICAgICAgICAgICBwcmludChmIiAge25hbWU6PDIyfSB7dmFsdWV9ICAoaW5mbykiKQoKICAgIHJlcG9ydCA9IHsKICAgICAgICAibWV0cmljcyI6IG1ldHJpY3MsCiAgICAgICAgInRocmVzaG9sZHMiOiB0aHJlc2hvbGRzLAogICAgICAgICJlbWJlZGRlciI6IHN2Yy5lbWJlZGRlci5uYW1lLAogICAgICAgICJyZXJhbmtlciI6IHN2Yy5yZXJhbmtlci5uYW1lLAogICAgICAgICJhYnN0YWluX3RocmVzaG9sZCI6IHN2Yy5hYnN0YWluX3RocmVzaG9sZCwKICAgICAgICAiZmFrZV9tb2RlbHMiOiBhcmdzLmZha2UsCiAgICAgICAgInBlcl9xdWVzdGlvbiI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgInF1ZXN0aW9uIjogZVsicXVlc3Rpb24iXSwKICAgICAgICAgICAgICAgICJjYXRlZ29yeSI6IGVbImNhdGVnb3J5Il0sCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRfZG9jX2lkcyI6IGVbImV4cGVjdGVkX2RvY19pZHMiXSwKICAgICAgICAgICAgICAgICJmaXJzdF9leHBlY3RlZF9yYW5rIjogciwKICAgICAgICAgICAgICAgICJiZWhhdmVkIjogb2ssCiAgICAgICAgICAgICAgICAiYWJzdGFpbmVkIjogcmVzWyJhYnN0YWluZWQiXSwKICAgICAgICAgICAgICAgICJjaXRhdGlvbnMiOiByZXNbImNpdGF0aW9ucyJdLAogICAgICAgICAgICAgICAgInRvcF9yZXJhbmtfc2NvcmUiOiByZXNbInNvdXJjZXMiXVswXVsicmVyYW5rX3Njb3JlIl0gaWYgcmVzWyJzb3VyY2VzIl0gZWxzZSBOb25lLAogICAgICAgICAgICB9CiAgICAgICAgICAgIGZvciBlLCByLCBvaywgcmVzIGluIHJvd3MKICAgICAgICBdLAogICAgfQogICAgKEJBU0UgLyAiZXZhbCIgLyAicmVwb3J0Lmpzb24iKS53cml0ZV90ZXh0KGpzb24uZHVtcHMocmVwb3J0LCBpbmRlbnQ9MSkpCiAgICBwcmludChmIlxud3JvdGUgZXZhbC9yZXBvcnQuanNvbiIpCiAgICBpZiBmYWlsZWQ6CiAgICAgICAgcHJpbnQoZiJHQVRFIEZBSUxFRDogeycsICcuam9pbihmYWlsZWQpfSIpCiAgICAgICAgcmV0dXJuIDEKICAgIHByaW50KCJHQVRFIFBBU1NFRCIpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICByYWlzZSBTeXN0ZW1FeGl0KG1haW4oKSkK
+"""Run the golden-set evaluation and gate on thresholds.
+
+Usage:  PYTHONPATH=src .venv/bin/python eval/run_eval.py [--fake]
+
+Metrics (answerable questions):
+  hit@5               fraction with an expected doc in the reranked top-5
+  mrr@5               mean reciprocal rank of the first expected doc in top-5
+  citation_precision  of citations emitted, fraction pointing at expected docs
+  keyword_recall      fraction of answer_keywords present in the answer (info)
+Abstention:
+  abstention_accuracy unanswerable correctly abstained AND answerable not abstained
+
+Writes eval/report.json; exit code 1 if any gated metric is below its
+threshold in eval/thresholds.json.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE / "src"))
+
+from askfhir.answer import CITATION_RE  # noqa: E402
+from askfhir.service import AskFHIRService  # noqa: E402
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--fake", action="store_true", help="use fake models")
+    args = parser.parse_args()
+
+    golden = [
+        json.loads(line)
+        for line in (BASE / "eval" / "golden.jsonl").read_text().splitlines()
+        if line.strip()
+    ]
+    thresholds = json.loads((BASE / "eval" / "thresholds.json").read_text())
+
+    svc = AskFHIRService.load(
+        corpus_dir=BASE / "corpus", index_dir=BASE / "data" / "index", fake=args.fake
+    )
+    print(f"embedder={svc.embedder.name}  reranker={svc.reranker.name}  "
+          f"abstain_threshold={svc.abstain_threshold}")
+
+    rows = []
+    hits, rr_sum, answered = 0, 0.0, 0
+    cite_total, cite_good = 0, 0
+    kw_total, kw_found = 0, 0
+    abstain_correct, abstain_total = 0, 0
+
+    for entry in golden:
+        result = svc.ask(entry["question"])
+        expected = set(entry["expected_doc_ids"])
+        if not expected:  # unanswerable
+            abstain_total += 1
+            ok = result["abstained"]
+            abstain_correct += int(ok)
+            rows.append((entry, None, ok, result))
+            continue
+        abstain_total += 1
+        abstain_correct += int(not result["abstained"])
+        top_docs = [s["doc_id"] for s in result["sources"][:5]]
+        rank = next((i + 1 for i, d in enumerate(top_docs) if d in expected), None)
+        if rank:
+            hits += 1
+            rr_sum += 1.0 / rank
+        answered += 1
+        cited_docs = {
+            svc.chunks_by_id[cid].doc_id
+            for cid in CITATION_RE.findall(result["answer"])
+            if cid in svc.chunks_by_id
+        }
+        cite_total += len(cited_docs)
+        cite_good += sum(1 for d in cited_docs if d in expected)
+        answer_low = result["answer"].lower()
+        for kw in entry["answer_keywords"]:
+            kw_total += 1
+            kw_found += int(kw.lower() in answer_low)
+        rows.append((entry, rank, not result["abstained"], result))
+
+    metrics = {
+        "questions": len(golden),
+        "answerable": answered,
+        "hit@5": round(hits / answered, 4) if answered else 0.0,
+        "mrr@5": round(rr_sum / answered, 4) if answered else 0.0,
+        "citation_precision": round(cite_good / cite_total, 4) if cite_total else 0.0,
+        "keyword_recall": round(kw_found / kw_total, 4) if kw_total else 0.0,
+        "abstention_accuracy": round(abstain_correct / abstain_total, 4) if abstain_total else 0.0,
+    }
+
+    print(f"\n{'question':<72} {'rank':>4}  ok")
+    print("-" * 84)
+    for entry, rank, ok, _ in rows:
+        q = entry["question"][:70]
+        print(f"{q:<72} {str(rank) if rank else '-':>4}  {'yes' if ok else 'NO'}")
+
+    print("\nmetrics vs gate thresholds:")
+    failed = []
+    for name, value in metrics.items():
+        if name in thresholds:
+            gate = thresholds[name]
+            status = "PASS" if value >= gate else "FAIL"
+            if status == "FAIL":
+                failed.append(name)
+            print(f"  {name:<22} {value:.4f}  >= {gate:<6} {status}")
+        else:
+            print(f"  {name:<22} {value}  (info)")
+
+    report = {
+        "metrics": metrics,
+        "thresholds": thresholds,
+        "embedder": svc.embedder.name,
+        "reranker": svc.reranker.name,
+        "abstain_threshold": svc.abstain_threshold,
+        "fake_models": args.fake,
+        "per_question": [
+            {
+                "question": e["question"],
+                "category": e["category"],
+                "expected_doc_ids": e["expected_doc_ids"],
+                "first_expected_rank": r,
+                "behaved": ok,
+                "abstained": res["abstained"],
+                "citations": res["citations"],
+                "top_rerank_score": res["sources"][0]["rerank_score"] if res["sources"] else None,
+            }
+            for e, r, ok, res in rows
+        ],
+    }
+    (BASE / "eval" / "report.json").write_text(json.dumps(report, indent=1))
+    print(f"\nwrote eval/report.json")
+    if failed:
+        print(f"GATE FAILED: {', '.join(failed)}")
+        return 1
+    print("GATE PASSED")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
