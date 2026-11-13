@@ -1,1 +1,175 @@
-IiIiQW5zd2VyIGNvbXBvc2l0aW9uIHdpdGggZW5mb3JjZWQgY2l0YXRpb25zLgoKVGhlIGRlZmF1bHQgZ2VuZXJhdG9yIGlzIGFuIEV4dHJhY3RpdmVDb21wb3NlcjogaXQgYnVpbGRzIHRoZSBhbnN3ZXIgT05MWQpmcm9tIHNlbnRlbmNlcyBvZiB0aGUgdG9wIHJlcmFua2VkIGNodW5rcywgYW5kIGV2ZXJ5IHNlbnRlbmNlIGNhcnJpZXMgYQpjaXRhdGlvbiBtYXJrZXIgYGBbZG9jLXNsdWcjbl1gYCBuYW1pbmcgdGhlIGV4YWN0IGNodW5rIGl0IGNhbWUgZnJvbS4KYHZhbGlkYXRlX2NpdGF0aW9uc2AgdGhlbiBjaGVja3MgdGhlIGNvbXBvc2VkIGFuc3dlcjogZXZlcnkgc2VudGVuY2UgbXVzdApjaXRlIGF0IGxlYXN0IG9uZSBjaHVuaywgYW5kIGV2ZXJ5IGNpdGVkIGNodW5rIG11c3QgYmUgaW5zaWRlIHRoZSByZXRyaWV2ZWQKc2V0LiBBbiBhbnN3ZXIgdGhhdCBmYWlscyB2YWxpZGF0aW9uIGlzIG5ldmVyIHJldHVybmVkIOKAlCB0aGUgc2VydmljZSBmYWxscwpiYWNrIG9yIGFic3RhaW5zLgoKQW4gTExNLWJhY2tlZCBnZW5lcmF0b3IgY2FuIHJlcGxhY2UgdGhlIGNvbXBvc2VyIGJlaGluZCB0aGUgQW5zd2VyR2VuZXJhdG9yCnByb3RvY29sIHdpdGhvdXQgY2hhbmdpbmcgcmV0cmlldmFsLCB2YWxpZGF0aW9uLCBvciB0aGUgQVBJLgoiIiIKCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmltcG9ydCByZQpmcm9tIGRhdGFjbGFzc2VzIGltcG9ydCBkYXRhY2xhc3MKZnJvbSB0eXBpbmcgaW1wb3J0IFByb3RvY29sLCBydW50aW1lX2NoZWNrYWJsZQoKZnJvbSAuY2h1bmtpbmcgaW1wb3J0IENodW5rCmZyb20gLmVtYmVkZGluZ3MgaW1wb3J0IHRva2VuaXplCgpDSVRBVElPTl9SRSA9IHJlLmNvbXBpbGUociJcWyhbQS1aYS16MC05X1wtXSsjXGQrKVxdIikKX1NFTlRFTkNFX1NQTElUID0gcmUuY29tcGlsZShyIig/PD1bLiE/XSlccysiKQoKQUJTVEFJTl9NRVNTQUdFID0gKAogICAgIkkgY291bGRuJ3QgZmluZCB0aGF0IGluIHRoZSBGSElSIGRvY3MgcHJvdmlkZWQsIHNvIEkgZG9uJ3QgaGF2ZSBhICIKICAgICJzb3VyY2VkIGFuc3dlciBmb3IgaXQuIFRyeSByZXBocmFzaW5nIHRoZSBxdWVzdGlvbiwgb3IgYXNrIGFib3V0IGEgIgogICAgInNwZWNpZmljIHRvcGljIHRoZSBjb3JwdXMgY292ZXJzOiBGSElSIHJlc291cmNlcyAoUGF0aWVudCwgRW5jb3VudGVyLCAiCiAgICAiT2JzZXJ2YXRpb24sIENvbmRpdGlvbiwgTWVkaWNhdGlvblJlcXVlc3QpLCBzZWFyY2gsIEJ1bmRsZXMgYW5kICIKICAgICJ0cmFuc2FjdGlvbnMsIFNNQVJUIG9uIEZISVIsIEhMNyB2MiwgdGVybWlub2xvZ3ksIG9yIHByb2ZpbGVzIGFuZCAiCiAgICAidmFsaWRhdGlvbi4iCikKCgpAZGF0YWNsYXNzCmNsYXNzIFBhc3NhZ2U6CiAgICBjaHVuazogQ2h1bmsKICAgIHJlcmFua19zY29yZTogZmxvYXQKCgpAcnVudGltZV9jaGVja2FibGUKY2xhc3MgQW5zd2VyR2VuZXJhdG9yKFByb3RvY29sKToKICAgIGRlZiBnZW5lcmF0ZSgKICAgICAgICBzZWxmLAogICAgICAgIHF1ZXN0aW9uOiBzdHIsCiAgICAgICAgcGFzc2FnZXM6IGxpc3RbUGFzc2FnZV0sCiAgICAgICAgdG9rZW5fd2VpZ2h0czogZGljdFtzdHIsIGZsb2F0XSB8IE5vbmUgPSBOb25lLAogICAgKSAtPiBzdHI6CiAgICAgICAgLi4uCgoKZGVmIHNwbGl0X3NlbnRlbmNlcyh0ZXh0OiBzdHIpIC0+IGxpc3Rbc3RyXToKICAgIHBhcnRzID0gX1NFTlRFTkNFX1NQTElULnNwbGl0KCIgIi5qb2luKHRleHQuc3BsaXQoKSkpCiAgICByZXR1cm4gW3Auc3RyaXAoKSBmb3IgcCBpbiBwYXJ0cyBpZiBwLnN0cmlwKCldCgoKZGVmIF9zZW50ZW5jZXNfd2l0aF9jaXRhdGlvbnMoYW5zd2VyOiBzdHIpIC0+IGxpc3Rbc3RyXToKICAgICIiIlNwbGl0IGludG8gc2VudGVuY2VzLCByZS1hdHRhY2hpbmcgY2l0YXRpb24gbWFya2VycyB0aGF0IGZvbGxvdyB0aGUKICAgIHNlbnRlbmNlJ3MgdGVybWluYXRpbmcgcHVuY3R1YXRpb24gdG8gdGhlIHNlbnRlbmNlIHRoZXkgYmVsb25nIHRvLiIiIgogICAgc2VudGVuY2VzOiBsaXN0W3N0cl0gPSBbXQogICAgZm9yIGZyYWcgaW4gc3BsaXRfc2VudGVuY2VzKGFuc3dlcik6CiAgICAgICAgcmVzdCA9IGZyYWcKICAgICAgICBsZWFkaW5nOiBsaXN0W3N0cl0gPSBbXQogICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgIG0gPSByZS5tYXRjaChyIlxzKihcW1tBLVphLXowLTlfXC1dKyNcZCtcXSlccyoiLCByZXN0KQogICAgICAgICAgICBpZiBub3QgbToKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgIGxlYWRpbmcuYXBwZW5kKG0uZ3JvdXAoMSkpCiAgICAgICAgICAgIHJlc3QgPSByZXN0W20uZW5kKCk6XQogICAgICAgICAgICBpZiBub3QgcmVzdDoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgaWYgbGVhZGluZyBhbmQgc2VudGVuY2VzOgogICAgICAgICAgICBzZW50ZW5jZXNbLTFdID0gc2VudGVuY2VzWy0xXSArICIgIiArICIgIi5qb2luKGxlYWRpbmcpCiAgICAgICAgICAgIGlmIG5vdCByZXN0OgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICBlbGlmIGxlYWRpbmcgYW5kIG5vdCBzZW50ZW5jZXM6CiAgICAgICAgICAgIHNlbnRlbmNlcy5hcHBlbmQoIiAiLmpvaW4obGVhZGluZykgKyAoIiAiICsgcmVzdCBpZiByZXN0IGVsc2UgIiIpKQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGlmIHJlc3Q6CiAgICAgICAgICAgIHNlbnRlbmNlcy5hcHBlbmQocmVzdCkKICAgIHJldHVybiBzZW50ZW5jZXMKCgpkZWYgdmFsaWRhdGVfY2l0YXRpb25zKGFuc3dlcjogc3RyLCBhbGxvd2VkX2NodW5rX2lkczogc2V0W3N0cl0pIC0+IGxpc3Rbc3RyXToKICAgICIiIlJldHVybiBhIGxpc3Qgb2YgcHJvYmxlbXM7IGVtcHR5IGxpc3QgbWVhbnMgdGhlIGFuc3dlciBpcyB2YWxpZC4iIiIKICAgIHByb2JsZW1zOiBsaXN0W3N0cl0gPSBbXQogICAgY2l0ZWQgPSBDSVRBVElPTl9SRS5maW5kYWxsKGFuc3dlcikKICAgIGlmIG5vdCBjaXRlZDoKICAgICAgICBwcm9ibGVtcy5hcHBlbmQoImFuc3dlciBjb250YWlucyBubyBjaXRhdGlvbnMiKQogICAgZm9yIGNpZCBpbiBjaXRlZDoKICAgICAgICBpZiBjaWQgbm90IGluIGFsbG93ZWRfY2h1bmtfaWRzOgogICAgICAgICAgICBwcm9ibGVtcy5hcHBlbmQoZiJjaXRhdGlvbiBbe2NpZH1dIGlzIG5vdCBpbiB0aGUgcmV0cmlldmVkIHNldCIpCiAgICBmb3Igc2VudGVuY2UgaW4gX3NlbnRlbmNlc193aXRoX2NpdGF0aW9ucyhhbnN3ZXIpOgogICAgICAgIGlmIG5vdCBDSVRBVElPTl9SRS5zZWFyY2goc2VudGVuY2UpOgogICAgICAgICAgICBwcm9ibGVtcy5hcHBlbmQoZiJzZW50ZW5jZSB3aXRob3V0IGNpdGF0aW9uOiB7c2VudGVuY2VbOjYwXX0uLi4iKQogICAgcmV0dXJuIHByb2JsZW1zCgoKZGVmIF9zZW50ZW5jZV9zY29yZSgKICAgIHNlbnRlbmNlOiBzdHIsIHFfdG9rZW5zOiBzZXRbc3RyXSwgdG9rZW5fd2VpZ2h0czogZGljdFtzdHIsIGZsb2F0XSB8IE5vbmUgPSBOb25lCikgLT4gZmxvYXQ6CiAgICAiIiJJREYtd2VpZ2h0ZWQgb3ZlcmxhcDogcmFyZSBxdWVzdGlvbiB0ZXJtcyAocmFuaywgX2hhcywgcmVmdXRlZCkgY291bnQKICAgIGZhciBtb3JlIHRoYW4gY29ycHVzLWNvbW1vbiBvbmVzIChyZXNvdXJjZSwgcGF0aWVudCwgZmhpciksIHdoaWNoIGtlZXBzCiAgICBnZW5lcmljIGRvY3VtZW50LWludHJvIHNlbnRlbmNlcyBmcm9tIHdpbm5pbmcgb24gd29yZCBzYWxhZCBhbG9uZS4iIiIKICAgIHRva3MgPSB0b2tlbml6ZShzZW50ZW5jZSkKICAgIGlmIG5vdCB0b2tzOgogICAgICAgIHJldHVybiAwLjAKICAgIGlmIHRva2VuX3dlaWdodHM6CiAgICAgICAgZGVub20gPSBzdW0odG9rZW5fd2VpZ2h0cy5nZXQodCwgMC4wKSBmb3IgdCBpbiBxX3Rva2Vucykgb3IgMS4wCiAgICAgICAgbnVtZXIgPSBzdW0odG9rZW5fd2VpZ2h0cy5nZXQodCwgMC4wKSBmb3IgdCBpbiBzZXQodG9rcykgJiBxX3Rva2VucykKICAgICAgICByZXR1cm4gbnVtZXIgLyBkZW5vbQogICAgb3ZlcmxhcCA9IHN1bSgxIGZvciB0IGluIHRva3MgaWYgdCBpbiBxX3Rva2VucykKICAgIHJldHVybiBvdmVybGFwIC8gbWF4KGxlbihxX3Rva2VucyksIDEpCgoKY2xhc3MgRXh0cmFjdGl2ZUNvbXBvc2VyOgogICAgIiIiQ29tcG9zZSBhbiBhbnN3ZXIgZnJvbSB0aGUgbW9zdCBxdWVzdGlvbi1yZWxldmFudCBzZW50ZW5jZXMgb2YgdGhlCiAgICB0b3AgcGFzc2FnZXMsIGVhY2ggc2VudGVuY2UgdGFnZ2VkIHdpdGggaXRzIHNvdXJjZSBjaHVuayBjaXRhdGlvbi4iIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgbWF4X3NlbnRlbmNlczogaW50ID0gNCwgcGVyX2NodW5rOiBpbnQgPSAyLCBmbG9vcl9yYXRpbzogZmxvYXQgPSAwLjMpOgogICAgICAgIHNlbGYubWF4X3NlbnRlbmNlcyA9IG1heF9zZW50ZW5jZXMKICAgICAgICBzZWxmLnBlcl9jaHVuayA9IHBlcl9jaHVuawogICAgICAgIHNlbGYuZmxvb3JfcmF0aW8gPSBmbG9vcl9yYXRpbwoKICAgIGRlZiBnZW5lcmF0ZSgKICAgICAgICBzZWxmLAogICAgICAgIHF1ZXN0aW9uOiBzdHIsCiAgICAgICAgcGFzc2FnZXM6IGxpc3RbUGFzc2FnZV0sCiAgICAgICAgdG9rZW5fd2VpZ2h0czogZGljdFtzdHIsIGZsb2F0XSB8IE5vbmUgPSBOb25lLAogICAgKSAtPiBzdHI6CiAgICAgICAgcV90b2tlbnMgPSBzZXQodG9rZW5pemUocXVlc3Rpb24pKQogICAgICAgICMgQ29sbGVjdCBjYW5kaWRhdGUgc2VudGVuY2VzIGFjcm9zcyBwYXNzYWdlcywgd2VpZ2h0aW5nIGVhY2ggYnkgaXRzCiAgICAgICAgIyBwYXNzYWdlJ3MgcmVyYW5rIHBvc2l0aW9uOiBhIHNlbnRlbmNlIGZyb20gYSBsb3dlci1yYW5rZWQgcGFzc2FnZQogICAgICAgICMgbXVzdCBiZSBwcm9wb3J0aW9uYWxseSBtb3JlIHJlbGV2YW50IHRvIGRpc3BsYWNlIG9uZSBmcm9tIHRoZSB0b3AKICAgICAgICAjIHBhc3NhZ2UuIFRoaXMga2VlcHMgYW5zd2VycyAoYW5kIHRoZWlyIGNpdGF0aW9ucykgY29uY2VudHJhdGVkIG9uCiAgICAgICAgIyB0aGUgYmVzdCBldmlkZW5jZSBpbnN0ZWFkIG9mIGRyaWZ0aW5nIGFjcm9zcyBuZWlnaGJvdXJpbmcgZG9jcy4KICAgICAgICBjYW5kaWRhdGVzOiBsaXN0W3R1cGxlW2Zsb2F0LCBpbnQsIHN0ciwgc3RyXV0gPSBbXSAgIyAoc2NvcmUsIHBfaWR4LCBzZW50ZW5jZSwgY2h1bmtfaWQpCiAgICAgICAgZm9yIHBfaWR4LCBwYXNzYWdlIGluIGVudW1lcmF0ZShwYXNzYWdlcyk6CiAgICAgICAgICAgIHdlaWdodCA9IDEuMCAvICgxLjAgKyBwX2lkeCkKICAgICAgICAgICAgZm9yIHNlbnQgaW4gc3BsaXRfc2VudGVuY2VzKHBhc3NhZ2UuY2h1bmsudGV4dCk6CiAgICAgICAgICAgICAgICBpZiBsZW4oc2VudCkgPCA0MCBvciBzZW50LnN0YXJ0c3dpdGgoKCJgYGAiLCAieyIsICciJywgInwiKSk6CiAgICAgICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgICAgIHJhdyA9IF9zZW50ZW5jZV9zY29yZShzZW50LCBxX3Rva2VucywgdG9rZW5fd2VpZ2h0cykKICAgICAgICAgICAgICAgIGlmIHJhdyA+IDA6CiAgICAgICAgICAgICAgICAgICAgY2FuZGlkYXRlcy5hcHBlbmQoKHJhdyAqIHdlaWdodCwgcF9pZHgsIHNlbnQsIHBhc3NhZ2UuY2h1bmsuY2h1bmtfaWQpKQogICAgICAgIGlmIG5vdCBjYW5kaWRhdGVzOgogICAgICAgICAgICByZXR1cm4gIiIKICAgICAgICBjYW5kaWRhdGVzLnNvcnQoa2V5PWxhbWJkYSBjOiAtY1swXSkKICAgICAgICBmbG9vciA9IHNlbGYuZmxvb3JfcmF0aW8gKiBjYW5kaWRhdGVzWzBdWzBdCgogICAgICAgIHBpY2tlZDogbGlzdFt0dXBsZVtpbnQsIHN0ciwgc3RyXV0gPSBbXQogICAgICAgIHBlcl9jaHVua19jb3VudDogZGljdFtzdHIsIGludF0gPSB7fQogICAgICAgIHNlZW46IHNldFtzdHJdID0gc2V0KCkKICAgICAgICBwaWNrZWRfdG9rZW5fc2V0czogbGlzdFtzZXRbc3RyXV0gPSBbXQogICAgICAgIGZvciBzY29yZSwgcF9pZHgsIHNlbnQsIGNpZCBpbiBjYW5kaWRhdGVzOgogICAgICAgICAgICBpZiBsZW4ocGlja2VkKSA+PSBzZWxmLm1heF9zZW50ZW5jZXMgb3Igc2NvcmUgPCBmbG9vcjoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgIGlmIHBlcl9jaHVua19jb3VudC5nZXQoY2lkLCAwKSA+PSBzZWxmLnBlcl9jaHVuayBvciBzZW50IGluIHNlZW46CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICB0b2tzID0gc2V0KHRva2VuaXplKHNlbnQpKQogICAgICAgICAgICAjIE92ZXJsYXBwaW5nIGNodW5rcyByZXBlYXQgbmVhci1pZGVudGljYWwgc2VudGVuY2VzOyBzdXBwcmVzcyBhCiAgICAgICAgICAgICMgY2FuZGlkYXRlIHRoYXQgbW9zdGx5IGR1cGxpY2F0ZXMgb25lIGFscmVhZHkgcGlja2VkLgogICAgICAgICAgICBpZiBhbnkoCiAgICAgICAgICAgICAgICBsZW4odG9rcyAmIHByZXYpIC8gbWF4KGxlbih0b2tzIHwgcHJldiksIDEpID4gMC43CiAgICAgICAgICAgICAgICBmb3IgcHJldiBpbiBwaWNrZWRfdG9rZW5fc2V0cwogICAgICAgICAgICApOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgcGVyX2NodW5rX2NvdW50W2NpZF0gPSBwZXJfY2h1bmtfY291bnQuZ2V0KGNpZCwgMCkgKyAxCiAgICAgICAgICAgIHNlZW4uYWRkKHNlbnQpCiAgICAgICAgICAgIHBpY2tlZF90b2tlbl9zZXRzLmFwcGVuZCh0b2tzKQogICAgICAgICAgICBwaWNrZWQuYXBwZW5kKChwX2lkeCwgc2VudCwgY2lkKSkKICAgICAgICBwaWNrZWQuc29ydChrZXk9bGFtYmRhIHA6IHBbMF0pICAjIHJlYWRpbmcgb3JkZXI6IGJlc3QgcGFzc2FnZSBmaXJzdAogICAgICAgIHJldHVybiAiICIuam9pbihmIntzZW50fSBbe2NpZH1dIiBmb3IgXywgc2VudCwgY2lkIGluIHBpY2tlZCkK
+"""Answer composition with enforced citations.
+
+The default generator is an ExtractiveComposer: it builds the answer ONLY
+from sentences of the top reranked chunks, and every sentence carries a
+citation marker ``[doc-slug#n]`` naming the exact chunk it came from.
+`validate_citations` then checks the composed answer: every sentence must
+cite at least one chunk, and every cited chunk must be inside the retrieved
+set. An answer that fails validation is never returned — the service falls
+back or abstains.
+
+An LLM-backed generator can replace the composer behind the AnswerGenerator
+protocol without changing retrieval, validation, or the API.
+"""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass
+from typing import Protocol, runtime_checkable
+
+from .chunking import Chunk
+from .embeddings import tokenize
+
+CITATION_RE = re.compile(r"\[([A-Za-z0-9_\-]+#\d+)\]")
+_SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+ABSTAIN_MESSAGE = (
+    "I couldn't find that in the FHIR docs provided, so I don't have a "
+    "sourced answer for it. Try rephrasing the question, or ask about a "
+    "specific topic the corpus covers: FHIR resources (Patient, Encounter, "
+    "Observation, Condition, MedicationRequest), search, Bundles and "
+    "transactions, SMART on FHIR, HL7 v2, terminology, or profiles and "
+    "validation."
+)
+
+
+@dataclass
+class Passage:
+    chunk: Chunk
+    rerank_score: float
+
+
+@runtime_checkable
+class AnswerGenerator(Protocol):
+    def generate(
+        self,
+        question: str,
+        passages: list[Passage],
+        token_weights: dict[str, float] | None = None,
+    ) -> str:
+        ...
+
+
+def split_sentences(text: str) -> list[str]:
+    parts = _SENTENCE_SPLIT.split(" ".join(text.split()))
+    return [p.strip() for p in parts if p.strip()]
+
+
+def _sentences_with_citations(answer: str) -> list[str]:
+    """Split into sentences, re-attaching citation markers that follow the
+    sentence's terminating punctuation to the sentence they belong to."""
+    sentences: list[str] = []
+    for frag in split_sentences(answer):
+        rest = frag
+        leading: list[str] = []
+        while True:
+            m = re.match(r"\s*(\[[A-Za-z0-9_\-]+#\d+\])\s*", rest)
+            if not m:
+                break
+            leading.append(m.group(1))
+            rest = rest[m.end():]
+            if not rest:
+                break
+        if leading and sentences:
+            sentences[-1] = sentences[-1] + " " + " ".join(leading)
+            if not rest:
+                continue
+        elif leading and not sentences:
+            sentences.append(" ".join(leading) + (" " + rest if rest else ""))
+            continue
+        if rest:
+            sentences.append(rest)
+    return sentences
+
+
+def validate_citations(answer: str, allowed_chunk_ids: set[str]) -> list[str]:
+    """Return a list of problems; empty list means the answer is valid."""
+    problems: list[str] = []
+    cited = CITATION_RE.findall(answer)
+    if not cited:
+        problems.append("answer contains no citations")
+    for cid in cited:
+        if cid not in allowed_chunk_ids:
+            problems.append(f"citation [{cid}] is not in the retrieved set")
+    for sentence in _sentences_with_citations(answer):
+        if not CITATION_RE.search(sentence):
+            problems.append(f"sentence without citation: {sentence[:60]}...")
+    return problems
+
+
+def _sentence_score(
+    sentence: str, q_tokens: set[str], token_weights: dict[str, float] | None = None
+) -> float:
+    """IDF-weighted overlap: rare question terms (rank, _has, refuted) count
+    far more than corpus-common ones (resource, patient, fhir), which keeps
+    generic document-intro sentences from winning on word salad alone."""
+    toks = tokenize(sentence)
+    if not toks:
+        return 0.0
+    if token_weights:
+        denom = sum(token_weights.get(t, 0.0) for t in q_tokens) or 1.0
+        numer = sum(token_weights.get(t, 0.0) for t in set(toks) & q_tokens)
+        return numer / denom
+    overlap = sum(1 for t in toks if t in q_tokens)
+    return overlap / max(len(q_tokens), 1)
+
+
+class ExtractiveComposer:
+    """Compose an answer from the most question-relevant sentences of the
+    top passages, each sentence tagged with its source chunk citation."""
+
+    def __init__(self, max_sentences: int = 4, per_chunk: int = 2, floor_ratio: float = 0.3):
+        self.max_sentences = max_sentences
+        self.per_chunk = per_chunk
+        self.floor_ratio = floor_ratio
+
+    def generate(
+        self,
+        question: str,
+        passages: list[Passage],
+        token_weights: dict[str, float] | None = None,
+    ) -> str:
+        q_tokens = set(tokenize(question))
+        # Collect candidate sentences across passages, weighting each by its
+        # passage's rerank position: a sentence from a lower-ranked passage
+        # must be proportionally more relevant to displace one from the top
+        # passage. This keeps answers (and their citations) concentrated on
+        # the best evidence instead of drifting across neighbouring docs.
+        candidates: list[tuple[float, int, str, str]] = []  # (score, p_idx, sentence, chunk_id)
+        for p_idx, passage in enumerate(passages):
+            weight = 1.0 / (1.0 + p_idx)
+            for sent in split_sentences(passage.chunk.text):
+                if len(sent) < 40 or sent.startswith(("```", "{", '"', "|")):
+                    continue
+                raw = _sentence_score(sent, q_tokens, token_weights)
+                if raw > 0:
+                    candidates.append((raw * weight, p_idx, sent, passage.chunk.chunk_id))
+        if not candidates:
+            return ""
+        candidates.sort(key=lambda c: -c[0])
+        floor = self.floor_ratio * candidates[0][0]
+
+        picked: list[tuple[int, str, str]] = []
+        per_chunk_count: dict[str, int] = {}
+        seen: set[str] = set()
+        picked_token_sets: list[set[str]] = []
+        for score, p_idx, sent, cid in candidates:
+            if len(picked) >= self.max_sentences or score < floor:
+                break
+            if per_chunk_count.get(cid, 0) >= self.per_chunk or sent in seen:
+                continue
+            toks = set(tokenize(sent))
+            # Overlapping chunks repeat near-identical sentences; suppress a
+            # candidate that mostly duplicates one already picked.
+            if any(
+                len(toks & prev) / max(len(toks | prev), 1) > 0.7
+                for prev in picked_token_sets
+            ):
+                continue
+            per_chunk_count[cid] = per_chunk_count.get(cid, 0) + 1
+            seen.add(sent)
+            picked_token_sets.append(toks)
+            picked.append((p_idx, sent, cid))
+        picked.sort(key=lambda p: p[0])  # reading order: best passage first
+        return " ".join(f"{sent} [{cid}]" for _, sent, cid in picked)
