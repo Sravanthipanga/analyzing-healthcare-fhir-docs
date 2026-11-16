@@ -1,5 +1,7 @@
 # Analyzing Healthcare — FHIR Docs
 
+![CI](https://github.com/Sravanthipanga/analyzing-healthcare-fhir-docs/actions/workflows/ci.yml/badge.svg)
+
 **AskFHIR** — an "Ask My Docs" system for FHIR / HL7.
 
 A production-pattern **retrieval-augmented generation (RAG)** application over
