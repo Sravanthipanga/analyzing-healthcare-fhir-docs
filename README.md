@@ -2,6 +2,11 @@
 
 ![CI](https://github.com/Sravanthipanga/analyzing-healthcare-fhir-docs/actions/workflows/ci.yml/badge.svg)
 
+
+![Analyzing Healthcare — FHIR Docs chat UI](docs/ui-screenshot.png)
+
+*The chat UI: a cited answer with per-source stage scores (BM25 rank · vector rank · RRF fused · rerank), and abstention on off-topic questions.*
+
 **AskFHIR** — an "Ask My Docs" system for FHIR / HL7.
 
 A production-pattern **retrieval-augmented generation (RAG)** application over
