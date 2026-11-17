@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "askfhir"
 version = "0.1.0"
 description = "AskFHIR — production-pattern RAG over FHIR/HL7 docs with hybrid retrieval, reranking, and enforced citations"
+license = { text = "BSD-3-Clause" }
 requires-python = ">=3.10"
 dependencies = [
     "fastapi",
@@ -17,6 +18,11 @@ dependencies = [
 
 [project.optional-dependencies]
 models = ["fastembed"]
+observability = [
+    "opentelemetry-api",
+    "opentelemetry-sdk",
+    "opentelemetry-exporter-otlp",
+]
 dev = ["pytest", "httpx"]
 
 [tool.setuptools.packages.find]
