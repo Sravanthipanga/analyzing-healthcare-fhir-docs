@@ -127,6 +127,30 @@ def test_ask_is_instrumented():
     assert {"bm25_search", "embed_query", "vector_search", "rerank"} <= stage_names
 
 
+def test_stage_latencies_are_nonzero_after_real_ask():
+    """Regression: stage latency/cost must be recorded AFTER the span
+    closes. Reading span.duration_ms inside the span yields 0.0, which
+    silently zeroed every per-stage p50/p95 in the first shipped version."""
+    import time
+
+    class SlowReranker(FakeReranker):
+        def score(self, query, texts):
+            time.sleep(0.01)
+            return super().score(query, texts)
+
+    store = ObservabilityStore()
+    chunks = load_corpus(CORPUS_DIR)
+    embedder = FakeEmbedder()
+    emb = embedder.embed([c.index_text() for c in chunks])
+    svc = AskFHIRService(chunks, emb, embedder, SlowReranker(),
+                         fake_models=True, store=store)
+    svc.ask("What is a transaction Bundle in FHIR?")
+    snap = store.snapshot()
+    assert snap["latency"]["rerank"]["p50_ms"] > 0
+    assert snap["latency"]["rerank"]["max_ms"] >= 10.0
+    assert snap["cost"]["by_stage"]["rerank"] > 0
+
+
 def test_ask_abstention_is_instrumented():
     store = ObservabilityStore()
     svc = _service(store)

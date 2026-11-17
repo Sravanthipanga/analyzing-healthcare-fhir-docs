@@ -171,10 +171,12 @@ class AskFHIRService:
         def _cm():
             with store.tracer.span(name, **attributes) as span:
                 yield span
-                store.latency.record(name, span.duration_ms)
-                tokens = span.attributes.get("tokens", 0)
-                store.cost.bill_span(trace_id, name, span.duration_ms,
-                                     tokens=tokens)
+            # The span is closed here, so duration_ms is final. Recording
+            # inside the with-block would read 0.0 (end_ns not yet set).
+            store.latency.record(name, span.duration_ms)
+            tokens = span.attributes.get("tokens", 0)
+            store.cost.bill_span(trace_id, name, span.duration_ms,
+                                 tokens=tokens)
 
         return _cm()
 
