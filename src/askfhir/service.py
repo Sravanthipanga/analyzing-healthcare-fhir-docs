@@ -11,6 +11,8 @@ import numpy as np
 
 from .answer import ABSTAIN_MESSAGE, ExtractiveComposer, Passage, validate_citations
 from .bm25_index import BM25Index
+from .observability import ObservabilityStore, get_store
+from .observability.cost import estimate_tokens
 from .chunking import Chunk, load_corpus
 from .embeddings import Embedder, get_embedder
 from .hybrid import reciprocal_rank_fusion
@@ -60,7 +62,9 @@ class AskFHIRService:
         reranker: Reranker,
         abstain_threshold: float | None = None,
         fake_models: bool = False,
+        store: ObservabilityStore | None = None,
     ):
+        self.store = store or get_store()
         self.chunks = chunks
         self.chunks_by_id = {c.chunk_id: c for c in chunks}
         self.embedder = embedder
@@ -124,25 +128,94 @@ class AskFHIRService:
 
     # ------------------------------------------------------------------- ask
     def ask(self, question: str) -> dict:
-        question = (question or "").strip()
-        if not question:
-            return self._abstain(question, [])
+        """Answer one question, fully instrumented.
 
-        bm25_results = self._bm25.search(question, TOP_EACH)
-        q_vec = self.embedder.embed([question])[0]
-        vector_results = self._vectors.search(q_vec, TOP_EACH)
+        Every stage runs inside a trace span; stage latencies feed the
+        p50/p95 tracker, spans are billed into a per-request cost record,
+        and the outcome feeds the online quality counters. The result
+        gains ``trace_id`` and an ``observability`` summary block.
+        """
+        store = self.store
+        question = (question or "").strip()
+        with store.tracer.span("ask", question=question[:200]) as root:
+            result, fallback_used = self._ask_traced(question)
+            root.attributes.update(
+                abstained=result["abstained"],
+                citations=len(result["citations"]),
+                sources=len(result["sources"]),
+            )
+            trace_id = root.trace_id
+        # Root span is closed here, so its duration is final.
+        store.latency.record("ask", root.duration_ms)
+        record = store.cost.settle(trace_id)
+        store.quality.record(
+            abstained=result["abstained"],
+            citations=len(result["citations"]),
+            sources=len(result["sources"]),
+            fallback_used=fallback_used,
+        )
+        result["trace_id"] = trace_id
+        result["observability"] = {
+            "latency_ms": round(root.duration_ms, 3),
+            "cost_usd": record.total_usd,
+        }
+        return result
+
+    def _stage(self, name: str, trace_id: str, **attributes):
+        """Context manager: span + latency sample + cost billing."""
+        from contextlib import contextmanager
+
+        store = self.store
+
+        @contextmanager
+        def _cm():
+            with store.tracer.span(name, **attributes) as span:
+                yield span
+                store.latency.record(name, span.duration_ms)
+                tokens = span.attributes.get("tokens", 0)
+                store.cost.bill_span(trace_id, name, span.duration_ms,
+                                     tokens=tokens)
+
+        return _cm()
+
+    def _ask_traced(self, question: str) -> tuple[dict, bool]:
+        # The root span is already open (ask); its trace id keys the bill.
+        trace_id = self.store.tracer._stack()[-1].trace_id
+        if not question:
+            return self._abstain(question, []), False
+
+        with self._stage("bm25_search", trace_id, top_k=TOP_EACH) as sp:
+            bm25_results = self._bm25.search(question, TOP_EACH)
+            sp.attributes["hits"] = len(bm25_results)
+        with self._stage("embed_query", trace_id,
+                         model=self.embedder.name,
+                         tokens=estimate_tokens(question)) as sp:
+            q_vec = self.embedder.embed([question])[0]
+        with self._stage("vector_search", trace_id, top_k=TOP_EACH) as sp:
+            vector_results = self._vectors.search(q_vec, TOP_EACH)
+            sp.attributes["hits"] = len(vector_results)
 
         bm25_rank = {pos: i + 1 for i, (pos, _) in enumerate(bm25_results)}
         vector_rank = {pos: i + 1 for i, (pos, _) in enumerate(vector_results)}
-        fused = reciprocal_rank_fusion(
-            [[p for p, _ in bm25_results], [p for p, _ in vector_results]],
-            top_n=FUSED_N,
-        )
+        with self._stage("fusion", trace_id, method="rrf"):
+            fused = reciprocal_rank_fusion(
+                [[p for p, _ in bm25_results], [p for p, _ in vector_results]],
+                top_n=FUSED_N,
+            )
         fused_score = dict(fused)
         candidates = [pos for pos, _ in fused]
-        rerank_scores = self.reranker.score(
-            question, [self.chunks[p].text for p in candidates]
+        candidate_tokens = sum(
+            estimate_tokens(self.chunks[p].text) for p in candidates
         )
+        with self._stage("rerank", trace_id, model=self.reranker.name,
+                         candidates=len(candidates),
+                         tokens=candidate_tokens) as sp:
+            rerank_scores = self.reranker.score(
+                question, [self.chunks[p].text for p in candidates]
+            )
+            sp.attributes["top_score"] = (
+                round(float(max(rerank_scores)), 4) if len(rerank_scores) else None
+            )
         order = sorted(
             range(len(candidates)),
             key=lambda i: (-float(rerank_scores[i]), i),
@@ -161,16 +234,24 @@ class AskFHIRService:
             )
 
         if not sources or sources[0].rerank_score < self.abstain_threshold:
-            return self._abstain(question, sources)
+            return self._abstain(question, sources), False
 
         passages = [Passage(s.chunk, s.rerank_score) for s in sources]
         allowed = {s.chunk.chunk_id for s in sources}
-        answer = self._composer.generate(question, passages, self._token_weights)
-        if validate_citations(answer, allowed):
-            # Fallback: compose from the single best passage only.
-            answer = self._composer.generate(question, passages[:1], self._token_weights)
-            if validate_citations(answer, {passages[0].chunk.chunk_id}):
-                return self._abstain(question, sources)
+        compose_tokens = estimate_tokens(
+            question + "".join(p.chunk.text for p in passages)
+        )
+        fallback_used = False
+        with self._stage("compose", trace_id, tokens=compose_tokens):
+            answer = self._composer.generate(question, passages, self._token_weights)
+            if validate_citations(answer, allowed):
+                # Fallback: compose from the single best passage only.
+                fallback_used = True
+                answer = self._composer.generate(
+                    question, passages[:1], self._token_weights
+                )
+                if validate_citations(answer, {passages[0].chunk.chunk_id}):
+                    return self._abstain(question, sources), True
 
         from .answer import CITATION_RE
 
@@ -180,7 +261,7 @@ class AskFHIRService:
             "abstained": False,
             "citations": sorted(set(CITATION_RE.findall(answer))),
             "sources": [s.to_dict() for s in sources],
-        }
+        }, fallback_used
 
     def _abstain(self, question: str, sources: list[Source]) -> dict:
         return {
