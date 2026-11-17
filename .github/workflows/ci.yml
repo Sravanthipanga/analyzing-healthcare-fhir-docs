@@ -31,6 +31,9 @@ jobs:
       - name: Evaluation gate
         run: python eval/run_eval.py
 
+      - name: Regression gate
+        run: python eval/regression_gate.py
+
       - name: Upload eval report
         if: always()
         uses: actions/upload-artifact@v4
