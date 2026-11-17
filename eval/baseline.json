@@ -1,5 +1,5 @@
 {
- "comment": "Frozen known-good baseline for eval/regression_gate.py. Measured 2026-11-17 on the real models (bge-small-en-v1.5 + ms-marco-MiniLM-L-6-v2) over the 35-question golden set, in the build sandbox; CI runners differ, so latency carries the headroom factor. Update deliberately, in its own commit, when a change is intended to move these numbers.",
+ "comment": "Frozen known-good baseline for eval/regression_gate.py. Measured 2026-11-17 on the real models (bge-small-en-v1.5 + ms-marco-MiniLM-L-6-v2) over the 35-question golden set, in the build sandbox; CI runners differ, so latency carries the headroom factor. Regenerated after the per-stage latency fix (stage spans are now billed/recorded after close; rerank dominates at ~1.86 s mean). Update deliberately, in its own commit, when a change is intended to move these numbers.",
  "metrics": {
   "hit@5": 1.0,
   "mrr@5": 0.9655,
@@ -10,11 +10,11 @@
  "observability": {
   "latency": {
    "ask": {
-    "p95_ms": 2444.721
+    "p95_ms": 2630.711
    }
   },
   "cost": {
-   "mean_usd": 0.00244861
+   "mean_usd": 0.00319245
   }
  },
  "tolerances": {
