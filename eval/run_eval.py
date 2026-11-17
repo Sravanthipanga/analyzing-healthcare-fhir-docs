@@ -117,6 +117,10 @@ def main() -> int:
         "reranker": svc.reranker.name,
         "abstain_threshold": svc.abstain_threshold,
         "fake_models": args.fake,
+        # Observability snapshot over the whole eval run: per-stage
+        # latency percentiles, cost per request, online quality signals.
+        # eval/regression_gate.py compares this against the baseline.
+        "observability": svc.store.snapshot(),
         "per_question": [
             {
                 "question": e["question"],
@@ -125,6 +129,9 @@ def main() -> int:
                 "first_expected_rank": r,
                 "behaved": ok,
                 "abstained": res["abstained"],
+                "latency_ms": res.get("observability", {}).get("latency_ms"),
+                "cost_usd": res.get("observability", {}).get("cost_usd"),
+                "trace_id": res.get("trace_id"),
                 "citations": res["citations"],
                 "top_rerank_score": res["sources"][0]["rerank_score"] if res["sources"] else None,
             }
