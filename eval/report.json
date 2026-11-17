@@ -1,0 +1,705 @@
+{
+ "metrics": {
+  "questions": 35,
+  "answerable": 29,
+  "hit@5": 1.0,
+  "mrr@5": 0.9655,
+  "citation_precision": 0.7,
+  "keyword_recall": 0.9057,
+  "abstention_accuracy": 1.0
+ },
+ "thresholds": {
+  "abstention_accuracy": 0.85,
+  "citation_precision": 0.6,
+  "hit@5": 0.85,
+  "mrr@5": 0.82
+ },
+ "embedder": "fastembed:BAAI/bge-small-en-v1.5",
+ "reranker": "fastembed:Xenova/ms-marco-MiniLM-L-6-v2",
+ "abstain_threshold": -5.5,
+ "fake_models": false,
+ "observability": {
+  "latency": {
+   "ask": {
+    "count": 35,
+    "mean_ms": 1984.906,
+    "p50_ms": 2007.867,
+    "p95_ms": 2444.721,
+    "p99_ms": 2774.285,
+    "max_ms": 2774.285
+   },
+   "bm25_search": {
+    "count": 35,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   },
+   "compose": {
+    "count": 29,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   },
+   "embed_query": {
+    "count": 35,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   },
+   "fusion": {
+    "count": 35,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   },
+   "rerank": {
+    "count": 35,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   },
+   "vector_search": {
+    "count": 35,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0
+   }
+  },
+  "cost": {
+   "requests": 35,
+   "total_usd": 0.085701,
+   "mean_usd": 0.00244861,
+   "p95_usd": 0.0033404,
+   "per_1k_requests_usd": 2.4486,
+   "by_stage": {
+    "bm25_search": 0.0,
+    "compose": 0.08569,
+    "embed_query": 1.1e-05,
+    "rerank": 0.0,
+    "vector_search": 0.0
+   }
+  },
+  "quality": {
+   "requests": 35,
+   "answered": 29,
+   "abstention_rate": 0.1714,
+   "empty_rate": 0.0,
+   "fallback_rate": 0.0,
+   "citations_per_answer": 1.862
+  },
+  "tracing": {
+   "otel_bridge_active": false,
+   "trace_file": null
+  }
+ },
+ "per_question": [
+  {
+   "question": "What is a FHIR resource and what are some examples of resources?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-overview"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1688.121,
+   "cost_usd": 0.0030353199999999998,
+   "trace_id": "8ce184b958d74011bfde02719d8f9a64",
+   "citations": [
+    "fhir-overview#1",
+    "observation-resource#0",
+    "profiles-and-validation#1"
+   ],
+   "top_rerank_score": 7.0021
+  },
+  {
+   "question": "Which version of FHIR is most widely implemented in production systems?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-overview"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1495.998,
+   "cost_usd": 0.0026853400000000005,
+   "trace_id": "4adcfd4439bd45f99b3887aa456307fd",
+   "citations": [
+    "fhir-overview#7"
+   ],
+   "top_rerank_score": 8.7342
+  },
+  {
+   "question": "What does a FHIR server publish at its /metadata endpoint?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-overview"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2379.449,
+   "cost_usd": 0.00232028,
+   "trace_id": "d46d7fa7c01140b4a8f89a446dea28d2",
+   "citations": [
+    "fhir-overview#8",
+    "fhir-overview#9",
+    "smart-on-fhir#10"
+   ],
+   "top_rerank_score": 7.0259
+  },
+  {
+   "question": "Which element of the Patient resource holds the medical record number?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "patient-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2694.458,
+   "cost_usd": 0.0028053400000000004,
+   "trace_id": "2e5ac24b30c546d29fa09bb1fd025818",
+   "citations": [
+    "patient-resource#0",
+    "patient-resource#1"
+   ],
+   "top_rerank_score": 2.1515
+  },
+  {
+   "question": "How does the Patient resource record which languages a patient speaks?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "patient-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2444.721,
+   "cost_usd": 0.0025903400000000004,
+   "trace_id": "f1b5449d63144222bf73ea5af7f09959",
+   "citations": [
+    "patient-resource#5"
+   ],
+   "top_rerank_score": 2.0417
+  },
+  {
+   "question": "What does the rank mean in an Encounter diagnosis?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "encounter-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2278.008,
+   "cost_usd": 0.00322024,
+   "trace_id": "a379bb97b1874ae0b011043320357c2e",
+   "citations": [
+    "condition-resource#9",
+    "encounter-resource#4",
+    "encounter-resource#5"
+   ],
+   "top_rerank_score": 7.6803
+  },
+  {
+   "question": "What values can the Encounter class have, such as ambulatory or emergency?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "encounter-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2774.285,
+   "cost_usd": 0.00312036,
+   "trace_id": "c1e290dd19fc404e828a520cf0b04cf7",
+   "citations": [
+    "encounter-resource#1",
+    "encounter-resource#2"
+   ],
+   "top_rerank_score": 5.565
+  },
+  {
+   "question": "How is a blood pressure reading represented in an Observation resource?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "observation-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1820.304,
+   "cost_usd": 0.0027653400000000002,
+   "trace_id": "f5e168ecadbf483ca0cf51532cef9e9d",
+   "citations": [
+    "observation-resource#0",
+    "observation-resource#4",
+    "terminology#0"
+   ],
+   "top_rerank_score": 5.2311
+  },
+  {
+   "question": "Which LOINC code identifies a heart rate observation?",
+   "category": "terminology",
+   "expected_doc_ids": [
+    "observation-resource"
+   ],
+   "first_expected_rank": 2,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2379.483,
+   "cost_usd": 0.00296026,
+   "trace_id": "70c2964a515d4304b258d3ffa137d06b",
+   "citations": [
+    "observation-resource#8",
+    "observation-resource#9",
+    "terminology#1"
+   ],
+   "top_rerank_score": 6.7038
+  },
+  {
+   "question": "What is the difference between clinicalStatus and verificationStatus on a Condition?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "condition-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2102.947,
+   "cost_usd": 0.0033054200000000003,
+   "trace_id": "9c8b9c03d22d4875b9c4138bb6ea9e59",
+   "citations": [
+    "condition-resource#1",
+    "condition-resource#2"
+   ],
+   "top_rerank_score": 2.7353
+  },
+  {
+   "question": "When a diagnosis has been ruled out, which verification status should the Condition have?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "condition-resource"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1846.7,
+   "cost_usd": 0.00317044,
+   "trace_id": "6ccb6da9a561410b95a4ff5f30855540",
+   "citations": [
+    "condition-resource#2"
+   ],
+   "top_rerank_score": 3.8256
+  },
+  {
+   "question": "What does the intent element mean on a MedicationRequest?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "medication-request"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2268.508,
+   "cost_usd": 0.0034052800000000005,
+   "trace_id": "80a8d45ac24e48b6976d5d4ad9ea3fca",
+   "citations": [
+    "medication-request#1",
+    "medication-request#9"
+   ],
+   "top_rerank_score": 2.9717
+  },
+  {
+   "question": "Which part of a MedicationRequest says how many refills are allowed?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "medication-request"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1594.18,
+   "cost_usd": 0.00298034,
+   "trace_id": "2d23dd65885e44008fc5e051288571d1",
+   "citations": [
+    "medication-request#4"
+   ],
+   "top_rerank_score": -1.1548
+  },
+  {
+   "question": "What is the difference between a transaction Bundle and a batch Bundle?",
+   "category": "comparison",
+   "expected_doc_ids": [
+    "bundle-and-transactions"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2395.385,
+   "cost_usd": 0.0032003400000000003,
+   "trace_id": "6c683525a65443e3bb941116a47d8fa3",
+   "citations": [
+    "bundle-and-transactions#3"
+   ],
+   "top_rerank_score": 4.8619
+  },
+  {
+   "question": "How do resources reference each other inside a transaction Bundle before the server assigns real ids?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "bundle-and-transactions"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2292.494,
+   "cost_usd": 0.0031855000000000004,
+   "trace_id": "71ddf478da774cb091286bde0808cf2b",
+   "citations": [
+    "bundle-and-transactions#5"
+   ],
+   "top_rerank_score": 6.0727
+  },
+  {
+   "question": "How do I also return the patient resource together with observation search results?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-search"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2327.8,
+   "cost_usd": 0.0027754,
+   "trace_id": "20aa3ff7c9a84e80a065ac0ca6ddee2b",
+   "citations": [
+    "fhir-search#8"
+   ],
+   "top_rerank_score": 7.8271
+  },
+  {
+   "question": "What does the _has parameter do in FHIR search?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-search"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1776.069,
+   "cost_usd": 0.00298022,
+   "trace_id": "1adf2484208d44a19eaa6ab8c250c3bc",
+   "citations": [
+    "fhir-overview#9",
+    "fhir-search#0"
+   ],
+   "top_rerank_score": 5.8553
+  },
+  {
+   "question": "Which prefixes like ge and lt can be used with date search parameters?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "fhir-search"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1618.111,
+   "cost_usd": 0.0025953400000000002,
+   "trace_id": "e3457cf9dc6d44b4b79662270bdb2703",
+   "citations": [
+    "fhir-search#2"
+   ],
+   "top_rerank_score": 5.5946
+  },
+  {
+   "question": "What does the SMART on FHIR scope patient/Patient.read allow an app to do?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "smart-on-fhir"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1612.621,
+   "cost_usd": 0.00307536,
+   "trace_id": "36ff93463d494ecd84c440719b57f1ba",
+   "citations": [
+    "smart-on-fhir#0",
+    "smart-on-fhir#8"
+   ],
+   "top_rerank_score": 5.2182
+  },
+  {
+   "question": "What is the difference between an EHR launch and a standalone launch in SMART on FHIR?",
+   "category": "comparison",
+   "expected_doc_ids": [
+    "smart-on-fhir"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1459.882,
+   "cost_usd": 0.00282542,
+   "trace_id": "e9d22fe15a6f4a52bf6d9d4e7d0a1bed",
+   "citations": [
+    "smart-on-fhir#0",
+    "smart-on-fhir#1",
+    "smart-on-fhir#2"
+   ],
+   "top_rerank_score": 6.0322
+  },
+  {
+   "question": "Which HL7 v2 segment carries patient demographics, and which FHIR resource does it map to?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "hl7v2-vs-fhir"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1721.571,
+   "cost_usd": 0.00282544,
+   "trace_id": "511a102b6d19442ab06dd27854578f7b",
+   "citations": [
+    "hl7v2-vs-fhir#11",
+    "hl7v2-vs-fhir#5"
+   ],
+   "top_rerank_score": 4.3054
+  },
+  {
+   "question": "What protocol is traditionally used to transport HL7 v2 messages?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "hl7v2-vs-fhir"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2386.196,
+   "cost_usd": 0.00275032,
+   "trace_id": "bafb8b7283ad4560b53e2ced63b9ba1b",
+   "citations": [
+    "hl7v2-vs-fhir#3"
+   ],
+   "top_rerank_score": 4.4123
+  },
+  {
+   "question": "Should I use HL7 v2 or FHIR for a new patient-facing mobile application, and why?",
+   "category": "comparison",
+   "expected_doc_ids": [
+    "hl7v2-vs-fhir"
+   ],
+   "first_expected_rank": 2,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1515.773,
+   "cost_usd": 0.0026204,
+   "trace_id": "81dbaf4cceb744858ff6cb22f422c770",
+   "citations": [
+    "fhir-overview#0"
+   ],
+   "top_rerank_score": 3.0538
+  },
+  {
+   "question": "Which code system provides names for laboratory tests such as glucose?",
+   "category": "terminology",
+   "expected_doc_ids": [
+    "terminology"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2007.867,
+   "cost_usd": 0.00308034,
+   "trace_id": "1d888db8257c468da85de95b934bd2da",
+   "citations": [
+    "observation-resource#2",
+    "terminology#1"
+   ],
+   "top_rerank_score": 6.3375
+  },
+  {
+   "question": "What is the difference between a Coding and a CodeableConcept?",
+   "category": "terminology",
+   "expected_doc_ids": [
+    "terminology"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2265.355,
+   "cost_usd": 0.0034403,
+   "trace_id": "fd4a706acef74b259a49e298c70e3225",
+   "citations": [
+    "condition-resource#4",
+    "observation-resource#2",
+    "terminology#4"
+   ],
+   "top_rerank_score": 5.9486
+  },
+  {
+   "question": "What does a required binding strength mean when an element is bound to a value set?",
+   "category": "terminology",
+   "expected_doc_ids": [
+    "terminology"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1406.236,
+   "cost_usd": 0.0033404,
+   "trace_id": "e09111ca631d42809ab58087c3990f61",
+   "citations": [
+    "profiles-and-validation#3",
+    "terminology#6"
+   ],
+   "top_rerank_score": 5.1212
+  },
+  {
+   "question": "What is the difference between the differential and the snapshot of a StructureDefinition?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "profiles-and-validation"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 2295.08,
+   "cost_usd": 0.00304044,
+   "trace_id": "12223f46dea64934a9c9717e80c4d882",
+   "citations": [
+    "profiles-and-validation#1",
+    "profiles-and-validation#2"
+   ],
+   "top_rerank_score": 1.8002
+  },
+  {
+   "question": "What does must-support mean in a FHIR profile?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "profiles-and-validation"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1302.37,
+   "cost_usd": 0.00267022,
+   "trace_id": "be7ca7769ac146ca9309915a6f443e06",
+   "citations": [
+    "profiles-and-validation#10",
+    "profiles-and-validation#3"
+   ],
+   "top_rerank_score": 6.5637
+  },
+  {
+   "question": "How can I validate a resource against a profile without storing it on the server?",
+   "category": "factual",
+   "expected_doc_ids": [
+    "profiles-and-validation"
+   ],
+   "first_expected_rank": 1,
+   "behaved": true,
+   "abstained": false,
+   "latency_ms": 1913.095,
+   "cost_usd": 0.0029303999999999997,
+   "trace_id": "b2ddd3d97b3142dcaabcae634888558a",
+   "citations": [
+    "profiles-and-validation#7"
+   ],
+   "top_rerank_score": 7.2403
+  },
+  {
+   "question": "What is the capital of France?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 1793.177,
+   "cost_usd": 1.4e-07,
+   "trace_id": "7f1cad14ac6f4768b1aa2226ecbf65d6",
+   "citations": [],
+   "top_rerank_score": -11.0251
+  },
+  {
+   "question": "How do I configure a Cisco router for BGP peering?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 1614.03,
+   "cost_usd": 2.4000000000000003e-07,
+   "trace_id": "0e9aabfde2a44a4eab2d3802d5052d22",
+   "citations": [],
+   "top_rerank_score": -10.829
+  },
+  {
+   "question": "What is a good recipe for chocolate cake?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 2101.822,
+   "cost_usd": 2.0000000000000002e-07,
+   "trace_id": "8fed4ede46274440baacb5cbac488196",
+   "citations": [],
+   "top_rerank_score": -11.0537
+  },
+  {
+   "question": "What is Apple's current stock price?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 2105.807,
+   "cost_usd": 1.8e-07,
+   "trace_id": "d3616394499e471ba9cd926f3aa29288",
+   "citations": [],
+   "top_rerank_score": -11.0633
+  },
+  {
+   "question": "How does photosynthesis work in plants?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 2182.294,
+   "cost_usd": 1.8e-07,
+   "trace_id": "93cede32948c4e24902078cee838afb4",
+   "citations": [],
+   "top_rerank_score": -11.1554
+  },
+  {
+   "question": "Who won the football World Cup in 2022?",
+   "category": "unanswerable",
+   "expected_doc_ids": [],
+   "first_expected_rank": null,
+   "behaved": true,
+   "abstained": true,
+   "latency_ms": 1611.525,
+   "cost_usd": 1.8e-07,
+   "trace_id": "45aca867f51b463c99f808834c17e5f9",
+   "citations": [],
+   "top_rerank_score": -10.0453
+  }
+ ]
+}
