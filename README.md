@@ -1,12 +1,5 @@
 # Analyzing Healthcare — FHIR Docs
 
-![CI](https://github.com/Sravanthipanga/analyzing-healthcare-fhir-docs/actions/workflows/ci.yml/badge.svg)
-
-
-![Analyzing Healthcare — FHIR Docs chat UI](docs/ui-screenshot.png)
-
-*The chat UI: a cited answer with per-source stage scores (BM25 rank · vector rank · RRF fused · rerank), and abstention on off-topic questions.*
-
 **AskFHIR** — an "Ask My Docs" system for FHIR / HL7.
 
 A production-pattern **retrieval-augmented generation (RAG)** application over
@@ -85,6 +78,37 @@ refuses rather than improvise. The threshold (−5.5) was calibrated on the
 golden set: the weakest answerable question scored −1.15 and the strongest
 unanswerable one −10.05, so the threshold sits mid-gap with wide margins.
 
+## Observability (the production layer)
+
+Most RAG portfolios stop at "it answers questions". Production AI work is
+mostly what happens *after*: watching the system. Every request here is
+traced, timed, priced, and quality-scored (`src/askfhir/observability/`):
+
+- **Tracing** — OpenTelemetry-semantic spans per stage
+  (`ask → bm25_search / embed_query / vector_search / fusion / rerank /
+  compose`) with model names, candidate counts, and scores as attributes.
+  Spans export to JSONL (`ASKFHIR_TRACE_FILE`) and bridge to any OTLP
+  collector (Jaeger, Tempo, Langfuse, Phoenix) when the OpenTelemetry SDK
+  is installed and `OTEL_EXPORTER_OTLP_ENDPOINT` is set.
+- **Latency** — per-stage and end-to-end **p50 / p95 / p99** over a rolling
+  window, so a reranker regression shows up as *its* p95 moving.
+- **Cost per request** — a priced ledger: local ONNX stages billed per
+  CPU-second, API-shaped stages per 1K tokens (price table overridable via
+  `ASKFHIR_PRICE_TABLE`). Reports mean / p95 cost and cost per 1K requests.
+- **Quality signals** — live abstention rate, citation density, fallback
+  rate, and empty-result rate: the proxies that catch quality decay
+  between offline eval runs.
+
+Endpoints: `GET /observability` (JSON snapshot), `GET /observability/traces`,
+`GET /observability/dashboard` (live page), `GET /metrics` (Prometheus).
+Every `/ask` response carries its `trace_id` and a latency/cost summary.
+
+**Regression gating:** CI runs the golden eval *and*
+`eval/regression_gate.py`, which compares quality, p95 latency, and cost
+per request against the frozen `eval/baseline.json`. A change that makes
+answers worse, slower, or pricier than the last known-good build fails —
+even if it still clears the absolute thresholds.
+
 ## Evaluation (the CI gate)
 
 `eval/golden.jsonl` holds 35 questions — 29 answerable (factual, terminology,
@@ -161,14 +185,18 @@ src/askfhir/
   hybrid.py              Reciprocal Rank Fusion
   reranker.py            Reranker protocol: fastembed cross-encoder / ST fallback / fake
   answer.py              ExtractiveComposer + citation validation + abstention text
-  service.py             retrieve → fuse → rerank → compose → validate
-  api.py                 FastAPI: POST /ask, GET /docs, GET /healthz, GET / (UI)
+  service.py             retrieve → fuse → rerank → compose → validate (instrumented)
+  observability/         tracing (OTel/OTLP), latency p50/p95/p99, cost ledger, quality signals
+  api.py                 FastAPI: /ask, /docs, /healthz, /observability, /metrics, UI
 static/index.html        single-file chat UI; shows per-stage scores per source
+static/observability.html  live observability dashboard (latency, cost, traces)
 scripts/build_index.py   writes data/index/{chunks.json, embeddings.npy}
 eval/
   golden.jsonl           35-question golden set
   thresholds.json        CI gate thresholds
-  run_eval.py            evaluation runner (writes eval/report.json)
+  run_eval.py            evaluation runner (writes eval/report.json + observability snapshot)
+  baseline.json          frozen known-good metrics/latency/cost for the regression gate
+  regression_gate.py     fails CI when quality, p95 latency, or cost regress vs baseline
 tests/                   pytest: unit + API + golden sanity (+ opt-in real-model test)
 .github/workflows/ci.yml pytest, index build, and the eval gate on every push/PR
 Dockerfile               slim image, index + models baked in
@@ -201,3 +229,7 @@ Dockerfile               slim image, index + models baked in
   tokenizer that keeps codes like `85354-9` atomic.
 - Streaming answers in the UI; feedback capture (👍/👎) feeding new golden
   questions.
+
+## License
+
+BSD 3-Clause License — see [LICENSE](LICENSE). © 2026 Sravanthi Panga.

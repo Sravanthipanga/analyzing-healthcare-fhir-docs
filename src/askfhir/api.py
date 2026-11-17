@@ -11,13 +11,15 @@ import os
 from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 from pydantic import BaseModel, Field
 
+from .observability import get_store
 from .service import AskFHIRService
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 STATIC_INDEX = BASE_DIR / "static" / "index.html"
+STATIC_OBSERVABILITY = BASE_DIR / "static" / "observability.html"
 
 _service: AskFHIRService | None = None
 
@@ -57,6 +59,25 @@ def create_app(service: AskFHIRService | None = None) -> FastAPI:
     def ask(req: AskRequest) -> JSONResponse:
         result = get_service().ask(req.question)
         return JSONResponse(result)
+
+    @app.get("/observability")
+    def observability() -> dict:
+        """Latency percentiles, cost per request, and quality signals."""
+        return get_store().snapshot()
+
+    @app.get("/observability/traces")
+    def traces(limit: int = 20) -> list[dict]:
+        return get_store().tracer.recent_traces(limit=min(limit, 100))
+
+    @app.get("/observability/dashboard")
+    def observability_dashboard() -> FileResponse:
+        return FileResponse(STATIC_OBSERVABILITY, media_type="text/html")
+
+    @app.get("/metrics")
+    def metrics() -> PlainTextResponse:
+        """Prometheus exposition for scraping."""
+        return PlainTextResponse(get_store().prometheus(),
+                                 media_type="text/plain")
 
     @app.get("/")
     def index() -> FileResponse:
