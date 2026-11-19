@@ -1,4 +1,5 @@
 # Analyzing Healthcare — FHIR Docs
+[![CI](https://github.com/Sravanthipanga/analyzing-healthcare-fhir-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/Sravanthipanga/analyzing-healthcare-fhir-docs/actions/workflows/ci.yml)
 
 **AskFHIR** — an "Ask My Docs" system for FHIR / HL7.
 
@@ -18,6 +19,20 @@ build fails (see [Evaluation](#evaluation-the-ci-gate)).
   anywhere; examples use obviously synthetic people ("Jane Example").
 - **Models run 100% locally** (ONNX via fastembed). No API key, no LLM bill.
   An LLM generator can be dropped in behind the `AnswerGenerator` protocol.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Q[Question] --> API[FastAPI /ask]
+    API --> RET[Hybrid retrieval: BM25 + vector]
+    DOCS[(FHIR R4 corpus, 128 chunks)] --> RET
+    RET --> RRF[Reciprocal Rank Fusion]
+    RRF --> RR[Cross-encoder reranking]
+    RR --> GATE{Top score above threshold?}
+    GATE -- no --> ABS[Abstain: insufficient evidence]
+    GATE -- yes --> ANS[Extractive answer with citations]
+```
 
 ## Architecture
 
@@ -232,4 +247,4 @@ Dockerfile               slim image, index + models baked in
 
 ## License
 
-BSD 3-Clause License — see [LICENSE](LICENSE). © 2026 Sravanthi Panga.
+MIT License — see [LICENSE](LICENSE). © 2026 Sravanthi Panga.
